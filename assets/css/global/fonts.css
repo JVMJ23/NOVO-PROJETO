@@ -1,0 +1,23 @@
+    @font-face {
+        font-family: 'MyriadPro';
+        src: url(../../fonts/MyriadPro-Regular.woff);
+        src: url(../../fonts/MyriadPro-Regular.woff2);
+       
+        font-style: normal;
+    }
+    @font-face{
+        font-family: 'MyriadProBold';
+        src:url(../../fonts/MyriadPro-Bold.woff);
+        src:url(../../fonts/MyriadPro-Bold.woff2);
+    
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'MyriadProCondit';
+        src: url(../../fonts/MyriadPro-BoldCond.woff);
+        src: url(../../fonts/MyriadPro-BoldCond.woff2);
+
+        font-style: normal;
+    }
+   

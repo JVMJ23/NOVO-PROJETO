@@ -1,0 +1,323 @@
+
+/* ---------------------------------------------------------------------------
+   Banner Slider
+--------------------------------------------------------------------------- */
+main{
+  position: relative;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*fundo*/
+body{
+     background-image:url(../../../images/global/background-main.png);
+     background-size :100%;
+     background-repeat: repeat-y;
+     background-color: none;
+}
+.meumaxclube-banner, .folheto-container,.atacado-banner{
+  padding: 0 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.meumaxclube-banner img, .folheto-container img,.atacado-banner img{
+height: 100%;
+width:100%;
+object-fit:cover;
+display: block;
+max-width: 1200px;
+margin: 0 auto;
+
+}
+
+
+
+/* Área que agrupa o slider e o banner lateral */
+.index-main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items:stretch;
+  height: 350px;
+  gap: 5px;
+}
+
+/* Slider à esquerda */
+.banner-slider {
+  width: 70%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slide individual */
+.banner-slider .slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.banner-slider .slide.active {
+  display: block;
+}
+
+.slide-content {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.slide-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Controles do Slider */
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.slider-controls span {
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+/* Banner lateral fixo (Compre Online) */
+.compre-banner {
+  width: 29%;
+  height: 100%;
+}
+
+.compre-banner .img-placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.compre-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Banner MáxClube */
+.meumaxclube-banner {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.meumaxclube-container img {
+  width: 100%;
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Folheto Ofertas */
+.folheto-container {
+  text-align: center;
+  margin: 5px 5px;
+}
+
+.folheto-unico img {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Banner Atacado */
+.atacado-banner {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.atacado-banner img {
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+}
+/* ---------------------------------------------------------------------------
+   Seção "Receitas Call" (acima do footer)
+--------------------------------------------------------------------------- */
+.receitas-call-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.receitas-call {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #e84b2a;
+}
+.call-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Cada bloco lateral em linha */
+.side-images {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+/* Todas as imagens laterais */
+.side-images img, 
+.call-button img {
+  width: calc(100vw / 7); 
+  height: auto;
+  aspect-ratio: 1/1; 
+  object-fit: cover;
+  display: block; 
+}
+/* Botão central fica igual às imagens */
+.call-button {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.call-button a{
+  cursor: pointer;
+  width: calc(100% / 7);
+  aspect-ratio: 1/1;
+}
+
+.botao-voltar {
+  display: block;
+  text-align: right;
+  margin: 5px 120px 0 0;
+  font-family: 'MyriadPro', sans-serif;
+  font-size: 15px;
+  color: #003366;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+/* ----------------------------------------
+   Responsivo para tablets (≤ 991px)
+---------------------------------------- */
+@media (max-width: 991px) {
+  main {
+    padding: 40px 30px;
+  }
+
+  .index-main-content {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .banner-slider,
+  .compre-banner {
+    width: 100%;
+    height: auto;
+  }
+
+  .compre-banner .img-placeholder {
+    height: auto;
+  }
+
+  .compre-banner img {
+    max-width: 100%;
+  }
+
+  .meumaxclube-banner,
+  .folheto-container,
+  .atacado-banner {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .botao-voltar {
+    margin: 10px 30px 0 auto;
+  }
+}
+
+/* ----------------------------------------
+   Responsivo para celulares (≤ 576px)
+---------------------------------------- */
+@media (max-width: 576px) {
+  main {
+    padding: 30px 15px;
+  }
+
+  .banner-slider {
+    height: auto;
+  }
+
+  .slide-content,
+  .slide-content img {
+    height: auto;
+  }
+
+  .slider-controls span {
+    font-size: 36px;
+  }
+
+  .compre-banner .img-placeholder {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .meumaxclube-banner,
+  .folheto-container,
+  .atacado-banner {
+    padding: 0 15px;
+  }
+
+  .call-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-images,
+  .call-button {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .side-images img,
+  .call-button img {
+    width: 100px;
+    aspect-ratio: 1/1;
+    margin: 5px;
+  }
+
+  .call-button a {
+    width: 100px;
+    margin: 5px;
+  }
+
+  .botao-voltar {
+    text-align: center;
+    margin: 30px auto 10px auto;
+  }
+}

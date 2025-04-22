@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhe Conosco</title>
+  <link rel="stylesheet" href="assets/css/global/global.css">
+  <link rel="stylesheet" href="assets/css/pages/trabalhe/trabalhe.css">
+
+</head>
+<body>
+  <!-- Header com três faixas -->
+  <header class="site-header">
+    <!-- Header Top (Azul) -->
+    <div class="header-top">
+      <div class="container header-top-container">
+        <div class="logo">
+          <a href="index.html" alt="Pagina Principal">
+            <img src="assets/images/global/logo novo-02.png" alt="logo">
+         
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/redemaximosupermercados/" target="_blank"><img src="assets/images/global/insta-logo-02.png"></a>
+          <a href="https://www.facebook.com/redemaximosupermercados" target="_blank"><img src="assets/images/global/facebook-logo-02.png"></a>
+          <a href="https://br.linkedin.com/company/grupomaximo" target="_blank"><img src="assets/images/global/linkedln-logo-02.png"></a>
+        </div>
+      </div>
+    </div>
+    <!-- Header Mid (Laranja) – menus alinhados à direita -->
+    <div class="header-mid">
+      <div class="container header-mid-container">
+        <nav>
+          <ul>
+            <li><a href="encontre.html">Encontre seu Máximo</a></li>
+            <li><a href="historia.html">Nossa História</a></li>
+            <li><a href="novidades.html">Novidades da Rede</a></li>
+            <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Header Bottom (Branco) – menus alinhados à direita -->
+    <div class="header-bottom">
+      <div class="container header-bottom-container">
+        <nav>
+          <ul>
+            <li><a href="ofertas.html"><img src="assets/images/global/ofertas-icon_icones.png">Ofertas</a></li>
+            <li><a href="compre.html"><img src="assets/images/global/compre-icon_icones.png">Compre Online</a></li>
+            <li><a href="https://meumaxclube.com.br/v1/apps/cadastroPrimeiraFase"><img src="assets/images/global/maxclube-icon_icones.png">MáxClube</a></li>
+            <li><a href="https://dmcard.com.br/portal/sobre-o-cartao/faca-seu-cartao"><img src="assets/images/global/cartão-icon_icones.png">Cartão MáxClube</a></li>
+            <li><a href="produtos.html"><img src="assets/images/global/produtosmax-icon_icones.png">Produtos Máx</a></li>
+            <li><a href="solidarie.html"><img src="assets/images/global/solidariemax-icon_icones.png">SolidarieMáx</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="formulario-container">
+    <div class="formulario-top">
+      <h1>Você se considera uma pessoa atenciosa, simpática e pronta para novos desafios?</h1>
+  
+      <form id="formulario-trabalho">
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" required>
+        </div>
+  
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Endereço de E-mail</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone de Contato</label>
+            <input type="text" id="telefone" required>
+          </div>
+        </div>
+  
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" required>
+          </div>
+          <div class="form-group">
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" required>
+          </div>
+        </div>
+  
+        <div class="form-row">
+          <div class="form-group">
+            <label for="loja">Loja que prefere participar dos processos</label>
+            <input type="text" id="loja" required>
+          </div>
+          <div class="form-group">
+            <label for="setor">Setor</label>
+            <input type="text" id="setor" required>
+          </div>
+        </div>
+      </form>
+    </div>
+  
+    <div class="formulario-bottom">
+      <!-- Imagem à esquerda -->
+      <div class="imagem-box">
+        <img src="assets/images/pages/pages/trabalhe/trabalhe-conosco-01.png" alt="Funcionário">
+      </div>
+  
+     
+      <div class="form-extra">
+        <div class="form-group">
+          <label for="curriculo">Anexe aqui seu currículo (DOC, PDF, JPG)</label>
+          <input type="file" id="curriculo" accept=".pdf,.doc,.docx,.jpg" required>
+          <label for="curriculo" class="btn-upload">Escolher arquivo</label>
+          <span class="file-name">Nenhum Arquivo escolhido</span>
+        </div>
+  
+  
+        <div class="politica">
+          <p>Ao enviar o currículo você afirma estar de acordo com nossa <a href="#" id="abrir-politica">Política de Privacidade</a>.
+        </p>
+        <input type="checkbox" id="Li-termos" required> Declaro ter lido e estar de acordo com a politica de privacidade
+
+        <div class="recaptcha">
+            <div class="g-recaptcha" data-sitekey="KEY"></div>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </div>
+        <div id="modal-politica" class="modal">
+          <div class="modal-content">
+          <span class="fechar">&times;</span>
+          <h2>Politica de privacidade</h2>
+          <p>Ao enviar o currículo através desta plataforma, o candidato autoriza o Supermercado Máximo e empresas do mesmo grupo econômico a arquivarem o currículo e todas as informações contidas nele em meio eletrônico para fins exclusivos de recrutamento e seleção, e autoriza seus colaboradores e prepostos envolvidos no recrutamento e seleção a terem acesso e a tratarem esses dados pra fins exclusivos de recrutamento e seleção. O candidato está ciente de que, a qualquer momento, caso deseje, pode entrar em contato com a empresa através dos canais informados neste website e solicitar ao RH da empresa que exclua os dados de seus arquivos.
+          </p>          
+          <button class="fechar">X Fechar</button>
+          </div>
+
+        </div>
+
+    </div>
+  </main>
+    <!-- rodapé -->
+   <!-- Footer com endereços divididos em 2 colunas -->
+   <footer class="site-footer">
+    <div class="store-addresses">
+      <div>
+        <p><strong>Bosque</strong> Av. Cidade Jardim, 3950 - Bosque dos Eucaliptos</p>
+        <p><strong>Urbanova</strong> Av. Papa João Paulo II, 250 - Urbanova VI</p>
+        <p><strong>Vila</strong> Rua Abaeté, 27 - Jardim Ismênia</p>
+        <p><strong>Tesouro</strong> Av. Barbacena, 966 - Vila Tesouro</p>
+        <p><strong>Guará</strong> Av. Juscelino Kubitschek Oliveira, 705 - Cpo Galvão</p>
+      </div>
+      <div>
+        <p><strong>Lorena</strong> Rua Castro Alves, 205 - Bairro da Cruz</p>
+        <p><strong>Ubatuba</strong> Praça 13 de Maio, 181 - Centro</p>
+        <p><strong>C. Jordão</strong> Av. Dr. Januário Miraglia, 2114 - Vila Abernéssia</p>
+        <p><strong>Tremembé</strong> Rua Doutor Monteiro, 260 - Centro</p>
+        <p><strong>Aquarius</strong> Av. Cassiano Ricardo, 1214</p>
+      </div>
+    </div>
+  
+    <div class="footer-center">
+      <img src="assets/images/global/logo novo-02.png" alt="logo da Rede Máximo">
+      <p>Produzido por João.2025 Rede Máximo de Supermercados</p>
+    </div>
+  </footer>
+  
+  <script>
+    const inputFile = document.getElementById('curriculo');
+    const fileNameDisplay = document.querySelector('.file-name');
+  
+    inputFile.addEventListener('change', function () {
+      if (this.files.length > 0) {
+        fileNameDisplay.textContent = this.files[0].name;
+      } else {
+        fileNameDisplay.textContent = 'Nenhum Arquivo escolhido';
+      }
+    });
+
+  </script>
+
+            <script>
+              const abrir = document.getElementById("abrir-politica");
+              const modal = document.getElementById("modal-politica");
+              const fecharBtns = document.querySelectorAll(".fechar");
+
+              abrir.addEventListener("click", function (e) {
+                e.preventDefault();
+                modal.style.display = "block";
+              });
+
+              fecharBtns.forEach(btn => {
+                btn.addEventListener("click", function () {
+                  modal.style.display = "none";
+                });
+              });
+
+              window.addEventListener("click", function (e) {
+                if (e.target === modal) {
+                  modal.style.display = "none";
+                }
+              });
+            </script>
+
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

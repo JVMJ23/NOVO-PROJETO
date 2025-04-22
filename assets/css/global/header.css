@@ -1,0 +1,209 @@
+/* ---------------------------------------------------------------------------
+   Header – estrutura e seções
+--------------------------------------------------------------------------- */
+
+/* Header Principal */
+.site-header {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  font-family: 'MyriadPro',sans-serif;
+}
+
+/* Header Top (Azul) */
+.header-top {
+  background-image: url(../../images/global/background-blue.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 25px 120px;
+}
+
+.header-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  max-width: 1100px;
+}
+
+.header-top .logo img {
+  max-width: 120px;
+  display: flex;
+  border: none;
+  position: relative;
+  margin-left: 150px;
+}
+
+.header-top .social-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 120px;
+}
+
+.header-top .social-links img {
+  max-width: 20px;
+  color: #e2dbdb;
+  margin-left: 15px;
+  display: flex;
+}
+
+/* Header Mid (Laranja) */
+.header-mid {
+  background-image: url(../../images/global/container-orange.png);
+  color: #cec7c7;
+  padding: 10px 0;
+}
+
+.header-mid-container nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin-right: 250px;
+}
+
+.header-mid-container nav ul li {
+  margin: 0 10px;
+}
+
+.header-mid-container nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  border-right: 1px solid white;
+  padding: 0 10px 0 15px;
+
+}
+
+/* Header Bottom (Branco) */
+.header-bottom {
+  background: #fff;
+  color: #333;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+}
+
+.header-bottom-container nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.header-bottom-container nav ul li {
+  margin: 0 10px;
+}
+
+.header-bottom-container nav ul li a {
+  color: #000080;
+  text-decoration: none;
+  font-size: 17px;
+  white-space: nowrap;
+}
+.header-bottom-container nav ul li a img{
+  max-width: 30px;
+  max-height: 30px;
+  display: inline;
+  
+}
+
+
+
+@media (max-width: 991px) {
+  .header-top {
+    padding: 20px 40px;
+  }
+
+  .header-top-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .header-top .logo img {
+    margin-left: 0;
+  }
+
+  .header-top .social-links {
+    margin-right: 0;
+  }
+
+  .header-mid-container nav ul {
+    margin-right: 30px;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .header-mid-container nav ul li {
+    margin: 5px;
+  }
+
+  .header-bottom-container nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .header-bottom-container nav ul li a {
+    font-size: 15px;
+  }
+
+  .header-bottom-container nav ul li a img {
+    max-width: 24px;
+    max-height: 24px;
+  }
+}
+
+/* ----------------------------------------
+   Responsivo para celular (≤ 576px)
+---------------------------------------- */
+@media (max-width: 576px) {
+  .header-top {
+    padding: 15px 20px;
+  }
+
+  .header-top-container {
+    flex-direction: row;
+    align-items:center;
+  }
+
+  .header-top .logo img {
+    max-width: 100px;
+  }
+
+  .header-top .social-links img {
+    max-width: 18px;
+    margin-left: 10px;
+  }
+
+  .header-mid-container nav ul {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .header-mid-container nav ul li a {
+    font-size: 13px;
+  }
+
+  .header-bottom-container nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-bottom-container nav ul li a {
+    font-size: 14px;
+  }
+
+  .header-bottom-container nav ul li a img {
+    max-width: 20px;
+    max-height: 20px;
+    margin-bottom: 5px;
+  }
+}

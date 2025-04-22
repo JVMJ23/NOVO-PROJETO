@@ -1,0 +1,170 @@
+
+.recipe-container {
+  background-image: url(../../../images/global/background\ receitas-01.png);
+  background-repeat: repeat-x;
+  background-size: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Agrupa imagem e ingredientes lado a lado */
+.image-ingredients {
+  display: flex;
+  align-items: flex-start; /* Este é o ponto chave */
+  gap: 20px;
+  width: 1050px; /* Define largura fixa para bater com o layout */
+}
+.recipe-container img{
+  display: block;
+}
+.recipe-image img{
+  width: 500px;
+  height: auto;
+  display: block;
+}
+.recipe-image{
+  position: relative;
+  height: auto;
+}
+/* Ingredientes */
+.ingredients {
+  max-width: 500px;
+}
+
+.ingredients h2 {
+  font-family: 'MyriadProBold',sans-serif;
+  margin-left: 40px;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.ingredients ul {
+  list-style: disc;
+  padding-left: 50px;
+}
+
+.ingredients li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Modo de preparo */
+.instructions {
+  margin-top: 20px;
+  width: 950px;
+}
+
+.instructions h2 {
+  font-family: 'MyriadProBold',sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align:initial;
+}
+
+.instructions p {
+  font-family: 'MyriadPro',sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 1%;
+}
+
+/*mediaquery*/
+@media (max-width: 1024px) {
+  .image-ingredients {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .recipe-image img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .ingredients {
+    max-width: 100%;
+  }
+
+  .instructions {
+    width: 90%;
+  }
+
+  .instructions h2 {
+    font-size: 22px;
+  }
+
+  .instructions p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe-container {
+    padding: 40px 20px;
+    background-size: 80%;
+  }
+
+  .image-ingredients {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .ingredients h2 {
+    font-size: 22px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .ingredients ul {
+    padding-left: 25px;
+  }
+
+  .ingredients li {
+    font-size: 16px;
+  }
+
+  .instructions {
+    width: 100%;
+  }
+
+  .instructions h2 {
+    font-size: 20px;
+  }
+
+  .instructions p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-container {
+    padding: 30px 15px;
+    background-size: 100%;
+  }
+
+  .recipe-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ingredients h2,
+  .instructions h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .ingredients li {
+    font-size: 15px;
+  }
+
+  .instructions p {
+    font-size: 15px;
+  }
+}

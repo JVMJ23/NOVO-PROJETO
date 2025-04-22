@@ -1,0 +1,147 @@
+/* ---------------------------------------------------------------------------
+   Novidades / Receitas
+--------------------------------------------------------------------------- */
+.receitas h1{
+  margin: 0 20%;
+  font-family: 'MyriadProCondit',sans-serif;
+  font-size: 50px;
+  color: #e84b2a;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0%;
+}
+.receitas p{
+  font-family: 'MyriadPro',sans-serif;
+  margin-bottom: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+  font-weight: 800;
+}
+
+.receitas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  justify-items: center;
+  padding: 0 20%;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.receita {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-decoration: none;
+  overflow:hidden;
+}
+
+
+.receita img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.receita button {
+  padding: 10px 15px;
+  cursor: pointer;
+  
+}
+
+
+/*media query*/
+/* Telas até 1280px (notebooks e desktops médios) */
+@media (max-width: 1280px) {
+  .receitas h1 {
+    font-size: 44px;
+    margin: 0 15%;
+  }
+
+  .receitas-grid {
+    padding: 0 15%;
+  }
+}
+
+/* Telas até 1024px (tablets e notebooks compactos) */
+@media (max-width: 1024px) {
+  .receitas h1 {
+    font-size: 38px;
+    margin: 0 10%;
+  }
+
+  .receitas p {
+    font-size: 15px;
+  }
+
+  .receitas-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    padding: 0 10%;
+    gap: 20px;
+  }
+}
+
+/* Telas até 768px (celulares maiores e tablets em pé) */
+@media (max-width: 768px) {
+  .receitas h1 {
+    font-size: 32px;
+    margin: 0 6%;
+  }
+
+  .receitas p {
+    font-size: 14px;
+    margin: 10px 0 30px;
+  }
+
+  .receitas-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    padding: 0 6%;
+    gap: 16px;
+  }
+
+  .receita button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+/* Telas até 480px (smartphones padrão) */
+@media (max-width: 480px) {
+  .receitas h1 {
+    font-size: 24px;
+    margin: 0 20px;
+  }
+
+  .receitas p {
+    font-size: 13px;
+    margin: 10px 15px 25px;
+  }
+
+  .receitas-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    gap: 14px;
+  }
+
+  .receita button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Telas até 360px (smartphones pequenos como iPhone SE) */
+@media (max-width: 360px) {
+  .receitas h1 {
+    font-size: 22px;
+  }
+
+  .receitas p {
+    font-size: 12px;
+  }
+
+  .receita button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

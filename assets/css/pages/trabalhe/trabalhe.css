@@ -1,0 +1,305 @@
+main {
+  position: relative;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+   /*fundo*/
+   body{
+   background-image:url(../../../images/global/background-main.png);
+   background-size :100%;
+   background-repeat: repeat-y;
+   background-color: none;
+}
+
+.formulario-container {
+  max-width: 1200px;
+  margin: 0 15%;
+  padding: 0 20px;
+}
+
+/* Parte de cima */
+.formulario-top h1 {
+  font-family: 'MyriadProCondit',sans-serif;
+  font-size: 54px;
+  color: #e35f1d;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#formulario-trabalho {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Parte de baixo */
+.formulario-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.imagem-box img {
+  max-width: 380px;
+  height: auto;
+}
+
+.form-extra {
+  flex: 5 5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-upload {
+  background-color: #e35f1d;
+  color: white;
+  font-size: 22px;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.file-name {
+  margin-left: 10px;
+  font-size: 13px;
+  color: #555;
+}
+.recaptcha{
+  position:relative;
+  max-width: 300px;
+  height: auto;
+  left: 100px;
+}
+.recaptcha img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  
+}
+
+.btn-enviar {
+  background-color: #e35f1d;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.politica {
+  font-size: 12px;
+  color: #555;
+}
+
+.politica a {
+  color: #e35f1d;
+  text-decoration: underline;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  color: #1d2f44;
+}
+
+.modal-content p {
+  color: #444;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.modal .fechar {
+  background-color: #e26b1a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-content span.fechar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 26px;
+  color: #002244;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* ----------------------------------------
+   Responsivo para tablets (≤ 991px)
+---------------------------------------- */
+@media (max-width: 991px) {
+  .formulario-container {
+    margin: 0 5%;
+    padding: 0 10px;
+  }
+
+  .formulario-top h1 {
+    font-size: 38px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .formulario-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .imagem-box img {
+    max-width: 100%;
+  }
+
+  .recaptcha {
+    left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .form-extra {
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn-enviar {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+/* ----------------------------------------
+   Responsivo para celulares (≤ 576px)
+---------------------------------------- */
+@media (max-width: 576px) {
+  .formulario-top h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  .btn-upload {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-upload {
+    width: 100%;
+  }
+
+  .recaptcha {
+    max-width: 100%;
+    margin: 20px auto;
+    left: 0;
+  }
+
+  .recaptcha img {
+    max-width: 100%;
+  }
+
+  .btn-enviar {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .politica {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+  }
+
+  .modal-content h2 {
+    font-size: 20px;
+  }
+
+  .modal-content p {
+    font-size: 14px;
+  }
+
+  .modal .fechar,
+  .modal-content span.fechar {
+    font-size: 22px;
+    padding: 8px 16px;
+  }
+}

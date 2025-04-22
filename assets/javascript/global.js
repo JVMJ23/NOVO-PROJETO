@@ -1,0 +1,140 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Slider automático – executa se houver slides
+    const slides = document.querySelectorAll('.banner-slider .slide');
+    if (slides.length > 0) {
+      let currentSlide = 0;
+      const slideInterval = setInterval(nextSlide, 5000);
+      function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+      // Controles do Slider
+      const prevControl = document.querySelector('.slider-controls .prev');
+      const nextControl = document.querySelector('.slider-controls .next');
+      if (prevControl) {
+        prevControl.addEventListener('click', function() {
+          slides[currentSlide].classList.remove('active');
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          slides[currentSlide].classList.add('active');
+        });
+      }
+      if (nextControl) {
+        nextControl.addEventListener('click', nextSlide);
+      }
+    }
+    
+    // Scroll suave apenas para links com href iniciando com "#"
+    const navLinks = document.querySelectorAll('header nav ul li a');
+    navLinks.forEach(link => {
+      if(link.getAttribute('href').charAt(0) === "#") {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            window.scrollTo({
+              top: targetSection.offsetTop - 100,
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+    });
+  });
+  document.querySelectorAll(".galeria a").forEach(link => {
+    link.addEventListener("mouseover", () => {
+        link.style.opacity = "0.8";
+    });
+    link.addEventListener("mouseout", () => {
+        link.style.opacity = "1";
+    });
+  });
+  
+  document.getElementById("formulario-trabalho").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+  
+    // Capturando os valores dos campos
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const cidade = document.getElementById("cidade").value.trim();
+    const bairro = document.getElementById("bairro").value.trim();
+    const loja = document.getElementById("loja").value.trim();
+    const setor = document.getElementById("setor").value.trim();
+    const curriculo = document.getElementById("curriculo").files;
+    const naoSouRobo = document.getElementById("nao-sou-robo").checked;
+    const erroMsg = document.getElementById("erro-msg");
+  
+    // Expressões regulares para validar email e telefone
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const telefoneRegex = /^\d{10,11}$/; // Aceita 10 ou 11 dígitos
+
+    const form = document.getElementById('formulario-trabalho');
+    const checkbox = document.getElementById('nao-sou-robo');
+
+    form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Impede o envio real por enquanto
+
+  const campos = form.querySelectorAll('input[type="text"], input[type="email"]');
+  let valid = true;
+
+  campos.forEach(campo => {
+    if (campo.value.trim() === '') {
+      valid = false;
+      campo.style.borderColor = 'red';
+    } else {
+      campo.style.borderColor = '#ccc';
+    }
+  });
+
+  if (!inputFile.files.length) {
+    alert('Por favor, anexe seu currículo.');
+    valid = false;
+  }
+
+  if (!checkbox.checked) {
+    alert('Por favor, confirme que você não é um robô.');
+    valid = false;
+  }
+
+  if (valid) {
+    alert('Formulário enviado com sucesso!');
+    form.submit(); // aqui você pode substituir por envio via backend
+  }
+});
+  
+    // Validações
+    if (
+        nome === "" ||
+        email === "" ||
+        telefone === "" ||
+        cidade === "" ||
+        bairro === "" ||
+        loja === "" ||
+        setor === "" ||
+        curriculo.length === 0 ||
+        !naoSouRobo
+    ) {
+        erroMsg.textContent = "Por favor, preencha todos os campos corretamente!";
+        erroMsg.style.display = "block";
+        return;
+    }
+  
+    if (!emailRegex.test(email)) {
+        erroMsg.textContent = "Por favor, insira um email válido!";
+        erroMsg.style.display = "block";
+        return;
+    }
+  
+    if (!telefoneRegex.test(telefone)) {
+        erroMsg.textContent = "Por favor, insira um telefone válido com 10 ou 11 dígitos!";
+        erroMsg.style.display = "block";
+        return;
+    }
+  
+    // Se tudo estiver correto, enviar formulário
+    erroMsg.style.display = "none";
+    alert("Formulário enviado com sucesso!");
+  });
+  

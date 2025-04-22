@@ -1,0 +1,302 @@
+main {
+  position: relative;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+   /*fundo*/
+   body{
+   background-image:url(../../../images/global/background-main.png);
+   background-size :100%;
+   background-repeat: repeat-y;
+   background-color: none;
+   overflow: hidden;
+}
+/* Container geral da seção */
+.historia-section {
+  max-width: 1000px;
+  position: relative;
+  font-family: 'MyriadPro',sans-serif;
+  margin: 0 auto;
+  padding: 80px 40px 50px;
+}
+
+/* Título */
+.titulo {
+  text-align: center;
+  font-size: 44px;
+  color: #d52b1e;
+  font-family: "MyriadProBold",sans-serif;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Container da timeline */
+.timeline-container {
+  max-width:600px;
+  margin: 0 auto;
+  padding-left: 30px;
+  position: relative;
+  border-left: 3px solid #000080;
+}
+/* Cada item da timeline */
+.timeline-item {
+  position: relative;
+  margin-bottom: 33px;
+  padding-left: 5px;
+  z-index: 2;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: -5px;
+  width: 35px;
+  height: 35px;
+  background-color: white; /* Mesma cor do fundo */
+  border-radius: 60%;
+  z-index: 0; /* Atrás da bolinha */
+}
+/* Bolinha azul com o ano */
+.dot {
+  position: absolute;
+  left: -45px;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  background:  white;
+  border: 2px solid #000080;
+  border-radius: 60%;
+  color: #000080;
+  z-index: 2;
+}
+.dot::after{
+  content: attr(data-year);
+  background-color: white;
+  position: absolute;
+  left: -25px;
+  top: -55px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000080;
+
+}
+
+/* Texto da timeline */
+.timeline-item p {
+  padding: 5px;
+  max-width: 450px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: 'MyriadPro',sans-serif;
+  text-align: justify;
+}
+
+/* Imagens fora do container central */
+.imagem-esquerda,
+.imagem-direita {
+  position: absolute;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.imagem-esquerda.img1 {
+  top: 10px;
+  left: 10px;
+}
+.imagem-esquerda.img2 {
+  top: 240px;
+  left:20px;
+  
+}
+.imagem-direita.img1 {
+  top: 0px;
+  right: 150px;
+}
+.imagem-direita.img2 {
+  top: 220px;
+  right: 100px;
+}
+
+.imagem-direita.img1 img {
+  max-width: 280px;
+  height: auto;
+  object-fit: cover;
+}
+.imagem-direita.img2 img {
+  max-width: 280px;
+  height: auto;
+  object-fit: cover;
+}
+.imagem-esquerda.img1 img{
+  max-width: 190px;
+  height: auto;
+  object-fit: cover;
+}
+.imagem-esquerda.img2 img{
+  max-width: 210px;
+  height: auto;
+  object-fit: cover;
+}
+/* Logo final */
+.logo-final {
+  max-width: 200px;
+  display: block;
+  margin-left: -125px;
+  margin-bottom: 30px;
+}
+
+/* Texto azul do final */
+.timeline-item:last-child p {
+  color: #092ed1;
+  font-size: 18px;
+  font-weight: 700;
+}
+.botao-voltar{
+  position: absolute;
+  right: 100px;
+  bottom: 20px;
+  margin-bottom: 20px;
+  font-family: 'MyriadPro',sans-serif;
+  font-size: 15px;
+  color: #003366;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  z-index: 10;
+}
+
+
+/*media query*/
+
+/* Smartphones pequenos: até 480px */
+@media (max-width: 480px) {
+  .historia-section {
+    padding: 20px 30px;
+  }
+
+  .titulo {
+    font-size: 26px;
+  }
+
+  .dot {
+    width: 18px;
+    height: 18px;
+    left: -18px;
+  }
+
+  .dot::after {
+    font-size: 12px;
+    top: -30px;
+    left: -15px;
+  }
+
+  .imagem-esquerda.img1 { left: -40px; top: 10px; }
+  .imagem-esquerda.img2 { left: -40px; top: 230px; }
+  .imagem-direita.img1 { right: -40px; top: 0px; }
+  .imagem-direita.img2 { right: -40px; top: 210px; }
+
+  .imagem-esquerda img,
+  .imagem-direita img {
+    max-width: 100px;
+  }
+
+  .logo-final {
+    max-width: 130px;
+  }
+
+  .botao-voltar {
+    font-size: 13px;
+    position: static;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+/* Celulares médios: até 768px */
+@media (max-width: 768px) {
+  .historia-section {
+    padding: 30px 50px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .dot {
+    width: 20px;
+    height: 20px;
+    left: -20px;
+  }
+
+  .dot::after {
+    font-size: 14px;
+    top: -35px;
+    left: -18px;
+  }
+
+  .imagem-esquerda.img1 { left: -70px; top: 10px; }
+  .imagem-esquerda.img2 { left: -80px; top: 240px; }
+  .imagem-direita.img1 { right: -80px; top: 0px; }
+  .imagem-direita.img2 { right: -80px; top: 220px; }
+
+  .imagem-esquerda img,
+  .imagem-direita img {
+    max-width: 140px;
+  }
+
+  .logo-final {
+    max-width: 150px;
+    margin: 40px auto;
+  }
+
+  .botao-voltar {
+    font-size: 14px;
+    position: static;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+/* Tablets: até 1024px */
+@media (max-width: 1024px) {
+  .historia-section {
+    padding: 40px 80px;
+  }
+
+  .titulo {
+    font-size: 36px;
+  }
+
+  .dot {
+    width: 22px;
+    height: 22px;
+    left: -25px;
+  }
+
+  .dot::after {
+    font-size: 16px;
+    top: -38px;
+    left: -20px;
+  }
+
+  .imagem-esquerda.img1 { left: -110px; top: 10px; }
+  .imagem-esquerda.img2 { left: -120px; top: 240px; }
+  .imagem-direita.img1 { right: -110px; top: 0px; }
+  .imagem-direita.img2 { right: -110px; top: 220px; }
+
+  .imagem-esquerda img,
+  .imagem-direita img {
+    max-width: 200px;
+  }
+
+  .logo-final {
+    max-width: 180px;
+  }
+
+  .botao-voltar {
+    font-size: 15px;
+  }
+}

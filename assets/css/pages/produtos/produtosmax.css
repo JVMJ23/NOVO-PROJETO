@@ -1,0 +1,154 @@
+/* ------------------------------------------------------------------------
+Produtos marca Máx
+--------------------------------------------------------------------------- */
+main {
+  position: relative;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+   /*fundo*/
+   body{
+   background-image:url(../../../images/global/background-main.png);
+   background-size :100%;
+   background-repeat: repeat-y;
+   background-color: none;
+}
+
+.produtos {
+    margin: 0 20%;
+    padding: 40px 0;
+    text-align: center;
+}
+.produtos h2{
+  color: blue;
+}
+.galeria1{
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    
+}
+
+.galeria2 ,.galeria3{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+.galeria1 img{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+}  
+.galeria2 img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    object-fit: cover;
+  
+}
+.galeria3 img{
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    display: flex;
+    object-fit: cover;
+}
+
+  
+  .galeria1 a{
+    width: 100%;
+    max-width: 1200px;
+    text-decoration: none;
+  }
+  .galeria2 a {
+    flex: 1 1 0;
+    max-width: 400px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .galeria3 a {
+    text-decoration: none;
+    text-align: center;
+    max-width: 1000px;
+    max-height: 700px; 
+}
+
+.botao-voltar {
+  display: block;
+  text-align: right;
+  margin: 50px 300px 10px auto;
+  font-family: 'MyriadPro', sans-serif;
+  font-size: 15px;
+  color: #003366;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* ----------------------------------------
+   Responsivo para tablets (≤ 991px)
+---------------------------------------- */
+@media (max-width: 991px) {
+  .produtos {
+    margin: 0 5%;
+    padding: 30px 0;
+  }
+
+  .galeria2 img,
+  .galeria3 img {
+    max-width: 600px;
+  }
+
+  .galeria2 a,
+  .galeria3 a {
+    max-width: 90%;
+  }
+
+  .botao-voltar {
+    margin: 30px 100px 20px auto;
+  }
+}
+
+/* ----------------------------------------
+   Responsivo para celulares (≤ 576px)
+---------------------------------------- */
+@media (max-width: 576px) {
+  .produtos {
+    margin: 0;
+    padding: 20px 10px;
+  }
+
+
+  .galeria1 {
+    padding: 0;
+  }
+
+  .galeria1 img {
+    max-width: 100%;
+  }
+
+  .galeria2 img,
+  .galeria3 img {
+    max-width: 600px;
+    
+  }
+
+  .galeria2,
+  .galeria3 {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .botao-voltar {
+    text-align: center;
+    margin: 30px auto 10px auto;
+  }
+}
