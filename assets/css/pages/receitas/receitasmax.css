@@ -3,20 +3,20 @@
 --------------------------------------------------------------------------- */
 .receitas h1{
   margin: 0 20%;
-  font-family: 'MyriadProCondit',sans-serif;
-  font-size: 50px;
+  font-family: 'MyriadPro',sans-serif;
+  font-size: 40px;
   color: #e84b2a;
+  font-weight: bold;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 0%;
+  margin-top: 30px;
 }
 .receitas p{
   font-family: 'MyriadPro',sans-serif;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 16px;
   text-align: center;
   color: black;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .receitas-grid {
@@ -55,8 +55,9 @@
 /* Telas até 1280px (notebooks e desktops médios) */
 @media (max-width: 1280px) {
   .receitas h1 {
-    font-size: 44px;
+    font-size: 40px;
     margin: 0 15%;
+    margin-top: 20px;
   }
 
   .receitas-grid {
@@ -69,6 +70,7 @@
   .receitas h1 {
     font-size: 38px;
     margin: 0 10%;
+    margin-top: 25px;
   }
 
   .receitas p {
@@ -85,8 +87,9 @@
 /* Telas até 768px (celulares maiores e tablets em pé) */
 @media (max-width: 768px) {
   .receitas h1 {
-    font-size: 32px;
+    font-size: 30px;
     margin: 0 6%;
+    margin-top: 25px;
   }
 
   .receitas p {
@@ -111,6 +114,7 @@
   .receitas h1 {
     font-size: 24px;
     margin: 0 20px;
+    margin-top: 25px;
   }
 
   .receitas p {
@@ -133,7 +137,8 @@
 /* Telas até 360px (smartphones pequenos como iPhone SE) */
 @media (max-width: 360px) {
   .receitas h1 {
-    font-size: 22px;
+    font-size: 20px;
+    margin-top: 5px;
   }
 
   .receitas p {

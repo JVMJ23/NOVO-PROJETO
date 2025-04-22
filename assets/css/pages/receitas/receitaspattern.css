@@ -35,7 +35,7 @@
 }
 
 .ingredients h2 {
-  font-family: 'MyriadProBold',sans-serif;
+  font-family: 'MyriadPro',sans-serif;
   margin-left: 40px;
   font-size: 24px;
   font-weight: 800;
@@ -48,7 +48,9 @@
 }
 
 .ingredients li {
+  font-family: 'MyriadPro',sans-serif;
   font-size: 18px;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 
@@ -59,8 +61,8 @@
 }
 
 .instructions h2 {
-  font-family: 'MyriadProBold',sans-serif;
-  font-size: 25px;
+  font-family: 'MyriadPro',sans-serif;
+  font-size: 24px;
   font-weight: 800;
   margin-bottom: 20px;
   text-align:initial;
@@ -68,11 +70,14 @@
 
 .instructions p {
   font-family: 'MyriadPro',sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 500;
   line-height: 1.6;
   text-align: justify;
-  margin-bottom: 1%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
 
 /*mediaquery*/
 @media (max-width: 1024px) {
@@ -101,7 +106,7 @@
   }
 
   .instructions p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
