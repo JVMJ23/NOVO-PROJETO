@@ -20,12 +20,13 @@ main {
 
 /* Parte de cima */
 .formulario-top h1 {
-  font-family: 'MyriadProCondit',sans-serif;
-  font-size: 54px;
-  color: #e35f1d;
-  margin-top: 40px;
-  margin-bottom: 50px;
   text-align: center;
+  color: #e84b2a;
+  font-family: 'MyriadProBlack',sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #formulario-trabalho {
@@ -40,10 +41,11 @@ main {
 }
 
 label {
+  font-family: 'MyriadProRegular'sans-serif;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #333;
+  color: black;
 }
 
 input[type="text"],
@@ -103,7 +105,7 @@ input[type="file"] {
 .file-name {
   margin-left: 10px;
   font-size: 13px;
-  color: #555;
+  color:black;
 }
 .recaptcha{
   position:relative;
@@ -129,7 +131,7 @@ input[type="file"] {
 
 .politica {
   font-size: 12px;
-  color: #555;
+  color:black;
 }
 
 .politica a {

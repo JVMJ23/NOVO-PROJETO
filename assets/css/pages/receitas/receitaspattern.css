@@ -35,10 +35,10 @@
 }
 
 .ingredients h2 {
-  font-family: 'MyriadPro',sans-serif;
+  font-family: 'MyriadProRegular',sans-serif;
   margin-left: 40px;
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 22px;
+  font-weight: 900;
   margin-bottom: 30px;
 }
 
@@ -48,9 +48,9 @@
 }
 
 .ingredients li {
-  font-family: 'MyriadPro',sans-serif;
-  font-size: 18px;
-  font-weight: 500;
+  font-family: 'MyriadProRegular',sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
   margin-bottom: 5px;
 }
 
@@ -61,21 +61,21 @@
 }
 
 .instructions h2 {
-  font-family: 'MyriadPro',sans-serif;
-  font-size: 24px;
-  font-weight: 800;
+  font-family: 'MyriadProRegular',sans-serif;
+  font-size: 22px;
+  font-weight: 900;
   margin-bottom: 20px;
   text-align:initial;
 }
 
 .instructions p {
-  font-family: 'MyriadPro',sans-serif;
-  font-size: 18px;
-  font-weight: 500;
+  font-family: 'MyriadProRegular',sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
   line-height: 1.6;
   text-align: justify;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 

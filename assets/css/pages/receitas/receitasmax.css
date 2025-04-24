@@ -3,20 +3,21 @@
 --------------------------------------------------------------------------- */
 .receitas h1{
   margin: 0 20%;
-  font-family: 'MyriadPro',sans-serif;
-  font-size: 40px;
+  font-family: 'MyriadProBlack',sans-serif;
+  font-size: 38px;
   color: #e84b2a;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 .receitas p{
-  font-family: 'MyriadPro',sans-serif;
-  margin-bottom: 40px;
+  font-family: 'MyriadProRegular',sans-serif;
+  margin-top: 0;
+  margin-bottom: 60px;
   font-size: 16px;
   text-align: center;
   color: black;
-  font-weight: 500;
 }
 
 .receitas-grid {
@@ -34,6 +35,7 @@
   align-items: center;
   text-decoration: none;
   overflow:hidden;
+  margin-bottom: 20px;
 }
 
 
@@ -55,7 +57,7 @@
 /* Telas até 1280px (notebooks e desktops médios) */
 @media (max-width: 1280px) {
   .receitas h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 0 15%;
     margin-top: 20px;
   }
@@ -68,13 +70,13 @@
 /* Telas até 1024px (tablets e notebooks compactos) */
 @media (max-width: 1024px) {
   .receitas h1 {
-    font-size: 38px;
+    font-size: 30px;
     margin: 0 10%;
     margin-top: 25px;
   }
 
   .receitas p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .receitas-grid {
@@ -94,7 +96,7 @@
 
   .receitas p {
     font-size: 14px;
-    margin: 10px 0 30px;
+    margin: 10px 0 10px;
   }
 
   .receitas-grid {
@@ -112,20 +114,20 @@
 /* Telas até 480px (smartphones padrão) */
 @media (max-width: 480px) {
   .receitas h1 {
-    font-size: 24px;
+    font-size: 14px;
     margin: 0 20px;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   .receitas p {
-    font-size: 13px;
+    font-size: 12px;
     margin: 10px 15px 25px;
   }
 
   .receitas-grid {
     grid-template-columns: 1fr;
     padding: 0 20px;
-    gap: 14px;
+    gap: 10px;
   }
 
   .receita button {
@@ -137,7 +139,7 @@
 /* Telas até 360px (smartphones pequenos como iPhone SE) */
 @media (max-width: 360px) {
   .receitas h1 {
-    font-size: 20px;
+    font-size: 12px;
     margin-top: 5px;
   }
 

@@ -9,7 +9,7 @@ main {
   
 }
    /*fundo*/
-   body{
+body{
    background-image:url(../../../images/global/background-main.png);
    background-size :100%;
    background-repeat: repeat-y;
@@ -32,16 +32,17 @@ main {
 }
 
  h1{
-  padding:30px 20px;
-  font-size: 50px;
-  color: #e35f1d;
-  font-weight: 900;
-  margin-top: 10px;
-  margin-bottom: 10px;
   text-align: center;
+  color: #e84b2a;
+  font-family: 'MyriadProBlack',sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 25px;
   
 }
 .novidade p{
+  font-family: 'MyriadProRegular',sans-serif;
   font-size: 16px;
   text-align: center;
 }

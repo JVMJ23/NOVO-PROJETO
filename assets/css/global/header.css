@@ -7,7 +7,7 @@
   position: relative;
   width: 100%;
   z-index: 999;
-  font-family: 'MyriadPro',sans-serif;
+  font-family: 'MyriadProRegular',sans-serif;
 }
 
 /* Header Top (Azul) */
@@ -27,23 +27,25 @@
 }
 
 .header-top .logo img {
-  max-width: 120px;
-  display: flex;
+  max-width: 170px;
+  display: block;
   border: none;
   position: relative;
   margin-left: 150px;
+  margin-top: 20px;
 }
 
 .header-top .social-links {
   display: flex;
   justify-content: flex-end;
   margin-right: 120px;
+  gap:0;
 }
 
 .header-top .social-links img {
-  max-width: 20px;
+  max-width: 22px;
   color: #e2dbdb;
-  margin-left: 15px;
+  margin-left: 5px;
   display: flex;
 }
 
@@ -51,14 +53,16 @@
 .header-mid {
   background-image: url(../../images/global/container-orange.png);
   color: #cec7c7;
+  border-bottom: 3px solid #b33900;
   padding: 10px 0;
+  text-align: center;
 }
 
 .header-mid-container nav ul {
   list-style: none;
   display: flex;
   justify-content: right;
-  margin-right: 250px;
+  margin-right: 230px;
 }
 
 .header-mid-container nav ul li {
@@ -66,13 +70,13 @@
 }
 
 .header-mid-container nav ul li a {
+  font-family: 'MyriadProRegular',sans-serif;
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   border-right: 1px solid white;
-  padding: 0 10px 0 15px;
+  padding: 0 10px 0 10px;
 
 }
 
@@ -80,9 +84,9 @@
 .header-bottom {
   background: #fff;
   color: #333;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-  font-weight: 500;
+  padding: 15px 0;
+  border-bottom: 2px solid #ddd;
+  
 }
 
 .header-bottom-container nav ul {
@@ -90,17 +94,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
  
 }
 
 .header-bottom-container nav ul li {
-  margin: 0 10px;
+  margin: 0 12px;
 }
 
 .header-bottom-container nav ul li a {
+  font-family: 'MyriadProRegular',sans-serif;
   color: #000080;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
   white-space: nowrap;
 }
 .header-bottom-container nav ul li a img{
@@ -111,7 +119,7 @@
 }
 
 
-
+/*media-query*/
 @media (max-width: 991px) {
   .header-top {
     padding: 20px 40px;

@@ -16,15 +16,21 @@ main {
    background-color: none;
 }
   .section h1{
-    color: #ff5000;
+    margin: 0 20%;
+    font-family: 'MyriadProBlack',sans-serif;
+    font-size: 36px;
+    color: #e84b2a;
+    font-weight: 900;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
   .lojas-grid {
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap :20px;
     margin-bottom: 40px;
-    margin: 0 20%;
+    margin: 0 15%;
   }
   
   .loja img{
@@ -52,10 +58,10 @@ main {
   }
   .banner-lojas p{
     max-width: 240px;
-    font-family: 'MyriadProBold',sans-serif;
-    color: #000080;
+    font-family: 'MyriadProRegular',sans-serif;
+    color: #003366;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: left;
     margin-top: 20px;
     margin-left: 20px;

@@ -7,15 +7,15 @@
   background-position: center;
   color: #ffffff;
   padding: 40px 0 20px;
-  font-family: 'MyriadPro', sans-serif;
+  font-family: 'MyriadProRegular', sans-serif;
   text-align: center;
 }
 
 .site-footer .store-addresses {
   display: flex;
   justify-content:center;
-  gap:30px;
-  max-width: 750px;
+  gap:15px;
+  max-width: 900px;
   margin: 0 auto 30px;
   padding: 0 20px;
   text-align: left;
@@ -29,16 +29,16 @@
   margin: 6px 0;
   font-size: 13px;
   font-style: italic;
-  line-height: 1.5;
+  font-weight: lighter;
+  line-height: 1.6;
   color: #ffffff;
 }
 
 .site-footer .store-addresses strong {
-  font-family: 'MyriadProBold',sans-serif;
+  font-family: 'MyriadProBlack',sans-serif;
   color: #e84b2a;
-  font-size: 16px;
-  font-style: italic;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 900;
 }
 
 .site-footer .footer-center {
@@ -47,15 +47,14 @@
 }
 
 .site-footer .footer-center img {
-  max-width: 120px;
+  max-width: 220px;
   height: auto;
   margin: 0 auto 8px;
   display: block;
 }
 
 .site-footer .footer-center p {
-  font-size: 13px;
-  font-style: italic;
+  font-size: 12px;
   margin: 0;
   opacity: 0.85;
   color:white;
@@ -63,93 +62,3 @@
 
 
 
-/*adaptando para outros dispositivos*/
-
-@media (max-width: 768px) {
-  .site-footer {
-    padding: 30px 15px 15px;
-    text-align: center;
-  }
-
-  .site-footer .store-addresses {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 0;
-    max-width: 100%;
-  }
-
-  .site-footer .store-addresses div {
-    flex: 1 1 100%;
-    max-width: 95%;
-    text-align: center;
-  }
-
-  .site-footer .store-addresses p {
-    font-size: 13px;
-    line-height: 1.4;
-    margin: 4px 0;
-    color: #ffffff;
-    font-style: italic;
-  }
-
-  .site-footer .store-addresses strong {
-    display: inline-block;
-    margin-bottom: 2px;
-    font-size: 15px;
-    color: #e84b2a;
-    font-weight: bold;
-    font-style: italic;
-  }
-
-  .site-footer .footer-center {
-    margin-top: 25px;
-  }
-
-  .site-footer .footer-center img {
-    max-width: 100px;
-    margin-bottom: 5px;
-  }
-
-  .site-footer .footer-center p {
-    font-size: 12px;
-    opacity: 0.85;
-    margin: 0;
-  }
-}
-
-
-
-@media (max-width: 480px) {
-  .site-footer {
-    padding: 25px 10px 10px;
-  }
-
-  .site-footer .store-addresses {
-    gap: 12px;
-  }
-
-  .site-footer .store-addresses div {
-    max-width: 100%;
-    padding: 0 5px;
-  }
-
-  .site-footer .store-addresses p {
-    font-size: 12px;
-    line-height: 1.4;
-    margin: 3px 0;
-  }
-
-  .site-footer .store-addresses strong {
-    font-size: 14px;
-  }
-
-  .site-footer .footer-center img {
-    max-width: 90px;
-  }
-
-  .site-footer .footer-center p {
-    font-size: 11px;
-    padding: 0 5px;
-  }
-}

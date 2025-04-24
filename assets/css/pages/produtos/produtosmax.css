@@ -6,7 +6,6 @@ main {
   padding: 30px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  
 }
    /*fundo*/
    body{
@@ -17,22 +16,17 @@ main {
 }
 
 .produtos {
-    margin: 0 20%;
+    margin: 0 18%;
     padding: 40px 0;
     text-align: center;
 }
-.produtos h2{
-  color: blue;
-}
 .galeria1{
-    
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
     padding: 0 20px;
     
 }
-
 .galeria2 ,.galeria3{
     display: flex;
     justify-content: center;
@@ -47,12 +41,12 @@ main {
     display: block;
 }  
 .galeria2 img{
+    height: 100%;
     width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: flex;
-    object-fit: cover;
-  
+    max-width: 450px;
+    display: block;
+    object-fit: contain;
+    align-items: stretch; 
 }
 .galeria3 img{
     width: 100%;
@@ -70,9 +64,11 @@ main {
   }
   .galeria2 a {
     flex: 1 1 0;
-    max-width: 400px;
+    max-width: 450px;
     text-decoration: none;
     text-align: center;
+    height: 100%;
+    align-items: stretch;
   }
   .galeria3 a {
     text-decoration: none;
@@ -84,14 +80,14 @@ main {
 .botao-voltar {
   display: block;
   text-align: right;
-  margin: 50px 300px 10px auto;
-  font-family: 'MyriadPro', sans-serif;
+  margin: 5px 150px 0 0;
+  font-family: 'MyriadProRegular', sans-serif;
   font-size: 15px;
   color: #003366;
   cursor: pointer;
   text-decoration: none;
-  font-weight: 500;
 }
+
 /* ----------------------------------------
    Responsivo para tablets (≤ 991px)
 ---------------------------------------- */

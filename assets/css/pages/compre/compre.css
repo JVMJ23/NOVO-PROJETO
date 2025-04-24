@@ -15,18 +15,20 @@ main {
    background-repeat: repeat-y;
    background-color: none;
 }
-
+.compre{
+  margin-bottom: 20px;
+}
 .compre h1{
   color: #e84b2a;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: bold;
   text-align: left;
-  font-family: 'MyriadProBold',sans-serif;
+  font-family: 'MyriadProBlack',sans-serif;
   }
 .compre p{
-  font-family: 'MyriadPro',sans-serif;
+  font-family: 'MyriadProRegular',sans-serif;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: justify;
 
 }
@@ -35,15 +37,12 @@ main {
   width: 100%;
   height: auto;
   object-fit: cover;
-  padding-bottom: 10px;
+  margin: 10px;
 }
 .compre-main{
   display: flex;
   margin: 0 20%;
-}
-.section .compre{
-  width: 100%;
-  flex: 6 4;
+  flex: 8 3;
 }
 
 .infografico img {
