@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  padding: 40px 0 20px;
+  padding: 60px 0 20px;
   font-family: 'MyriadProRegular', sans-serif;
   text-align: center;
 }
@@ -14,20 +14,20 @@
 .site-footer .store-addresses {
   display: flex;
   justify-content:center;
-  gap:15px;
-  max-width: 900px;
+  gap:5px;
+  max-width: 800px;
   margin: 0 auto 30px;
   padding: 0 20px;
   text-align: left;
 }
 
 .site-footer .store-addresses div {
-  flex: 0 0 48%;
+  flex: 1;
 }
 
 .site-footer .store-addresses p {
   margin: 6px 0;
-  font-size: 13px;
+  font-size: 14px;
   font-style: italic;
   font-weight: lighter;
   line-height: 1.6;
@@ -37,7 +37,7 @@
 .site-footer .store-addresses strong {
   font-family: 'MyriadProBlack',sans-serif;
   color: #e84b2a;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 900;
 }
 
@@ -61,4 +61,93 @@
 }
 
 
+/*outras plataformas*/
+@media (max-width: 991px) and (min-width: 768px) {
+  .site-footer .store-addresses {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 20px;
+  }
 
+  .site-footer .store-addresses div {
+    flex: 0 0 48%; /* mantêm as duas colunas */
+    max-width: 48%;
+  }
+
+  .site-footer .store-addresses p {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .site-footer .footer-center img {
+    max-width: 180px;
+  }
+
+  .site-footer .footer-center p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+  .site-footer .store-addresses {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 15px;
+  }
+
+  .site-footer .store-addresses div {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+
+  .site-footer .store-addresses p {
+    font-size: 10px;
+  }
+
+  .site-footer .footer-center img {
+    max-width: 150px;
+  }
+
+  .site-footer .footer-center p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 360px) {
+  .site-footer {
+    padding: 10px 0 10px;
+  }
+
+  .site-footer .store-addresses {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 0 5px;
+  }
+
+  .site-footer .store-addresses div {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  .site-footer .store-addresses p {
+    font-size: 8px;
+    line-height: 1.0;
+    text-align: left;
+  }
+  .site-footer .store-addresses strong {
+    font-family: 'MyriadProBlack',sans-serif;
+    color: #e84b2a;
+    font-size: 10px;
+    font-weight: 900;
+  }
+  .site-footer .footer-center img {
+    max-width: 130px;
+  }
+
+  .site-footer .footer-center p {
+    font-size: 8px;
+  }
+}

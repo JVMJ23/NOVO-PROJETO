@@ -10,7 +10,7 @@
     text-align: center;
 }
 .produtos-max h1{
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     text-align: justify;
     margin-top: 50px;
@@ -19,7 +19,7 @@
     font-family: 'MyriadProRegular',sans-serif;
 }
 .produtos-max h2{
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
     font-weight: bold;
     margin-top: 50px;
@@ -29,7 +29,7 @@
 }
 .produtos-max p{
     font-family: 'MyriadProRegular',sans-serif;
-    font-size: 26px;
+    font-size: 22px;
     margin: 10px auto;
     line-height: 1.6;
     max-width: 630px;

@@ -3,9 +3,9 @@
 --------------------------------------------------------------------------- */
 main {
   position: relative;
-  padding: 30px 20px;
+  padding: 0 40px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 13%;
   
 }
    /*fundo*/
@@ -16,21 +16,21 @@ main {
    background-color: none;
 }
   .section h1{
-    margin: 0 20%;
+    padding:0 40px;
     font-family: 'MyriadProBlack',sans-serif;
-    font-size: 36px;
+    font-size: 38px;
     color: #e84b2a;
     font-weight: 900;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
   .lojas-grid {
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    gap :20px;
+    gap :10px;
     margin-bottom: 40px;
-    margin: 0 15%;
+    padding: 0 40px;
   }
   
   .loja img{
@@ -43,105 +43,162 @@ main {
     gap: 25px;
     display: flex;
     text-align: center;
-    flex-direction: row;
-    flex: 4 7;
-    margin: 0 20%;
-    padding-bottom: 5%;
+    flex-direction: row!important;
+    padding: 0 40px 10px;
+    
+
   }
   .banner-lojas img{
     margin-top: 20px;
-    max-width: 590px;
+    max-width: 460px;
     width: 100%;
     height: auto;
     object-fit: cover;
     
   }
   .banner-lojas p{
-    max-width: 240px;
+    max-width: 280px;
     font-family: 'MyriadProRegular',sans-serif;
     color: #003366;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     text-align: left;
     margin-top: 20px;
     margin-left: 20px;
   }
+  .voltar-container{
+    display: flex;
+    justify-content: flex-end;
+    padding:10px 50px;
+    margin-top: 10px;
+    
+  }
   .botao-voltar{
-    position: absolute;
-    right: 280px;
-    bottom: 20px;
-    margin-bottom: 20px;
     font-family: 'MyriadPro',sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     color: #003366;
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;
-    z-index: 10;
 }
 
-@media (max-width: 991px) {
-  .lojas-grid {
-    grid-template-columns: 1fr;
-    margin: 0 5%;
+@media (max-width: 991px) and (min-width: 768px) {
+  main {
+    padding: 0 20px;
+    margin: 0 auto;
   }
-  h1{
-    font-size: 30px;
+
+  .lojas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 20px;
   }
 
   .banner-lojas {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 20px 5px;
+  }
+
+  .banner-lojas img {
+    max-width: 44vw;
+    width: 100%;
+    object-fit: cover;
   }
 
   .banner-lojas p {
-    max-width: 100%;
+    font-size: 16px;
+    max-width: 44vw;
     text-align: center;
-    margin-left: 0;
   }
 
-  .botao-voltar {
-    right: 40px;
-    bottom: 20px;
+  .section h1 {
+    font-size: 30px;
   }
 }
 
-/* ----------------------------------------
-   Responsivo para celulares (≤ 576px)
----------------------------------------- */
-@media (max-width: 576px) {
+@media (max-width: 767px) and (min-width: 481px) {
   main {
-    padding: 20px 10px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .lojas-grid {
+    grid-template-columns: repeat(2, 1fr); /* Ainda 2 colunas */
+    gap: 5px;
+    padding: 0 10px;
+  }
+
+  .banner-lojas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 10px 5px;
+  }
+
+  .banner-lojas img {
+    max-width: 80vw;
+    object-fit: cover;
+  }
+
+  .banner-lojas p {
+    font-size: 15px;
+    max-width: 95vw;
+    text-align: center;
   }
 
   .section h1 {
     font-size: 22px;
   }
 
+  .botao-voltar {
+    font-size: 11px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 360px) {
+  main {
+    padding: 0 8px;
+    margin: 0 auto;
+  }
+
   .lojas-grid {
-    margin: 0;
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 0 8px;
   }
 
   .banner-lojas {
-    padding-bottom: 10%;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 8px 5px;
   }
 
   .banner-lojas img {
-    max-width: 100%;
+    max-width: 100vw;
+    object-fit: cover;
   }
 
   .banner-lojas p {
-    font-size: 15px;
-    padding: 0 10px;
+    font-size: 14px;
+    max-width: 95vw;
+    text-align: center;
+  }
+
+  .section h1 {
+    font-size: 22px;
   }
 
   .botao-voltar {
-    position: static;
-    text-align: center;
-    margin: 20px auto 0;
-    display: block;
+    font-size: 10px;
+    right: 8px;
+    bottom: 8px;
   }
 }

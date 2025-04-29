@@ -19,7 +19,7 @@ main {
   position: relative;
   font-family: 'MyriadPro',sans-serif;
   margin: 0 auto;
-  padding: 80px 40px 50px;
+  padding: 60px 80px;
 }
 
 /* Título */
@@ -27,7 +27,7 @@ main {
   text-align: center;
   color: #e84b2a;
   font-family: 'MyriadProBlack',sans-serif;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 900;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -35,7 +35,7 @@ main {
 
 /* Container da timeline */
 .timeline-container {
-  max-width:650px;
+  max-width:600px;
   margin: 0 auto;
   padding-left: 30px;
   position: relative;
@@ -105,29 +105,29 @@ main {
 
 .imagem-esquerda.img1 {
   top: 10px;
-  left: -20px;
+  left: -10px;
 }
 .imagem-esquerda.img2 {
   top: 240px;
-  left:-30px;
+  left:-20px;
   
 }
 .imagem-direita.img1 {
   top: 0px;
-  right: 0px;
+  right: 60px;
 }
 .imagem-direita.img2 {
-  top: 220px;
-  right: 0px;
+  top: 250px;
+  right: 10px;
 }
 
 .imagem-direita.img1 img {
-  max-width: 280px;
+  max-width: 300px;
   height: auto;
   object-fit: cover;
 }
 .imagem-direita.img2 img {
-  max-width: 280px;
+  max-width: 300px;
   height: auto;
   object-fit: cover;
 }

@@ -13,9 +13,8 @@ main {
 }
 
 .formulario-container {
-  max-width: 1200px;
-  margin: 0 15%;
-  padding: 0 20px;
+  max-width: 910px;
+  padding: 0 40px;
 }
 
 /* Parte de cima */
@@ -23,7 +22,7 @@ main {
   text-align: center;
   color: #e84b2a;
   font-family: 'MyriadProBlack',sans-serif;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 900;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -111,7 +110,7 @@ input[type="file"] {
   position:relative;
   max-width: 300px;
   height: auto;
-  left: 100px;
+  left: 0px;
 }
 .recaptcha img {
   display: block;
