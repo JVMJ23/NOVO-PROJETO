@@ -1,13 +1,4 @@
 
-/* ---------------------------------------------------------------------------
-   Banner Slider
---------------------------------------------------------------------------- */
-main{
-  position: relative;
-  padding: 30px 80px;
-  max-width: 1200px;
-  margin: 0 80px;
-}
 /*fundo*/
 body{
      background-image:url(../../../images/global/background-main.png);
@@ -15,38 +6,25 @@ body{
      background-repeat: repeat-y;
      background-color: none;
 }
-.meumaxclube-banner, .folheto-container, .atacado-banner{
-  padding: 0 45px;
-  margin-top: 20px;
-  box-sizing: border-box;
-}
-.meumaxclube-banner img, .folheto-container img,.atacado-banner img{
-  height: 100%;
-  width:100%;
-  object-fit:cover;
-  display: block;
-  max-width: 1200px;
-  margin: 0 auto;
-
-}
-
 
 
 /* Área que agrupa o slider e o banner lateral */
 .index-main-content {
   display: flex;
-  padding: 0 45px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 30px;
   justify-content: space-between;
   align-items:stretch;
   height: 350px;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-sizing: border-box;
 }
 
 /* Slider à esquerda */
 .banner-slider {
-  width: 73%;
+  width: 82%;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -56,7 +34,7 @@ body{
 .banner-slider .slide {
   width: 100%;
   height: 100%;
-  display: none;
+  display: block;
 }
 
 .banner-slider .slide.active {
@@ -81,7 +59,7 @@ body{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display:block;
+  display: block;
 }
 
 /* Controles do Slider */
@@ -97,7 +75,7 @@ body{
 }
 
 .slider-controls span {
-  font-size: 40px;
+  font-size: 45px;
   color: white;
   padding: 10px;
   pointer-events: all;
@@ -106,7 +84,7 @@ body{
 
 /* Banner lateral fixo (Compre Online) */
 .compre-banner {
-  width: 42%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: stretch;
@@ -131,6 +109,22 @@ body{
   object-fit: cover;
   margin: 0;
   padding: 0;
+}
+/*padronizando os banners*/
+.meumaxclube-banner, .folheto-container, .atacado-banner{
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.meumaxclube-banner img, .folheto-container img,.atacado-banner img{
+  height: 100%;
+  width:100%;
+  object-fit:cover;
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+
 }
 
 /* Banner MáxClube */
@@ -222,7 +216,7 @@ body{
 .botao-voltar {
   display: block;
   text-align: right;
-  margin: 5px 120px 0 0;
+  margin: 5px 220px 0 0;
   font-family: 'MyriadProRegular', sans-serif;
   font-size: 15px;
   color: #003366;
@@ -230,12 +224,4 @@ body{
   text-decoration: none;
 }
 
-@media (max-width: 991px) {}
 
-@media (max-width: 768px) {}
-
-@media (max-width: 576px) {}
-
-@media (max-width: 480px) {}
-
-@media (max-width: 360px) {}

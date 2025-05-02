@@ -19,7 +19,7 @@ main {
   position: relative;
   font-family: 'MyriadPro',sans-serif;
   margin: 0 auto;
-  padding: 60px 80px;
+  padding: 20px 60px ;
 }
 
 /* Título */
@@ -27,24 +27,55 @@ main {
   text-align: center;
   color: #e84b2a;
   font-family: 'MyriadProBlack',sans-serif;
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 900;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
+/*Imagens para fora do container*/
+.historia-grid{
+  display:flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.column-left{
+  display: flex;
+  flex-direction:column;
+  gap:30px;
+  margin-right: 25px;
+}
+.column-right{
+  display: flex;
+  flex-direction:column;
+  gap:10px;}
+.column-left img{
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.column-right img{
+  max-width: 350px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
 /* Container da timeline */
 .timeline-container {
-  max-width:600px;
+  flex:1 1 510px;
   margin: 0 auto;
   padding-left: 30px;
   position: relative;
-  border-left: 2px solid #000080;
+  border-left: 2px solid #003366;
+  margin-top: 60px;
 }
 /* Cada item da timeline */
 .timeline-item {
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
   padding-left: 5px;
   z-index: 2;
 }
@@ -67,9 +98,9 @@ main {
   width: 25px;
   height: 25px;
   background:  white;
-  border: 1px solid #000080;
+  border: 1px solid #003366;
   border-radius: 70%;
-  color: #000080;
+  color: #003366;
   z-index: 2;
 }
 .dot::after{
@@ -80,14 +111,14 @@ main {
   top: -55px;
   font-size: 20px;
   font-weight: 600;
-  color: #000080;
+  color:#003366;
 
 }
 
 /* Texto da timeline */
 .timeline-item p {
-  padding: 5px;
-  max-width: 500px;
+  padding: 10px;
+  max-width: 530px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -95,52 +126,6 @@ main {
   text-align: justify;
 }
 
-/* Imagens fora do container central */
-.imagem-esquerda,
-.imagem-direita {
-  position: absolute;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.imagem-esquerda.img1 {
-  top: 10px;
-  left: -10px;
-}
-.imagem-esquerda.img2 {
-  top: 240px;
-  left:-20px;
-  
-}
-.imagem-direita.img1 {
-  top: 0px;
-  right: 60px;
-}
-.imagem-direita.img2 {
-  top: 250px;
-  right: 10px;
-}
-
-.imagem-direita.img1 img {
-  max-width: 300px;
-  height: auto;
-  object-fit: cover;
-}
-.imagem-direita.img2 img {
-  max-width: 300px;
-  height: auto;
-  object-fit: cover;
-}
-.imagem-esquerda.img1 img{
-  max-width: 190px;
-  height: auto;
-  object-fit: cover;
-}
-.imagem-esquerda.img2 img{
-  max-width: 210px;
-  height: auto;
-  object-fit: cover;
-}
 /* Logo final */
 .logo-final {
   max-width: 200px;
@@ -159,144 +144,85 @@ main {
 .botao-voltar {
   display: block;
   text-align: right;
-  margin: 5px 120px 0 0;
+  margin: 50px 300px 40px auto;
   font-family: 'MyriadProRegular', sans-serif;
   font-size: 15px;
   color: #003366;
   cursor: pointer;
   text-decoration: none;
+  font-weight: 500;
 }
 
 
 
 /*media query*/
 
-/* Smartphones pequenos: até 480px */
-@media (max-width: 480px) {
-  .historia-section {
-    padding: 20px 30px;
+/* Tablets (até 991px) */
+@media screen and (max-width: 991px) {
+  .historia-grid {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
-  .titulo {
-    font-size: 26px;
+  .column-left,
+  .column-right,
+  .timeline-container {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 200px;
   }
 
-  .dot {
-    width: 18px;
-    height: 18px;
-    left: -18px;
+  .timeline-container {
+    padding-left: 20px;
+    border-left: 2px solid #003366;
   }
 
-  .dot::after {
-    font-size: 12px;
-    top: -30px;
-    left: -15px;
-  }
-
-  .imagem-esquerda.img1 { left: -40px; top: 10px; }
-  .imagem-esquerda.img2 { left: -40px; top: 230px; }
-  .imagem-direita.img1 { right: -40px; top: 0px; }
-  .imagem-direita.img2 { right: -40px; top: 210px; }
-
-  .imagem-esquerda img,
-  .imagem-direita img {
-    max-width: 100px;
+  .timeline-item p {
+    max-width: 100%;
   }
 
   .logo-final {
-    max-width: 130px;
+    margin-left: 0;
+    margin: 30px auto;
   }
-
+  .timeline-item:last-child p {
+    font-size: 14px;
+  }
   .botao-voltar {
-    font-size: 13px;
-    position: static;
-    margin-top: 30px;
     text-align: center;
+    margin: 20px auto;
   }
 }
 
-/* Celulares médios: até 768px */
-@media (max-width: 768px) {
-  .historia-section {
-    padding: 30px 50px;
-  }
+/* Celulares (até 600px) */
+@media screen and (max-width: 600px) {
+
+  .historia-grid {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;}
 
   .titulo {
-    font-size: 30px;
-  }
-
-  .dot {
-    width: 20px;
-    height: 20px;
-    left: -20px;
-  }
-
-  .dot::after {
-    font-size: 14px;
-    top: -35px;
-    left: -18px;
-  }
-
-  .imagem-esquerda.img1 { left: -70px; top: 10px; }
-  .imagem-esquerda.img2 { left: -80px; top: 240px; }
-  .imagem-direita.img1 { right: -80px; top: 0px; }
-  .imagem-direita.img2 { right: -80px; top: 220px; }
-
-  .imagem-esquerda img,
-  .imagem-direita img {
-    max-width: 140px;
-  }
-
-  .logo-final {
-    max-width: 150px;
-    margin: 40px auto;
-  }
-
-  .botao-voltar {
-    font-size: 14px;
-    position: static;
-    text-align: center;
-    margin-top: 40px;
-  }
-}
-
-/* Tablets: até 1024px */
-@media (max-width: 1024px) {
-  .historia-section {
-    padding: 40px 80px;
-  }
-
-  .titulo {
-    font-size: 36px;
-  }
-
-  .dot {
-    width: 22px;
-    height: 22px;
-    left: -25px;
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 
   .dot::after {
     font-size: 16px;
-    top: -38px;
-    left: -20px;
+    top: -45px;
   }
 
-  .imagem-esquerda.img1 { left: -110px; top: 10px; }
-  .imagem-esquerda.img2 { left: -120px; top: 240px; }
-  .imagem-direita.img1 { right: -110px; top: 0px; }
-  .imagem-direita.img2 { right: -110px; top: 220px; }
-
-  .imagem-esquerda img,
-  .imagem-direita img {
-    max-width: 200px;
+  .timeline-item p {
+    max-width: 600px;
+    font-size: 14px;
   }
-
-  .logo-final {
-    max-width: 180px;
-  }
-
-  .botao-voltar {
+  .timeline-item:last-child p {
     font-size: 15px;
+  }
+  .column-left img,
+  .column-right img {
+    max-width: 250PX;
+    height: auto;
   }
 }

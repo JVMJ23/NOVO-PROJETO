@@ -1,0 +1,35 @@
+
+@media screen and (max-width:998px)and (min-width:319px){
+
+.index-main-content{
+    flex-direction: row;
+    height: auto;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items:stretch;
+}
+.banner-slider, .compre-banner{
+    width: 100%;
+    height: auto;
+}
+.banner-slider img, .compre-banner img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.meumaxclube-banner, .folheto-container, .atacado-banner{
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+}
+@media (max-width: 991px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 360px) {}

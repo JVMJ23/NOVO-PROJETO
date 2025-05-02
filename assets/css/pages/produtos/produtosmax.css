@@ -29,8 +29,9 @@ main {
 }
 .galeria2 ,.galeria3{
     display: flex;
+    align-items: baseline;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
 
 }
@@ -45,8 +46,8 @@ main {
     width: 100%;
     max-width: 450px;
     display: block;
-    object-fit: contain;
-    align-items: stretch; 
+    object-fit: cover;
+    align-items: baseline; 
 }
 .galeria3 img{
     width: 100%;
@@ -64,7 +65,7 @@ main {
   }
   .galeria2 a {
     flex: 1 1 0;
-    max-width: 450px;
+    max-width: 1000px;
     text-decoration: none;
     text-align: center;
     height: 100%;
@@ -80,7 +81,7 @@ main {
 .botao-voltar {
   display: block;
   text-align: right;
-  margin: 5px 150px 0 0;
+  margin: 5px 220px 0 0;
   font-family: 'MyriadProRegular', sans-serif;
   font-size: 15px;
   color: #003366;
