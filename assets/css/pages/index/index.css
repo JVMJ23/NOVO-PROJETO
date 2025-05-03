@@ -11,8 +11,8 @@ body{
 /* Área que agrupa o slider e o banner lateral */
 .index-main-content {
   display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
   margin-top: 30px;
   justify-content: space-between;
   align-items:stretch;
