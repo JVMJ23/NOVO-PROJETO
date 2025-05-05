@@ -11,10 +11,13 @@
     height: 100%;
     }
   .banner-slider{
-    width: 85%;
+    width: 82%;
+  }
+  .slider-controls span {
+    font-size: 0.7rem;
   }
   .compre-banner{
-    width:43%;
+    width:40%;
 }
 .botao-voltar {
   font-size: 0.8rem;
@@ -35,11 +38,14 @@
   .banner-slider{
     width: 80%;
   }
+  .slider-controls span {
+    font-size: 0.9rem;
+  }
   .compre-banner{
-    width:43%;
+    width:40%;
 }
 .botao-voltar {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 }
 
@@ -58,7 +64,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  /* Em telas muito pequenas, precisamos de alguns ajustes mínimos */
   .index-main-content {
     width: 85%;
     height: 100%;
@@ -66,8 +71,11 @@
   .banner-slider{
     width: 80%;
   }
+  .slider-controls span {
+    font-size: 0.9rem;
+  }
   .compre-banner{
-    width:43%;
+    width:38%;
 
   }
   .botao-voltar {

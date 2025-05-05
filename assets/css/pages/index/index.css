@@ -22,7 +22,7 @@ body {
 
 /* Slider à esquerda */
 .banner-slider {
-  width: 80%;
+  width: 76%;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -82,7 +82,7 @@ body {
 
 /* Banner lateral fixo (Compre Online) */
 .compre-banner {
-  width: 30%;
+  width: 35%;
   height: 100%;
   display: flex;
   align-items: stretch;
@@ -222,7 +222,7 @@ body {
 .botao-voltar {
   display: block;
   text-align: right;
-  width: 70%;
+  width: 65%;
   margin: 5px auto;
   font-family: 'MyriadProRegular', sans-serif;
   font-size: 15px;

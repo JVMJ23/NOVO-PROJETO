@@ -1,0 +1,53 @@
+/* Responsividade - manter design 50/50 em todas as plataformas */
+@media (max-width: 992px) {
+    main.compre-main {
+      flex-wrap: nowrap;
+    }
+    
+    .compre-content, .infografico {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    main.compre-main {
+      flex-wrap: nowrap; 
+    }
+    
+    .compre-content, .infografico {
+      width: 50%; 
+    }
+    
+    .compre h1 {
+      font-size: 0.9rem;
+    }
+    
+    .compre p {
+      font-size: 0.5rem
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main.compre-main {
+      padding: 0 10px;
+      flex-wrap: nowrap; /* Mantém 50/50 em todas as plataformas */
+    }
+    
+    .compre-content, .infografico {
+      width: 50%; /* Mantém 50/50 em todas as plataformas */
+    }
+    
+    .compre h1 {
+      font-size: 0.9rem;
+    }
+    
+    .compre p {
+      font-size: 0.5rem
+      
+    }
+    
+    .botao-voltar {
+      font-size: 0.7rem;
+    }
+  }
+  

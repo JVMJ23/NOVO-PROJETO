@@ -1,0 +1,64 @@
+
+@media screen and (max-width: 992px) {
+    .ofertas {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .ofertas {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+  
+ 
+  .container h1 {
+    text-align: center;
+    color: #e84b2a;
+    font-family: 'MyriadProBlack', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .container h1 {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container h1 {
+      font-size: 0.9rem;
+    }
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    max-width: 100%;
+  }
+  
+  
+  .botao-voltar {
+    display: block;
+    text-align: right;
+    margin: 5px 0 0 0;
+    padding-right: 10%;
+    font-family: 'MyriadProRegular', sans-serif;
+    font-size: 15px;
+    color: #003366;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .botao-voltar {
+      padding-right: 5%;
+    }
+  }

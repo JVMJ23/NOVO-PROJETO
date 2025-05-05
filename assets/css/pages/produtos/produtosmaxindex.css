@@ -1,53 +1,64 @@
-.produtos-max{
+
+.produtos-max {
     display: flex;
     justify-content: center;
     padding: 60px 20px;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.produtos-max container{
+
+.produtos-max .container {
     max-width: 900px;
     text-align: center;
+    width: 100%;
 }
-.produtos-max h1{
+
+.produtos-max h1 {
     font-size: 24px;
-    font-weight: bold;
-    text-align: justify;
+    font-weight: 900;
+    text-align:left;
+    margin-left: 15%;
     margin-top: 50px;
     margin-bottom: 50px;
-    text-align:left;
-    font-family: 'MyriadProRegular',sans-serif;
+    font-family: 'MyriadProRegular', sans-serif;
+    width: 100%;
 }
-.produtos-max h2{
+
+.produtos-max h2 {
     font-size: 24px;
     text-align: center;
     font-weight: bold;
+    margin-left: 15%;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding:0 25%;
-    font-family: 'MyriadProRegular',sans-serif;
+    padding: 0 25%;
+    font-family: 'MyriadProRegular', sans-serif;
 }
-.produtos-max p{
-    font-family: 'MyriadProRegular',sans-serif;
+
+.produtos-max p {
+    font-family: 'MyriadProRegular', sans-serif;
     font-size: 22px;
     margin: 10px auto;
     line-height: 1.6;
     max-width: 630px;
     margin-bottom: 30px;
-    text-align: justify center;
-    
+    text-align: justify;
 }
 
-.logo-container{
+.logo-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top:30px;
+    margin-top: 30px;
     flex-wrap: wrap;
+    width: 100%;
 }
-.logo-container img{
+
+.logo-container img {
     height: auto;
     max-width: 160px;
     margin-bottom: 50px;
-
 }

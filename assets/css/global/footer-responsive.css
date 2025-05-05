@@ -1,6 +1,7 @@
 
 @media screen and (max-width: 900px) {
   .site-footer {
+    border-top: 20px solid #e84b2a;
     padding: 50px 0 20px;
   }
   
@@ -11,6 +12,10 @@
 
 @media screen and (max-width: 768px) {
   /* Ajustes para tablets */
+
+  .site-footer {
+    border-top: 15px solid #e84b2a;
+  }
   .site-footer .store-addresses {
     flex-wrap: wrap;
     gap: 20px;
@@ -25,6 +30,9 @@
   /* Ajustes para celulares */
   .site-footer {
     padding: 40px 0 20px;
+    .site-footer {
+      border-top: 5px solid #e84b2a;
+    }
   }
   
   .site-footer .store-addresses {

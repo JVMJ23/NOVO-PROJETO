@@ -1,204 +1,141 @@
-/* ---------------------------------------------------------------------------
-   Lojas
+/* Reset e estilos gerais
 --------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo e estrutura principal
+--------------------------------------------------------------------------- */
+body {
+  background-image: url(../../../images/global/background-main.png);
+  background-size: 100%;
+  background-repeat: repeat-y;
+  background-color: transparent;
+  font-family: 'MyriadProRegular', Arial, sans-serif;
+}
+
 main {
   position: relative;
   padding: 0 40px;
   max-width: 1200px;
   margin: 0 13%;
-  
-}
-   /*fundo*/
-   body{
-   background-image:url(../../../images/global/background-main.png);
-   background-size :100%;
-   background-repeat: repeat-y;
-   background-color: none;
-}
-  .section h1{
-    padding:0 40px;
-    font-family: 'MyriadProBlack',sans-serif;
-    font-size: 38px;
-    color: #e84b2a;
-    font-weight: 900;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-  .lojas-grid {
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap :10px;
-    margin-bottom: 40px;
-    padding: 0 40px;
-  }
-  
-  .loja img{
-    display: block;
-    height: auto;
-    width:100%;
-    position: relative;
-  }
-  .banner-lojas{
-    gap: 25px;
-    display: flex;
-    text-align: center;
-    flex-direction: row!important;
-    padding: 0 40px 10px;
-    
-
-  }
-  .banner-lojas img{
-    margin-top: 20px;
-    max-width: 460px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    
-  }
-  .banner-lojas p{
-    max-width: 280px;
-    font-family: 'MyriadProRegular',sans-serif;
-    color: #003366;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-  .voltar-container{
-    display: flex;
-    justify-content: flex-end;
-    padding:10px 50px;
-    margin-top: 10px;
-    
-  }
-  .botao-voltar{
-    font-family: 'MyriadPro',sans-serif;
-    font-size: 13px;
-    color: #003366;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 500;
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
-  main {
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-
-  .lojas-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 0 20px;
-  }
-
-  .banner-lojas {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 0 20px 5px;
-  }
-
-  .banner-lojas img {
-    max-width: 44vw;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .banner-lojas p {
-    font-size: 16px;
-    max-width: 44vw;
-    text-align: center;
-  }
-
-  .section h1 {
-    font-size: 30px;
-  }
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 
-@media (max-width: 767px) and (min-width: 481px) {
-  main {
-    padding: 0 10px;
-    margin: 0 auto;
-  }
-
-  .lojas-grid {
-    grid-template-columns: repeat(2, 1fr); /* Ainda 2 colunas */
-    gap: 5px;
-    padding: 0 10px;
-  }
-
-  .banner-lojas {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    padding: 0 10px 5px;
-  }
-
-  .banner-lojas img {
-    max-width: 80vw;
-    object-fit: cover;
-  }
-
-  .banner-lojas p {
-    font-size: 15px;
-    max-width: 95vw;
-    text-align: center;
-  }
-
-  .section h1 {
-    font-size: 22px;
-  }
-
-  .botao-voltar {
-    font-size: 11px;
-    right: 10px;
-    bottom: 10px;
-  }
+/* Título principal
+--------------------------------------------------------------------------- */
+.section h1 {
+  padding: 0 40px;
+  font-family: 'MyriadProBlack', sans-serif;
+  font-size: 38px;
+  color: #e84b2a;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
-@media (max-width: 480px) and (min-width: 360px) {
-  main {
-    padding: 0 8px;
-    margin: 0 auto;
-  }
+/* Grid de lojas
+--------------------------------------------------------------------------- */
+.lojas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+  padding: 0 40px;
+}
 
-  .lojas-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    padding: 0 8px;
-  }
+.loja {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease-in-out;
+}
 
-  .banner-lojas {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    padding: 0 8px 5px;
-  }
+.loja:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
 
-  .banner-lojas img {
-    max-width: 100vw;
-    object-fit: cover;
-  }
+.loja a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
 
-  .banner-lojas p {
-    font-size: 14px;
-    max-width: 95vw;
-    text-align: center;
-  }
+.loja img {
+  display: block;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
 
-  .section h1 {
-    font-size: 22px;
-  }
+/* Banner "Em breve"
+--------------------------------------------------------------------------- */
+.banner-lojas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto 30px;
+  padding: 0 40px;
+  max-width: 100%;
+  gap: 20px;
+}
 
-  .botao-voltar {
-    font-size: 10px;
-    right: 8px;
-    bottom: 8px;
-  }
+.banner-lojas p {
+  max-width: 320px;
+  font-family: 'MyriadProRegular', sans-serif;
+  color: #003366;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.banner-lojas a {
+  display: block;
+  max-width: 460px;
+  width: 100%;
+}
+
+.banner-lojas img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Link de voltar para a página inicial */
+.voltar-pagina {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 15px;
+  padding-right: 40px;
+}
+
+.voltar-pagina a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.voltar-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 50px;
+  margin-top: 10px;
+}
+
+.botao-voltar {
+  font-family: 'MyriadPro', sans-serif;
+  font-size: 13px;
+  color: #003366;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
 }
