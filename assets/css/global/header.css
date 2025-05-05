@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------------------------
-   Header – estrutura e seções
+   Header – estrutura e seções - layout consistente em todas plataformas
 --------------------------------------------------------------------------- */
 
 /* Header Principal */
@@ -7,7 +7,7 @@
   position: relative;
   width: 100%;
   z-index: 999;
-  font-family: 'MyriadProRegular',sans-serif;
+  font-family: 'MyriadProRegular', sans-serif;
 }
 
 /* Header Top (Azul) */
@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding: 25px 120px;
+  padding: 25px 0;
 }
 
 .header-top-container {
@@ -24,6 +24,12 @@
   justify-content: space-between;
   align-items: last baseline;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-top .logo {
+  position: relative;
 }
 
 .header-top .logo img {
@@ -31,60 +37,67 @@
   display: block;
   border: none;
   position: relative;
-  margin-left: 90px;
   padding-top: 20px;
 }
-.header-top .logo a{
+
+.header-top .logo a {
   display: block;
   margin: 0;
   padding: 0;
   line-height: 0;
-  
 }
 
 .header-top .social-links {
   display: flex;
   justify-content: flex-end;
-  margin-right: 110px;
-  gap:0;
+  gap: 5px;
 }
 
 .header-top .social-links img {
   max-width: 22px;
   color: #e2dbdb;
-  margin-left: 5px;
-  display: flex;
+  display: block;
 }
 
 /* Header Mid (Laranja) */
 .header-mid {
-  background-color:#e84b2a;
+  background-color: #e84b2a;
   color: #cec7c7;
   border-bottom: 3px solid #b33900;
   padding: 10px 0;
   text-align: center;
 }
 
+.header-mid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .header-mid-container nav ul {
   list-style: none;
   display: flex;
-  justify-content: right;
-  margin-right: 255px;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 .header-mid-container nav ul li {
-  margin: 0 10px;
+  margin: 0;
 }
 
 .header-mid-container nav ul li a {
-  font-family: 'MyriadProRegular',sans-serif;
+  font-family: 'MyriadProRegular', sans-serif;
   color: #fff;
   text-decoration: none;
   font-size: 13px;
   white-space: nowrap;
   border-right: 1px solid white;
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
+}
 
+.header-mid-container nav ul li:last-child a {
+  border-right: none;
 }
 
 /* Header Bottom (Branco) */
@@ -93,7 +106,12 @@
   color: #333;
   padding: 10px 0;
   border-bottom: 2px solid #ddd;
-  
+}
+
+.header-bottom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header-bottom-container nav ul {
@@ -102,7 +120,8 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
- 
+  margin: 0;
+  padding: 0;
 }
 
 .header-bottom-container nav ul li {
@@ -110,18 +129,21 @@
 }
 
 .header-bottom-container nav ul li a {
-  font-family: 'MyriadProRegular',sans-serif;
+  font-family: 'MyriadProRegular', sans-serif;
   color: #000080;
   text-decoration: none;
   font-size: 16px;
   align-items: center;
   text-align: center;
   white-space: nowrap;
+  display: flex;
 }
-.header-bottom-container nav ul li a img{
+
+.header-bottom-container nav ul li a img {
   max-width: 30px;
   max-height: 30px;
   display: inline;
-  
+  vertical-align: middle;
+  margin-right: 5px;
 }
 

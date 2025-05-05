@@ -1,126 +1,32 @@
-/*outras plataformas*/
+/* Ajustes para responsividade mantendo o mesmo layout */
+@media screen and (max-width: 1024px) {
+  .header-top-container,
+  .header-mid-container,
+  .header-bottom-container {
+    width: 95%;
+  }
+}
 
-@media (max-width: 991px) and (min-width: 768px) {
-    .header-top {
-      padding: 10px 60px;
-    }
-  
-    .header-top .logo img {
-      max-width: 120px;
-      margin-left: 40px;
-      padding-top: 10px;
-    }
-  
-    .header-top .social-links {
-      margin-right: 50px;
-    }
-    .header-top .social-links img{
-      max-width: 25px;
-      max-height: 25px;
-    }
-    .header-mid-container nav ul {
-      margin-right: 100px;
-      flex-shrink: 0;
-    }
-  
-    .header-mid-container nav ul li a {
-      font-size: 12px;
-      padding: 0 8px;
-    }
-  
-    .header-bottom-container nav ul li a {
-      font-size: 14px;
-    }
-  
-    .header-bottom-container nav ul li a img {
-      max-width: 26px;
-      max-height: 26px;
-    }
+@media screen and (max-width: 768px) {
+  /* Ajustes mínimos para garantir funcionamento em telas menores */
+  .header-mid-container nav ul,
+  .header-bottom-container nav ul {
+    flex-wrap: wrap;
   }
   
-  @media (max-width: 767px) and (min-width: 481px) {
-    .header-top {
-      padding: 15px 30px;
-    }
-  
-    .header-top .logo img {
-      max-width: 120px;
-      margin-left: 20px;
-    }
-  
-    .header-top .social-links {
-      margin-right: 20px;
-    }
-    .header-top .social-links img{
-      max-width: 25px;
-      max-height: 25px;
-    }
-    .header-mid-container nav ul {
-      margin-right: 20px;
-    }
-  
-    .header-mid-container nav ul li a {
-      font-size: 12px;
-      padding: 0 5px;
-      flex-shrink: 0;
-    }
-  
-    .header-bottom-container nav ul li a {
-      font-size: 13px;
-      flex-shrink: 0;
-    }
-  
-    .header-bottom-container nav ul li a img {
-      max-width: 22px;
-      max-height: 22px;
-    }
+  .header-bottom-container nav ul {
+    justify-content: center;
+  }
+}
+
+/* Para telas muito pequenas, apenas garantir que textos não quebrem o layout */
+@media screen and (max-width: 480px) {
+  .header-top .logo img {
+    margin: 0 auto;
   }
   
-  @media (max-width: 480px) and (min-width: 360px) {
-    .header-top {
-      padding: 10px 10px;
-    }
-  
-    .header-top .logo img {
-      max-width: 100px;
-      margin-left: 5px;
-    }
-  
-    .header-top .social-links {
-      margin-right: 5px;
-    }
-    .header-top .social-links img{
-      max-width: 18px;
-      max-height: 18px;
-    }
-  
-    .header-mid-container nav ul {
-      margin: 0 auto;
-      flex-wrap: wrap;
-      align-items: center;
-      text-align: right;
-      flex-shrink: 0;
-    }
-  
-    .header-mid-container nav ul li a {
-      font-size: 11px;
-      border-right: none;
-      margin: 0 auto;
-    }
-  
-    .header-bottom-container nav ul {
-      margin: 0 auto;
-      flex-wrap: wrap;
-      flex-shrink: 0;
-      gap: 3px;
-    }
-  
-    .header-bottom-container nav ul li a {
-      font-size: 12px;
-    }
-  
-    .header-bottom-container nav ul li a img {
-      max-width: 20px;
-      max-height: 20px;
-    }
+  .header-mid-container nav ul li a {
+    font-size: 12px;
+    padding: 0 5px;
   }
+}
