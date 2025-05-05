@@ -4,10 +4,10 @@
 
 .site-footer {
   position: relative;
-  border-top: 25px solid #e84b2a;
+  border-top: 20px solid #e84b2a;
   background-image: url(../../images/global/footer-design.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   background-position: center;
   color: #ffffff;
   padding: 60px 0 20px;

@@ -11,18 +11,18 @@ body {
 /* Área que agrupa o slider e o banner lateral */
 .index-main-content {
   display: flex;
-  width: 75%;
+  width: 70%;
   margin: 30px auto 20px;
   justify-content: space-between;
   align-items: stretch;
-  height: 350px;
+  height: 100%;
   gap: 3px;
   box-sizing: border-box;
 }
 
 /* Slider à esquerda */
 .banner-slider {
-  width: 78%;
+  width: 80%;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -82,7 +82,7 @@ body {
 
 /* Banner lateral fixo (Compre Online) */
 .compre-banner {
-  width: 27%;
+  width: 30%;
   height: 100%;
   display: flex;
   align-items: stretch;

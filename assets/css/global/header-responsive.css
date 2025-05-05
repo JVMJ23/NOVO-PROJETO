@@ -23,10 +23,27 @@
 @media screen and (max-width: 480px) {
   .header-top .logo img {
     margin: 0 auto;
+    max-width: 110px;
+  }
+  .header-top .social-links img{
+    max-width: 16px;
   }
   
   .header-mid-container nav ul li a {
-    font-size: 12px;
-    padding: 0 5px;
+    padding: 2px 2px 2px;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.6rem;
+    align-content: center;
+    text-align: center;
+  }
+  .header-bottom-container nav ul li a{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.6rem;
+  }
+  .header-bottom-container nav ul li a img{
+    max-width: 16px;
   }
 }
