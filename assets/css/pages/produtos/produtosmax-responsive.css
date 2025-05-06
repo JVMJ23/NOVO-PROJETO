@@ -1,0 +1,87 @@
+/* Media Queries para garantir responsividade */
+@media screen and (max-width: 1200px) {
+    .produtos {
+      max-width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .galeria2 img, .galeria3 img {
+      height: 240px;
+    }
+    
+    .galeria2 a, .galeria3 a {
+      height: 260px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .produtos {
+      max-width: 90%;
+      padding: 10px;
+    }
+    
+    .galeria2, .galeria3 {
+      gap: 15px;
+    }
+    
+    .galeria2 img, .galeria3 img {
+      height: 200px;
+    }
+    
+    .galeria2 a, .galeria3 a {
+      height: 220px;
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* Mantém o layout em 3 colunas e 2 colunas mesmo em telas menores */
+    .galeria2, .galeria3 {
+      gap: 10px;
+    }
+    
+    .galeria2 img, .galeria3 img {
+      height: 150px;
+    }
+    
+    .galeria2 a, .galeria3 a {
+      height: 170px;
+      padding: 5px;
+    }
+    
+    .botao-voltar {
+      margin: 5px 10px 0 0;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .galeria2 img, .galeria3 img {
+      height: 120px;
+    }
+    
+    .galeria2 a, .galeria3 a {
+      height: 140px;
+    }
+  }
+  
+  /* Para telas muito pequenas, mantém a grade ao invés de empilhar */
+  @media screen and (max-width: 400px) {
+    .produtos {
+      padding: 5px;
+    }
+    
+    .galeria2, .galeria3 {
+      gap: 1px;
+    }
+    
+    .galeria2 img, .galeria3 img {
+      height: 100px;
+    }
+    
+    .galeria2 a, .galeria3 a {
+      height: 120px;
+      padding: 1px;
+    }
+  }

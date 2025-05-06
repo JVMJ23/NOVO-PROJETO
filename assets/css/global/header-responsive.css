@@ -1,5 +1,5 @@
-/* Ajustes para responsividade mantendo o mesmo layout */
-@media screen and (max-width: 1024px) {
+/* Media Queries para adaptação proporcional sem quebrar o layout */
+@media screen and (max-width: 1200px) {
   .header-top-container,
   .header-mid-container,
   .header-bottom-container {
@@ -7,43 +7,138 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  /* Ajustes mínimos para garantir funcionamento em telas menores */
-  .header-mid-container nav ul,
-  .header-bottom-container nav ul {
-    flex-wrap: wrap;
+@media screen and (max-width: 992px) {
+  /* Redução proporcional para tablets grandes */
+  .header-top .logo img {
+    max-width: 160px;
   }
   
-  .header-bottom-container nav ul {
-    justify-content: center;
+  .header-top .social-links img {
+    max-width: 20px;
+  }
+  
+  .header-mid-container nav ul li a {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+  
+  .header-bottom-container nav ul li a {
+    font-size: 14px;
+  }
+  
+  .header-bottom-container nav ul li a img {
+    max-width: 25px;
+    max-height: 25px;
   }
 }
 
-/* Para telas muito pequenas, apenas garantir que textos não quebrem o layout */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  /* Redução proporcional para tablets */
   .header-top .logo img {
-    margin: 0 auto;
-    max-width: 110px;
+    max-width: 140px;
   }
-  .header-top .social-links img{
+  
+  .header-top .social-links img {
+    max-width: 18px;
+  }
+  
+  .header-mid-container nav ul li a {
+    font-size: 11px;
+    padding: 0 6px;
+  }
+  
+  .header-bottom-container nav ul {
+    gap: 5px;
+  }
+  
+  .header-bottom-container nav ul li {
+    margin: 0 5px;
+  }
+  
+  .header-bottom-container nav ul li a {
+    font-size: 12px;
+  }
+  
+  .header-bottom-container nav ul li a img {
+    max-width: 22px;
+    max-height: 22px;
+    margin-right: 3px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Redução proporcional para dispositivos móveis */
+  .header-top .logo img {
+    max-width: 120px;
+  }
+  
+  .header-top .social-links img {
     max-width: 16px;
   }
   
   .header-mid-container nav ul li a {
-    padding: 2px 2px 2px;
-    display: flex;
-    flex-direction: row;
-    font-size: 0.6rem;
-    align-content: center;
-    text-align: center;
+    font-size: 10px;
+    padding: 0 4px;
   }
-  .header-bottom-container nav ul li a{
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    font-size: 0.6rem;
+  
+  .header-bottom-container nav ul {
+    gap: 2px;
   }
-  .header-bottom-container nav ul li a img{
+  
+  .header-bottom-container nav ul li {
+    margin: 0 2px;
+  }
+  
+  .header-bottom-container nav ul li a {
+    font-size: 10px;
+  }
+  
+  .header-bottom-container nav ul li a img {
+    max-width: 18px;
+    max-height: 18px;
+    margin-right: 2px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Redução máxima para dispositivos móveis pequenos */
+  .header-top {
+    padding: 5px 0;
+  }
+  
+  .header-top .logo img {
+    max-width: 100px;
+    padding-top: 10px;
+  }
+  
+  .header-top .social-links {
+    gap: 3px;
+  }
+  
+  .header-top .social-links img {
+    max-width: 14px;
+  }
+  
+  .header-mid {
+    padding: 8px 0;
+  }
+  
+  .header-mid-container nav ul li a {
+    font-size: 9px;
+    padding: 0 3px;
+  }
+  
+  .header-bottom {
+    padding: 5px 0;
+  }
+  
+  .header-bottom-container nav ul li a {
+    font-size: 9px;
+  }
+  
+  .header-bottom-container nav ul li a img {
     max-width: 16px;
+    max-height: 16px;
+    margin-right: 2px;
   }
 }

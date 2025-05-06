@@ -15,6 +15,7 @@
   background-image: url(../../images/global/background-blue.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000080;
   color: #fff;
   padding: 25px 0;
 }
@@ -25,7 +26,8 @@
   align-items: last baseline;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 5px;
+  box-sizing: border-box;
 }
 
 .header-top .logo {
@@ -72,6 +74,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .header-mid-container nav ul {
@@ -112,6 +115,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .header-bottom-container nav ul {
@@ -122,10 +126,12 @@
   gap: 10px;
   margin: 0;
   padding: 0;
+  flex-wrap: nowrap; /* Impede que os itens quebrem para a próxima linha */
 }
 
 .header-bottom-container nav ul li {
   margin: 0 10px;
+  flex: 1; /* Distribuição igual do espaço */
 }
 
 .header-bottom-container nav ul li a {
@@ -137,6 +143,7 @@
   text-align: center;
   white-space: nowrap;
   display: flex;
+  justify-content: center; /* Centralização horizontal */
 }
 
 .header-bottom-container nav ul li a img {
