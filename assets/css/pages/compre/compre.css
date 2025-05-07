@@ -4,7 +4,7 @@
 main.compre-main {
   position: relative;
   max-width: 1200px;
-  padding: 0 15%;
+  padding: 0 17%;
   margin: 20px auto;
   display: flex;
   flex-wrap: nowrap; /* Evita quebra para manter 50/50 em todas as plataformas */
@@ -40,7 +40,7 @@ section.compre .container {
 /* Seção de televendas - texto e lista de lojas */
 .compre h1 {
   color: #e84b2a;
-  font-size: 33px;
+  font-size: 32px;
   font-weight: 900;
   text-align: left;
   font-family: 'MyriadProBlack', sans-serif;
@@ -93,9 +93,9 @@ section.compre .container {
 }
 
 .infografico img {
-  width: 125%;
+  width: 115%;
   height: 100%;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 /* Botão voltar */

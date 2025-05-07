@@ -1,10 +1,4 @@
-main {
-  position: relative;
-  padding: 30px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  
-}
+
    /*fundo*/
    body{
     background-image: url(../../../images/global/background-main.png);
@@ -23,7 +17,7 @@ main {
   position: relative;
   font-family: 'MyriadPro',sans-serif;
   margin: 0 auto;
-  padding: 20px 60px ;
+  padding: 10px 60px ;
 }
 
 /* Título */
@@ -46,41 +40,45 @@ main {
   flex-wrap: wrap;
 }
 .column-left{
+  max-width: 300px;
+  margin: 0;
   display: flex;
   flex-direction:column;
-  gap:30px;
-  margin-right: 25px;
+  gap:10px;
 }
 .column-right{
+  margin: 0;
+  max-width: 300px;
   display: flex;
   flex-direction:column;
-  gap:10px;}
+  gap:5px;
+}
+
 .column-left img{
-  max-width: 180px;
+  max-width: 160px;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 .column-right img{
-  max-width: 350px;
+  max-width: 160px;
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 /* Container da timeline */
 .timeline-container {
-  flex:1 1 510px;
   margin: 0 auto;
   padding-left: 30px;
   position: relative;
   border-left: 2px solid #003366;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 /* Cada item da timeline */
 .timeline-item {
   position: relative;
   margin-bottom: 35px;
-  padding-left: 5px;
+  padding-left: 10px;
   z-index: 2;
 }
 .timeline-item::before {
@@ -94,11 +92,11 @@ main {
   border-radius: 60%;
   z-index: 0; /* Atrás da bolinha */
 }
-/* Bolinha azul com o ano */
+/* Bolinha azul */
 .dot {
   position: absolute;
   left: -45px;
-  top: 2px;
+  top: 5px;
   width: 25px;
   height: 25px;
   background:  white;
@@ -111,9 +109,9 @@ main {
   content: attr(data-year);
   background-color: white;
   position: absolute;
-  left: -25px;
+  left: -15px;
   top: -55px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   color:#003366;
 
@@ -122,9 +120,9 @@ main {
 /* Texto da timeline */
 .timeline-item p {
   padding: 10px;
-  max-width: 530px;
+  max-width: 400px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   font-family: 'MyriadProRegular',sans-serif;
   text-align: justify;
@@ -132,17 +130,17 @@ main {
 
 /* Logo final */
 .logo-final {
-  max-width: 200px;
+  max-width: 300px;
   display: block;
-  margin-left: -125px;
+  margin-left: -175px;
   margin-bottom: 30px;
 }
 
 /* Texto azul do final */
 .timeline-item:last-child p {
-  font-family: 'MyriadProBlack',sans-serif;
+  font-family: 'MyriadProRegular',sans-serif;
   color: #003366;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
 }
 .botao-voltar {
@@ -157,76 +155,3 @@ main {
   font-weight: 500;
 }
 
-
-
-/*media query*/
-
-/* Tablets (até 991px) */
-@media screen and (max-width: 991px) {
-  .historia-grid {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  .column-left,
-  .column-right,
-  .timeline-container {
-    margin: 20px 0;
-    width: 100%;
-    max-width: 200px;
-  }
-
-  .timeline-container {
-    padding-left: 20px;
-    border-left: 2px solid #003366;
-  }
-
-  .timeline-item p {
-    max-width: 100%;
-  }
-
-  .logo-final {
-    margin-left: 0;
-    margin: 30px auto;
-  }
-  .timeline-item:last-child p {
-    font-size: 14px;
-  }
-  .botao-voltar {
-    text-align: center;
-    margin: 20px auto;
-  }
-}
-
-/* Celulares (até 600px) */
-@media screen and (max-width: 600px) {
-
-  .historia-grid {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;}
-
-  .titulo {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-
-  .dot::after {
-    font-size: 16px;
-    top: -45px;
-  }
-
-  .timeline-item p {
-    max-width: 600px;
-    font-size: 14px;
-  }
-  .timeline-item:last-child p {
-    font-size: 15px;
-  }
-  .column-left img,
-  .column-right img {
-    max-width: 250PX;
-    height: auto;
-  }
-}
