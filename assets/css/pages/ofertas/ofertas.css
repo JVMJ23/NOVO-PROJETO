@@ -1,12 +1,24 @@
 body {
-    font-family: 'Arial', sans-serif;
     background-image: url(../../../images/global/background-main.png);
-    background-size: 100%;
+    background-size: 78%;
+    background-attachment: fixed;
+    background-position: right;
     background-repeat: repeat-y;
-    background-color: #f5f5f5;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
   }
   
-
+  .container h1 {
+    max-width: 900px;
+    text-align: center;
+    color: #e84b2a;
+    font-family: 'MyriadProBlack', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
   main {
     position: relative;
     padding: 30px 20px;
@@ -20,7 +32,7 @@ body {
     position: relative;
     margin: 0 auto;
     width: 80%;
-    max-width: 1000px;
+    max-width: 980px;
     padding-bottom: 60px;
   }
   

@@ -24,18 +24,28 @@
   .site-footer .store-addresses div {
     flex: 0 0 calc(50% - 10px); /* Duas colunas */
   }
+  .site-footer .footer-center img {
+    max-width: 120px;
+  }
+  .site-footer .store-addresses strong{
+    font-size: 12px;
+  }
+  .site-footer .store-addresses p{
+    font-size: 10px;
+  }
 }
+
 
 @media screen and (max-width: 576px) {
   /* Ajustes para celulares */
   .site-footer {
-    padding: 40px 0 20px;
-    .site-footer {
-      border-top: 5px solid #e84b2a;
-    }
+    padding: 30px 0 20px;
+    border-top: 10px solid #e84b2a;
+
   }
   
   .site-footer .store-addresses {
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -53,16 +63,16 @@
   
   .site-footer .store-addresses p {
     margin: 2px 0;
-    font-size: 0.6rem;
+    font-size: 6px;
   }
   .site-footer .store-addresses strong {
-    font-size: 0.8rem;
+    font-size: 8px;
   }
   
   .site-footer .footer-center img {
-    max-width: 100px;
+    max-width: 80px;
   }
 }
 .site-footer .footer-center p {
-  font-size: 0.7rem;
+  font-size: 5px;
 }

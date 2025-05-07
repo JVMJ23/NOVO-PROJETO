@@ -11,7 +11,7 @@
     height: 100%;
     }
   .banner-slider{
-    width: 82%;
+    width: 80%;
   }
   .slider-controls span {
     font-size: 0.7rem;
@@ -55,7 +55,6 @@
     gap: 3px;
   }
   
-  /* Garantir que a seção de receitas se comporte bem */
   .side-images img,
   .call-button img,
   .call-button a {
@@ -69,13 +68,13 @@
     height: 100%;
   }
   .banner-slider{
-    width: 80%;
+    width: 77%;
   }
   .slider-controls span {
     font-size: 0.9rem;
   }
   .compre-banner{
-    width:38%;
+    width:37%;
 
   }
   .botao-voltar {

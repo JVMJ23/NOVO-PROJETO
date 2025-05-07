@@ -1,38 +1,29 @@
-
+/*Media Query*/
 @media screen and (max-width: 992px) {
+  .container h1 {
+    width: 100%;
+    font-size: 30px;
+  }
     .ofertas {
       width: 90%;
     }
   }
   
   @media screen and (max-width: 768px) {
+    .container h1 {
+      width: 100%;
+      font-size: 26px;
+    }
     .ofertas {
       width: 95%;
       margin: 0 auto;
     }
   }
   
- 
-  .container h1 {
-    text-align: center;
-    color: #e84b2a;
-    font-family: 'MyriadProBlack', sans-serif;
-    font-size: 40px;
-    font-weight: 900;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    .container h1 {
-      font-size: 0.9rem;
-    }
-  }
-  
   @media screen and (max-width: 576px) {
     .container h1 {
-      font-size: 0.9rem;
+      width: 100%;
+      font-size: 18px;
     }
   }
 

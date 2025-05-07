@@ -10,10 +10,14 @@ main {
 }
    /*fundo*/
 body{
-   background-image:url(../../../images/global/background-main.png);
-   background-size :100%;
-   background-repeat: repeat-y;
-   background-color: none;
+  background-image: url(../../../images/global/background-main.png);
+  background-size: 78%;
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: repeat-y;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 
