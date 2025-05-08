@@ -21,7 +21,7 @@
   display: block;
 }
 .recipe-image img{
-  width: 500px;
+  width: 450px;
   height: auto;
   display: block;
 }
@@ -44,7 +44,7 @@
   font-family: 'MyriadProRegular',sans-serif;
   margin-left: 40px;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 900;
   margin-bottom: 30px;
 }
 .ingredients p{

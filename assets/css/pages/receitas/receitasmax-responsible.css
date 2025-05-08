@@ -1,0 +1,108 @@
+
+  @media (max-width: 992px) {
+    .receitas h1 {
+      margin: 0 10%;
+      font-size: 34px;
+      margin-top: 20px;
+    }
+    
+    .receitas p {
+      margin-bottom: 45px;
+      font-size: 15px;
+    }
+    
+    .receitas-grid {
+      padding: 0 10%;
+      gap: 15px;
+      grid-template-columns: repeat(5, 1fr); /* Force 5 recipes per row */
+    }
+    
+    .receita {
+      margin-bottom: 15px;
+    }
+    
+    .receita button {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .receitas h1 {
+      margin: 0 8%;
+      font-size: 28px;
+      margin-top: 18px;
+    }
+    
+    .receitas p {
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+    
+    .receitas-grid {
+      padding: 0 8%;
+      gap: 12px;
+      grid-template-columns: repeat(5, 1fr); /* Maintain 5 recipes per row */
+    }
+    
+    .receita {
+      margin-bottom: 12px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .receitas h1 {
+      margin: 0 5%;
+      font-size: 22px;
+      margin-top: 15px;
+    }
+    
+    .receitas p {
+      margin-bottom: 30px;
+      font-size: 12px;
+    }
+    
+    .receitas-grid {
+      padding: 0 5%;
+      gap: 10px;
+      grid-template-columns: repeat(5, 1fr); /* Maintain 5 recipes per row */
+    }
+    
+    .receita {
+      margin-bottom: 10px;
+    }
+    
+    .receita button {
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .receitas h1 {
+      margin: 0 3%;
+      font-size: 20px;
+      margin-top: 12px;
+    }
+    
+    .receitas p {
+      margin-bottom: 25px;
+      font-size: 11px;
+    }
+    
+    .receitas-grid {
+      padding: 0 3%;
+      gap: 8px;
+      grid-template-columns: repeat(5, 1fr); /* Maintain 5 recipes per row */
+      padding-bottom: 30px;
+    }
+    
+    .receita {
+      margin-bottom: 8px;
+    }
+    
+    .receita button {
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+  }
