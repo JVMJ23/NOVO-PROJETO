@@ -19,35 +19,91 @@
     }
     
     .compre h1 {
-      font-size: 0.9rem;
+      font-size: 15px;
     }
     
     .compre p {
-      font-size: 0.5rem
+      font-size: 12px;
     }
   }
   
   @media (max-width: 480px) {
     main.compre-main {
-      padding: 0 10px;
-      flex-wrap: nowrap; /* Mantém 50/50 em todas as plataformas */
+      padding: 0 20px;
+      flex-wrap: nowrap; /* Mantém 50/50*/
     }
     
-    .compre-content, .infografico {
-      width: 50%; /* Mantém 50/50 em todas as plataformas */
+    .infografico {
+      width: 50%; /* Mantém 50/50*/
     }
+    .compre-content{
+      width: 40%;
+      padding-left: 3%;
+    }
+    
     
     .compre h1 {
-      font-size: 0.9rem;
+      font-size: 10px;
     }
     
     .compre p {
-      font-size: 0.5rem
+      font-size: 6px;
+      font-family: 'MyriadProRegular',sans-serif;
       
     }
-    
-    .botao-voltar {
-      font-size: 0.7rem;
+    .btn-whatsapp img {
+      width: 96%;
+      height: auto;
+      display: block;
     }
+    .infografico{
+      padding-left: 2%;
+    }
+    .infografico img {
+      width:116%;
+      height:100%;
+      object-fit: contain;
+    }
+    .botao-voltar {
+      font-size: 7px;
+    }
+
+    /*celular com tela menor*/
+    @media (max-width: 320px) {
+      main.compre-main {
+        padding: 0 5px;
+        flex-wrap: nowrap; /* Mantém 50/50*/
+      }
+      
+      .infografico {
+        width: 50%; /* Mantém 50/50*/
+      }
+      .compre-content{
+        width: 35%;
+      }
+      
+      
+      .compre h1 {
+        font-size: 8px;
+      }
+      
+      .compre p {
+        font-size: 6px;
+        font-family: 'MyriadProRegular',sans-serif;
+        
+      }
+      .btn-whatsapp img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      }
+      .infografico img {
+        width:115%;
+        height:100%;
+        object-fit: contain;
+      }
+      .botao-voltar {
+        font-size: 7px;
+      }
   }
-  

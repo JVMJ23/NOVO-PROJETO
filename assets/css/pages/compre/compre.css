@@ -25,7 +25,7 @@ body {
 /* Container principal com 50-50 split */
 .compre-content {
   width: 50%;
-  padding-right: 1px;
+  padding-right: 5px;
   box-sizing: border-box;
 }
 
@@ -60,7 +60,7 @@ section.compre .container {
 /* Botões WhatsApp - lista de lojas */
 .btn-whatsapp {
   display: block;
-  width: 94%;
+  width: 100%;
   margin-bottom: 5px;
   transition: transform 0.2s;
   border-radius: 4px;
@@ -84,7 +84,7 @@ section.compre .container {
 /* Seção do infográfico Drive Thru e Delivery (50%) */
 .infografico {
   width: 50%; 
-  padding-left: 2px;
+  padding-left: 5px;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -93,7 +93,7 @@ section.compre .container {
 }
 
 .infografico img {
-  width: 115%;
+  width: 128%;
   height: 100%;
   object-fit: fill;
 }

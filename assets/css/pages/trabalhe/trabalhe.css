@@ -41,8 +41,8 @@ main {
 
 label {
   font-family: 'MyriadProRegular'sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 900;
   margin-bottom: 5px;
   color: black;
 }
@@ -54,6 +54,7 @@ input[type="file"] {
   font-size: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  background-color: #f1ebeb;
 }
 
 input[type="file"] {
