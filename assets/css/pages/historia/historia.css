@@ -84,12 +84,12 @@ body{
 }
 
 .column-right img{
-    max-width: 220px;
+    max-width: 230px;
     width: 95%;
     height: auto;
     object-fit: contain;
     margin-bottom: 15px;
-    margin-left: 1px; /* Pequena margem para aproximar da timeline */
+    margin-left: 1px;
 }
 
 /* Cada item da timeline */
@@ -160,7 +160,7 @@ body{
 .timeline-item:last-child p {
     font-family: 'MyriadProRegular',sans-serif;
     color: #003366;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 900;
     margin-bottom: 10px;
 }

@@ -16,15 +16,14 @@ body {
   width: 70%;
   margin: 30px auto 20px;
   justify-content: space-between;
-  align-items: stretch;
-  height: 100%;
+  height: 280px;
   gap: 5px;
   box-sizing: border-box;
 }
 
 /* Slider à esquerda */
 .banner-slider {
-  width: 75%;
+  width: 70%;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -75,27 +74,50 @@ body {
 }
 
 .slider-controls span {
-  font-size: 45px;
+  font-size: 42px;
   color: white;
   padding: 10px;
   pointer-events: all;
   cursor: pointer;
 }
+/* Indicadores do Slider (bolinhas) */
+.slider-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.slider-indicators .indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-indicators .indicator.active {
+  background-color: white;
+}
 
 /* Banner lateral fixo (Compre Online) */
 .compre-banner {
-  width: 37%;
-  height: 100%;
   display: flex;
-  align-items: stretch;
+  width: 38%;
+  height: 100%;
+  align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .compre-banner .img-placeholder {
   flex: 1;
   height: 100%;
   display: flex;
-  align-items: stretch;
 }
 
 .compre-banner a {

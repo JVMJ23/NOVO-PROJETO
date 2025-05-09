@@ -10,14 +10,14 @@ body {
   }
   
   .container h1 {
-    max-width: 900px;
+    max-width: 910px;
     text-align: center;
     color: #e84b2a;
     font-family: 'MyriadProBlack', sans-serif;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 900;
-    margin-top: 20px;
     margin-bottom: 30px;
+    padding:20px;
   }
   main {
     position: relative;
