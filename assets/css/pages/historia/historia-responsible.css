@@ -1,71 +1,173 @@
-/*media query*/
-
-/* Tablets (até 991px) */
-@media screen and (max-width: 991px) {
-    .historia-grid {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center;
+/* Media query para telas de até 768px (tablets) */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 85%; /* Aumentando um pouco o background */
     }
-  
-    .column-left,
-    .column-right,
-    .timeline-container {
-      margin: 20px 0;
-      width: 100%;
-      max-width: 200px;
+    
+    .historia-section {
+        max-width: 95%;
+        padding: 5px;
     }
-  
-    .timeline-container {
-      padding-left: 20px;
-      border-left: 2px solid #003366;
-    }
-  
-    .timeline-item p {
-      max-width: 100%;
-    }
-  
-    .logo-final {
-      margin-left: 0;
-      margin: 30px auto;
-    }
-    .timeline-item:last-child p {
-      font-size: 14px;
-    }
-    .botao-voltar {
-      text-align: center;
-      margin: 20px auto;
-    }
-  }
-  
-  /* Celulares (até 600px) */
-  @media screen and (max-width: 600px) {
-  
-    .historia-grid {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center;}
-  
+    
     .titulo {
-      font-size: 22px;
-      margin-bottom: 20px;
+        font-size: 32px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-  
-    .dot::after {
-      font-size: 16px;
-      top: -45px;
+    
+    /* Mantendo a estrutura de três colunas ajustando proporções */
+    .column-left {
+        width: 25%;
     }
-  
+    
+    .timeline-container {
+        width: 50%;
+    }
+    
+    .column-right {
+        width: 25%;
+    }
+    
+    .column-left img {
+        max-width: 120px;
+        margin-right: 15px;
+    }
+    
+    .column-right img {
+        max-width: 180px;
+    }
+    
     .timeline-item p {
-      max-width: 600px;
-      font-size: 14px;
+        font-size: 14px;
+    }
+    
+    .dot::after {
+        font-size: 18px;
+        left: -8px;
+        top: -40px;
+    }
+    
+    .timeline-item:last-child p {
+        font-size: 18px;
+    }
+    
+    .logo-final {
+        max-width: 200px;
+    }
+    
+    .botao-voltar {
+        right: 30px;
+    }
+}
+
+/* Media query para telas de até 576px (smartphones) */
+@media screen and (max-width: 576px) {
+    body {
+        background-size: 100%;
+    }
+    
+    .historia-section {
+        max-width: 100%;
+    }
+    
+    .titulo {
+        font-size: 28px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    /* Mantendo a mesma estrutura mas reduzindo mais os tamanhos */
+    .column-left img {
+        max-width: 90px;
+        margin-right: 10px;
+    }
+    
+    .column-right img {
+        max-width: 130px;
+    }
+    
+    .timeline-item::before {
+        width: 30px;
+        height: 30px;
+        left: -35px;
+    }
+    
+    .dot {
+        width: 20px;
+        height: 20px;
+        left: -30px;
+    }
+    
+    .dot::after {
+        font-size: 16px;
+        left: -5px;
+        top: -35px;
+    }
+    
+    .timeline-item p {
+        font-size: 13px;
+        padding: 3px 5px;
+    }
+    
+    .timeline-item:last-child p {
+        font-size: 16px;
+    }
+    
+    .logo-final {
+        max-width: 180px;
+    }
+    
+    .botao-voltar {
+        right: 20px;
+        font-size: 14px;
+    }
+}
+
+/* Media query para telas muito pequenas */
+@media screen and (max-width: 400px) {
+    .titulo {
+      font-size: 16px;
+    }
+    .historia-grid {
+        flex-wrap: nowrap; /* Garante que não vai quebrar em linhas */
+    }
+    
+    .timeline-container {
+        padding-left: 15px;
+    }
+    .column-left, .column-right{
+      width: 10%;
+    }
+    
+    .column-left img {
+        max-width: 60px;
+        margin-right: 5px;
+    }
+    
+    .column-right img {
+        max-width: 100px;
+    }
+    .timeline-item p{
+      font-size: 8px;
+    }
+    .timeline-item::before {
+        width: 25px;
+        height: 25px;
+        left: -30px;
+    }
+    
+    .dot {
+        width: 18px;
+        height: 18px;
+        left: -28px;
+    }
+    
+    .dot::after {
+        font-size: 14px;
+        left: -4px;
+        top: -30px;
     }
     .timeline-item:last-child p {
-      font-size: 15px;
+    font-size: 9px;
     }
-    .column-left img,
-    .column-right img {
-      max-width: 250PX;
-      height: auto;
-    }
-  }
+}

@@ -1,157 +1,180 @@
 
-   /*fundo*/
-   body{
+body{
     background-image: url(../../../images/global/background-main.png);
-    background-size: 78%;
+    background-size: 76%;
     background-attachment: fixed;
     background-position: right;
     background-repeat: repeat-y;
     background-color: transparent;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
+
 /* Container geral da seção */
 .historia-section {
-  max-width: 1200px;
-  position: relative;
-  font-family: 'MyriadPro',sans-serif;
-  margin: 0 auto;
-  padding: 10px 60px ;
+    max-width: 1000px;
+    position: relative;
+    font-family: 'MyriadPro',sans-serif;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 /* Título */
 .titulo {
-  text-align: center;
-  color: #e84b2a;
-  font-family: 'MyriadProBlack',sans-serif;
-  font-size: 34px;
-  font-weight: 900;
-  margin-top: 30px;
-  margin-bottom: 30px;
+    text-align: center;
+    color: #e84b2a;
+    font-family: 'MyriadProBlack',sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
-/*Imagens para fora do container*/
 .historia-grid{
-  display:flex;
-  justify-content: center;
-  gap: 10px;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.column-left{
-  max-width: 300px;
-  margin: 0;
-  display: flex;
-  flex-direction:column;
-  gap:10px;
-}
-.column-right{
-  margin: 0;
-  max-width: 300px;
-  display: flex;
-  flex-direction:column;
-  gap:5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
-.column-left img{
-  max-width: 160px;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+/* Reduzindo largura das colunas e aproximando da timeline */
+.column-left{
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    padding-right: 0;
+    margin-right: 0;
 }
-.column-right img{
-  max-width: 160px;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-/* Container da timeline */
+
+/* Timeline centralizada */
 .timeline-container {
-  margin: 0 auto;
-  padding-left: 30px;
-  position: relative;
-  border-left: 2px solid #003366;
-  margin-top: 50px;
+    width: 52%;
+    position: relative;
+    border-left: 2px solid #003366;
+    margin-top: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
+
+/* Coluna direita */
+.column-right{
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* Ajustando tamanho das imagens */
+.column-left img{
+    max-width: 150px;
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    margin-right: 25px;
+}
+
+.column-right img{
+    max-width: 220px;
+    width: 95%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    margin-left: 1px; /* Pequena margem para aproximar da timeline */
+}
+
 /* Cada item da timeline */
 .timeline-item {
-  position: relative;
-  margin-bottom: 35px;
-  padding-left: 10px;
-  z-index: 2;
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    z-index: 2;
 }
+
 .timeline-item::before {
-  content: "";
-  position: absolute;
-  left: -50px;
-  top: -5px;
-  width: 35px;
-  height: 35px;
-  background-color: white; /* Mesma cor do fundo */
-  border-radius: 60%;
-  z-index: 0; /* Atrás da bolinha */
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 60%;
+    z-index: 0;
 }
+
 /* Bolinha azul */
 .dot {
-  position: absolute;
-  left: -45px;
-  top: 5px;
-  width: 25px;
-  height: 25px;
-  background:  white;
-  border: 1px solid #003366;
-  border-radius: 70%;
-  color: #003366;
-  z-index: 2;
+    position: absolute;
+    left: -35px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border: 1px solid #003366;
+    border-radius: 70%;
+    color: #003366;
+    z-index: 2;
 }
-.dot::after{
-  content: attr(data-year);
-  background-color: white;
-  position: absolute;
-  left: -15px;
-  top: -55px;
-  font-size: 22px;
-  font-weight: 600;
-  color:#003366;
 
+.dot::after{
+    content: attr(data-year);
+    background-color: white;
+    position: absolute;
+    left: -10px;
+    top: -50px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #003366;
 }
 
 /* Texto da timeline */
 .timeline-item p {
-  padding: 10px;
-  max-width: 400px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  font-family: 'MyriadProRegular',sans-serif;
-  text-align: justify;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'MyriadProRegular',sans-serif;
+    text-align: justify;
+    margin: 0;
 }
 
 /* Logo final */
 .logo-final {
-  max-width: 300px;
-  display: block;
-  margin-left: -175px;
-  margin-bottom: 30px;
+    max-width: 250px;
+    display: block;
+    margin-left: -140px;
+    
 }
 
 /* Texto azul do final */
 .timeline-item:last-child p {
-  font-family: 'MyriadProRegular',sans-serif;
-  color: #003366;
-  font-size: 20px;
-  font-weight: 900;
+    font-family: 'MyriadProRegular',sans-serif;
+    color: #003366;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 10px;
 }
+
+
 .botao-voltar {
-  display: block;
-  text-align: right;
-  margin: 50px 300px 40px auto;
-  font-family: 'MyriadProRegular', sans-serif;
-  font-size: 15px;
-  color: #003366;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 500;
+    position: absolute;
+    right: 220px ;
+    bottom: 0;
+    text-align: right;
+    font-family: 'MyriadProRegular', sans-serif;
+    font-size: 15px;
+    color: #003366;
+    cursor: pointer;
+    text-decoration: none;
 }
 
