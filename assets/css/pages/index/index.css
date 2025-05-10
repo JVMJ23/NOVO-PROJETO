@@ -16,7 +16,7 @@ body {
   width: 70%;
   margin: 30px auto 20px;
   justify-content: space-between;
-  height: 280px;
+  height: 290px;
   gap: 5px;
   box-sizing: border-box;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .slider-controls span {
-  font-size: 42px;
+  font-size: 40px;
   color: white;
   padding: 10px;
   pointer-events: all;
@@ -83,7 +83,7 @@ body {
 /* Indicadores do Slider (bolinhas) */
 .slider-indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 0;
   right: 0;
   display: flex;
@@ -92,8 +92,8 @@ body {
 }
 
 .slider-indicators .indicator {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
@@ -107,7 +107,7 @@ body {
 /* Banner lateral fixo (Compre Online) */
 .compre-banner {
   display: flex;
-  width: 38%;
+  width: 39%;
   height: 100%;
   align-items: center;
   justify-content: center;

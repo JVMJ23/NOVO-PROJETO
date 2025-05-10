@@ -40,7 +40,7 @@ body {
 .galeria2, .galeria3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
+  gap:0;
   max-width: 835px; 
 }
 
@@ -81,7 +81,7 @@ body {
 .botao-voltar {
   display: block;
   text-align: right;
-  margin: 5px 260px 0 0;
+  margin: 5px 280px 0 0;
   font-family: 'MyriadProRegular', sans-serif;
   font-size: 15px;
   color: #003366;

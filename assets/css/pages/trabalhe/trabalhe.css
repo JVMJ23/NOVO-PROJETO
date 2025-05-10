@@ -22,7 +22,7 @@ main {
   text-align: center;
   color: #e84b2a;
   font-family: 'MyriadProBlack',sans-serif;
-  font-size: 38px;
+  font-size: 37px;
   font-weight: 900;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -76,11 +76,11 @@ input[type="file"] {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 50px;
-  gap: 40px;
+  gap: 30px;
 }
 
 .imagem-box img {
-  max-width: 380px;
+  max-width: 350px;
   height: auto;
 }
 
@@ -109,28 +109,27 @@ input[type="file"] {
 }
 .recaptcha{
   position:relative;
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
-  left: 0px;
+  margin-top: 10px;
+  left: 0;
 }
-.recaptcha img {
-  display: block;
-  max-width: 200px;
-  height: auto;
+
+
+.btn-enviar {
+  align-items: center;
+  background-color: #e35f1d;
+  color: white;
+  padding: 15px 30px;
+  font-size: 22px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
   
 }
 
-.btn-enviar {
-  background-color: #e35f1d;
-  color: white;
-  padding: 12px 25px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-}
-
 .politica {
-  font-size: 12px;
+  font-size: 13px;
   color:black;
 }
 
@@ -161,8 +160,8 @@ input[type="file"] {
 }
 
 .modal-content h2 {
-  font-size: 24px;
-  color: #1d2f44;
+  font-size: 22px;
+  color: #002244;
 }
 
 .modal-content p {
@@ -172,7 +171,7 @@ input[type="file"] {
 }
 
 .modal .fechar {
-  background-color: #e26b1a;
+  background-color: #e35f1d;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -190,118 +189,4 @@ input[type="file"] {
   background: none;
   border: none;
   cursor: pointer;
-}
-/* ----------------------------------------
-   Responsivo para tablets (≤ 991px)
----------------------------------------- */
-@media (max-width: 991px) {
-  .formulario-container {
-    margin: 0 5%;
-    padding: 0 10px;
-  }
-
-  .formulario-top h1 {
-    font-size: 38px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .formulario-bottom {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .imagem-box img {
-    max-width: 100%;
-  }
-
-  .recaptcha {
-    left: 0;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .form-extra {
-    width: 100%;
-    align-items: center;
-  }
-
-  .btn-enviar {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-}
-
-/* ----------------------------------------
-   Responsivo para celulares (≤ 576px)
----------------------------------------- */
-@media (max-width: 576px) {
-  .formulario-top h1 {
-    font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-  }
-
-  .form-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  label {
-    font-size: 13px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  .btn-upload {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .btn-upload {
-    width: 100%;
-  }
-
-  .recaptcha {
-    max-width: 100%;
-    margin: 20px auto;
-    left: 0;
-  }
-
-  .recaptcha img {
-    max-width: 100%;
-  }
-
-  .btn-enviar {
-    font-size: 16px;
-    padding: 10px 20px;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .politica {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .modal-content {
-    width: 95%;
-    margin: 20% auto;
-  }
-
-  .modal-content h2 {
-    font-size: 20px;
-  }
-
-  .modal-content p {
-    font-size: 14px;
-  }
-
-  .modal .fechar,
-  .modal-content span.fechar {
-    font-size: 22px;
-    padding: 8px 16px;
-  }
 }

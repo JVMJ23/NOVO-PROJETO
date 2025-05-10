@@ -1,0 +1,302 @@
+/* Método mais preciso sem usar scale */
+
+/* Tablets grandes */
+@media (max-width: 1024px) {
+  .formulario-container {
+    max-width: 820px; /* 90% de 910px */
+  }
+  
+  .formulario-top h1 {
+    font-size: 33.3px; /* 90% de 37px */
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 10.8px; /* 90% de 12px */
+    font-size: 13.5px; /* 90% de 15px */
+  }
+  
+  .formulario-bottom {
+    gap: 27px; /* 90% de 30px */
+  }
+  
+  .imagem-box img {
+    max-width: 360px; /* 90% de 400px */
+  }
+  
+  .btn-upload, .btn-enviar {
+    font-size: 19.8px; /* 90% de 22px */
+    padding: 9px 18px; /* 90% dos valores originais */
+  }
+}
+
+/* Tablets - 80% */
+@media (max-width: 868px) {
+  .formulario-container {
+    max-width: 728px;
+    padding: 0 32px;
+  }
+  
+  .formulario-top h1 {
+    font-size: 29.6px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 9.6px;
+    font-size: 12px;
+  }
+  
+  label {
+    font-size: 12px;
+  }
+  
+  .form-row {
+    gap: 16px;
+  }
+  
+  .formulario-bottom {
+    gap: 24px;
+  }
+  
+  .imagem-box img {
+    max-width: 320px;
+  }
+  
+  .btn-upload, .btn-enviar {
+    font-size: 17.6px;
+    padding: 8px 16px;
+  }
+}
+
+/* Smartphones grandes - 60% */
+@media (max-width: 576px) {
+  .formulario-container {
+    max-width: 546px;
+    padding: 0 24px;
+  }
+  
+  .formulario-top h1 {
+    font-size: 22.2px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 7.2px;
+    font-size: 9px;
+  }
+  
+  label {
+    font-size: 9px;
+  }
+  
+  .form-row {
+    gap: 12px;
+  }
+  
+  .formulario-bottom {
+    gap: 18px;
+  }
+  
+  .imagem-box img {
+    max-width: 240px;
+  }
+  
+  .btn-upload, .btn-enviar {
+    font-size: 13.2px;
+    padding: 6px 12px;
+  }
+  
+  .file-name {
+    font-size: 7.8px;
+  }
+  
+  .politica {
+    font-size: 7.8px;
+  }
+}
+
+/* Smartphones - 50% */
+@media (max-width: 480px) {
+  .formulario-container {
+    max-width: 455px;
+    padding: 0 20px;
+  }
+  
+  .formulario-top h1 {
+    font-size: 18.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 6px;
+    font-size: 7.5px;
+  }
+  
+  label {
+    font-size: 7.5px;
+    margin-bottom: 2.5px;
+  }
+  
+  .form-row {
+    gap: 10px;
+  }
+  
+  .formulario-bottom {
+    gap: 15px;
+  }
+  
+  .imagem-box img {
+    max-width: 200px;
+  }
+  
+  .btn-upload, .btn-enviar {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+  
+  .file-name {
+    font-size: 6.5px;
+  }
+  
+  .politica {
+    font-size: 6.5px;
+  }
+}
+
+/* Smartphones muito pequenos - 40% */
+@media (max-width: 375px) {
+  .formulario-container {
+    max-width: 364px;
+    padding: 0 16px;
+  }
+  
+  .formulario-top h1 {
+    font-size: 14.8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 4.8px;
+    font-size: 6px;
+  }
+  
+  label {
+    font-size: 6px;
+    margin-bottom: 2px;
+  }
+  
+  .form-row {
+    gap: 8px;
+  }
+  
+  .formulario-bottom {
+    gap: 12px;
+  }
+  
+  .imagem-box img {
+    max-width: 160px;
+  }
+  
+  .btn-upload, .btn-enviar {
+    font-size: 8.8px;
+    padding: 4px 8px;
+  }
+  
+  .file-name {
+    font-size: 5.2px;
+    margin-left: 4px;
+  }
+  
+  .politica {
+    font-size: 5.2px;
+  }
+  
+  .recaptcha {
+    max-width: 160px;
+    transform: scale(0.5);
+    transform-origin: left top;
+  }
+}
+
+/* Ajuste específico para 320px */
+@media (max-width: 320px) {
+  .formulario-container {
+    max-width: 320px;
+    padding: 0 15px;
+  }
+  
+  .formulario-top h1 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 4px;
+    font-size: 5.5px;
+  }
+  
+  label {
+    font-size: 5.5px;
+    margin-bottom: 2px;
+  }
+  
+  .form-row {
+    gap: 7px;
+  }
+  
+  .formulario-bottom {
+    gap: 10px;
+  }
+  
+  .imagem-box img {
+    max-width: 140px;
+  }
+  
+  .btn-upload, .btn-enviar {
+    font-size: 8px;
+    padding: 3.5px 7px;
+  }
+  
+  .file-name {
+    font-size: 5px;
+    margin-left: 3px;
+  }
+  
+  .politica {
+    font-size: 5px;
+  }
+  
+  .recaptcha {
+    max-width: 140px;
+    transform: scale(0.45);
+  }
+}
+
+/* Garantir alinhamento correto */
+.formulario-bottom {
+  align-items: flex-start;
+}
+
+.imagem-box {
+  flex-shrink: 0;
+}
+
+/* Evitar overflow */
+body {
+  overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
+}

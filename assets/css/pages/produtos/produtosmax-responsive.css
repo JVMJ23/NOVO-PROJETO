@@ -84,4 +84,7 @@
       height: 120px;
       padding: 1px;
     }
+    .botao-voltar {
+      font-size: 8px;
+    }
   }
