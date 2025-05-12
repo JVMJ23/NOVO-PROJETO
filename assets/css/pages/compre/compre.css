@@ -4,8 +4,8 @@
 main.compre-main {
   position: relative;
   max-width: 1200px;
-  padding: 0 16%;
-  margin: 20px auto;
+  padding: 0 15%;
+  margin: 10px auto;
   display: flex;
   flex-wrap: nowrap; /* Evita quebra para manter 50/50 em todas as plataformas */
 }
@@ -13,8 +13,8 @@ main.compre-main {
 /* Fundo */
 body {
   background-image: url(../../../images/global/background-main.png);
-  background-size: 75%;
-  background-attachment: fixed;
+  background-size: 650px auto;
+  background-attachment: local;
   background-position: right;
   background-repeat: repeat-y;
   background-color: transparent;
@@ -25,7 +25,6 @@ body {
 /*50-50 split */
 .compre-content {
   width: 50%;
-  padding-right: 5px;
   box-sizing: border-box;
 }
 
@@ -84,7 +83,7 @@ section.compre .container {
 /* Seção do infográfico Drive Thru e Delivery (50%) */
 .infografico {
   width: 50%; 
-  padding-left: 5px;
+  padding-left: 2px;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -93,7 +92,7 @@ section.compre .container {
 }
 
 .infografico img {
-  width: 125%;
+  width: 120%;
   height: 100%;
   object-fit: fill;
 }

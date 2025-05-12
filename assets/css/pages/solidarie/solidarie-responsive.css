@@ -1,68 +1,80 @@
-/* ----------------------------------------
-   Responsivo para tablets (≤ 991px)
----------------------------------------- */
-@media (max-width: 991px) {
-  .container h1 {
-    font-size: 36px;
-    margin-bottom: 30px;
+/* Media queries para responsividade */
+@media screen and (max-width: 992px) {
+  main {
+    padding: 20px 15px;
   }
-
+  
+  .container h1 {
+    font-size: 32px;
+  }
+  .troco-solidario img {
+    max-width: 90%;
+  }
+  
+  
   .container p,
   .institutions,
+  .institution,
   .mensagem-final {
-    font-size: 15px;
-    padding: 0 20px;
-  }
-
-  .troco-solidario img {
-    max-width: 100%;
-  }
-
-  .institution {
-    padding: 10px 15px;
-  }
-
-  .institution img {
-    width: 50px;
-    margin-bottom: 10px;
-  }
-
-  .botao-voltar {
-    margin: 40px 100px 30px auto;
+    max-width: 90%;
   }
 }
 
-/* ----------------------------------------
-   Responsivo para celulares (≤ 576px)
----------------------------------------- */
-@media (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .container h1 {
     font-size: 28px;
+  }
+  
+  .troco-solidario img {
+    max-width: 80%;
+  }
+  
+  .institution {
+    padding: 0;
+  }
+  
+  .institution img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .container p,
+  .institution p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    padding: 15px 10px;
+  }
+  
+  .container h1 {
+    font-size: 20px;
     margin-bottom: 20px;
   }
-
-  .container p,
-  .institutions,
-  .agradecimento p,
-  .mensagem-final {
-    font-size: 14px;
-    padding: 0 10px;
-    text-align: justify;
-  }
-
-  .institution {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .institution img {
-    margin-right: 0;
+  .institutions p{
     margin-bottom: 10px;
+    font-size: 10px;
   }
+  .institution {
+    margin-bottom: 15px;
+  }
+  
+  .institution img {
+    width: 40px;
+  }
+  
 
+  
+  .agradecimento p,
+  .container p,
+  .institution p,
+  .mensagem-final {
+    font-size: 10px;
+  }
+  
   .botao-voltar {
-    text-align: center;
-    margin: 30px auto 20px auto;
+    font-size: 12px;
   }
 }

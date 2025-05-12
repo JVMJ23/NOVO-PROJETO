@@ -1,15 +1,32 @@
+/* Definições base do botão voltar */
+.botao-voltar-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 5px 0;
+}
+
+.botao-voltar {
+  width: max-content;
+  font-family: 'MyriadProRegular', sans-serif;
+  font-size: 14px;
+  color: #003366;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 /* Media queries mínimas para garantir a visualização em telas pequenas */
 @media screen and (max-width: 1200px) {
   .index-main-content,
   .meumaxclube-banner,
   .folheto-container,
   .atacado-banner,
-  .botao-voltar {
+  .botao-voltar-container {
     width: 80%;
   }
   .index-main-content{
     height: 100%;
-    }
+  }
   .banner-slider{
     width: 80%;
   }
@@ -17,11 +34,11 @@
     font-size: 0.7rem;
   }
   .compre-banner{
-    width:40%;
-}
-.botao-voltar {
-  font-size: 0.7rem;
-}
+    width: 40%;
+  }
+  .botao-voltar {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -29,11 +46,11 @@
   .meumaxclube-banner,
   .folheto-container,
   .atacado-banner,
-  .botao-voltar {
+  .botao-voltar-container {
     width: 85%;
   }
   .index-main-content{
-  height: 100%;
+    height: 100%;
   }
   .banner-slider{
     width: 80%;
@@ -42,11 +59,11 @@
     font-size: 0.9rem;
   }
   .compre-banner{
-    width:40%;
-}
-.botao-voltar {
-  font-size: 0.7rem;
-}
+    width: 40%;
+  }
+  .botao-voltar {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -54,9 +71,9 @@
   .index-main-content {
     gap: 3px;
   }
-   .slider-indicators .indicator {
-  width: 5px;
-  height: 5px;
+  .slider-indicators .indicator {
+    width: 5px;
+    height: 5px;
   }
   .side-images img,
   .call-button img,
@@ -77,14 +94,16 @@
     font-size: 0.9rem;
   }
   .slider-indicators .indicator {
-  width: 4px;
-  height: 4px;
+    width: 4px;
+    height: 4px;
   }
   .compre-banner{
-    width:33%;
-
+    width: 33%;
+  }
+  .botao-voltar-container {
+    width: 85%;
   }
   .botao-voltar {
     font-size: 0.7rem;
-}
+  }
 }

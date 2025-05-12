@@ -26,7 +26,7 @@
   align-items: last baseline;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 13%;
+  padding: 0 12%;
   box-sizing: border-box;
 }
 
@@ -66,14 +66,14 @@
   background-color: #e84b2a;
   color: #cec7c7;
   border-bottom: 3px solid #b33900;
-  padding: 10px 0;
+  padding: 3px 0;
   text-align: center;
 }
 
 .header-mid-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 6%;
   box-sizing: border-box;
 }
 
@@ -82,11 +82,12 @@
   display: flex;
   justify-content: flex-end;
   margin: 0;
-  padding: 0 13%;
+  padding: 0 6%;
 }
 
 .header-mid-container nav ul li {
   margin: 0;
+  padding: 0;
 }
 
 .header-mid-container nav ul li a {
@@ -96,11 +97,21 @@
   font-size: 13px;
   white-space: nowrap;
   border-right: 1px solid white;
-  padding: 0 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s ease;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .header-mid-container nav ul li:last-child a {
   border-right: none;
+}
+
+.header-mid-container nav ul li a:hover {
+  background-color: #183e85;
+  color: white;
 }
 
 /* Header Bottom (Branco) */
@@ -114,7 +125,7 @@
 .header-bottom-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 25px;
   box-sizing: border-box;
 }
 
@@ -123,14 +134,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   margin: 0;
   padding: 0;
   flex-wrap: nowrap; /* Impede que os itens quebrem para a próxima linha */
 }
 
 .header-bottom-container nav ul li {
-  margin: 5px;
+  margin: 2px;
+  padding: 0;
 }
 
 .header-bottom-container nav ul li a {
@@ -138,11 +150,19 @@
   color: #000080;
   text-decoration: none;
   font-size: 16px;
-  align-items: center;
-  text-align: center;
   white-space: nowrap;
   display: flex;
-  justify-content: center; /* Centralização horizontal */
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  transition: background-color 0.2s ease;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header-bottom-container nav ul li a:hover {
+  background-color: #f2f2f2d7;
+  color: #e84b2a;
 }
 
 .header-bottom-container nav ul li a img {
@@ -152,4 +172,3 @@
   vertical-align: middle;
   margin-right: 5px;
 }
-

@@ -10,7 +10,7 @@ body {
   }
   
   .container h1 {
-    max-width: 910px;
+    max-width: 1000px;
     text-align: center;
     color: #e84b2a;
     font-family: 'MyriadProBlack', sans-serif;
@@ -34,6 +34,21 @@ body {
     width: 80%;
     max-width: 980px;
     padding-bottom: 60px;
+  }
+  .botao-voltar-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .botao-voltar {
+    width: max-content;
+    font-family: 'MyriadProRegular', sans-serif;
+    font-size: 14px;
+    color: #003366;
+    cursor: pointer;
+    text-decoration: none;
   }
   
   

@@ -1,0 +1,45 @@
+/* Media queries para responsividade */
+@media screen and (max-width: 992px) {
+  .novidades-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .novidades-main h1 {
+    font-size: 28px;
+  }
+  .novidades-scroll-area {
+    max-height: 450px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .novidades-container {
+    width: 90%;
+  }
+  .novidades-main h1 {
+    font-size: 20px;
+  }
+  .novidades-main p{
+    font-size: 11px;
+  }
+  .novidades-scroll-area {
+    max-height: 400px;
+  }
+
+  @media screen and (max-width: 456px) {
+   .novidades-container {
+    width: 90%;
+  }
+  .novidades-main h1 {
+    font-size: 14px;
+  }
+  .novidades-main p{
+    font-size: 8px;
+  }
+  .novidades-scroll-area {
+    max-height: 300px;
+  }
+}
+}

@@ -1,8 +1,8 @@
 /*fundo*/
 body {
   background-image: url(../../../images/global/background-main.png);
-  background-size: 980px auto;
-  background-attachment: fixed;
+  background-size: 960px auto;
+  background-attachment: scroll;
   background-position: right;
   background-repeat: repeat-y;
   background-color: transparent;
@@ -84,16 +84,16 @@ body {
 .slider-indicators {
   position: absolute;
   bottom: 10px;
-  left: 0;
+  left: 30%;
   right: 0;
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 5px;
 }
 
 .slider-indicators .indicator {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
@@ -243,15 +243,18 @@ body {
   display: block;
 }
 
+.botao-voltar-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 5px 0;
+}
+
 .botao-voltar {
-  display: block;
-  text-align: right;
-  width: 65%;
-  margin: 5px auto;
+  width: max-content;
   font-family: 'MyriadProRegular', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   color: #003366;
   cursor: pointer;
   text-decoration: none;
 }
-

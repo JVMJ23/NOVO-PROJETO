@@ -19,11 +19,12 @@
   
   .header-mid-container nav ul li a {
     font-size: 12px;
-    padding: 0 5px;
+    padding: 8px 5px;
   }
   
   .header-bottom-container nav ul li a {
     font-size: 14px;
+    padding: 8px 10px;
   }
   
   .header-bottom-container nav ul li a img {
@@ -44,7 +45,9 @@
   
   .header-mid-container nav ul li a {
     font-size: 11px;
-    padding: 0 4px;
+    padding: 6px 4px;
+    display: flex;
+    align-items: center;
   }
   
   .header-bottom-container nav ul {
@@ -52,11 +55,12 @@
   }
   
   .header-bottom-container nav ul li {
-    margin: 0 5px;
+    margin: 0 2px;
   }
   
   .header-bottom-container nav ul li a {
     font-size: 12px;
+    padding: 6px 8px;
   }
   
   .header-bottom-container nav ul li a img {
@@ -76,9 +80,17 @@
     max-width: 16px;
   }
   
+  .header-mid-container nav ul {
+    padding: 0 5%;
+  }
+  
   .header-mid-container nav ul li a {
     font-size: 8px;
-    padding: 0 2px;
+    padding: 5px 2px;
+  }
+  
+  .header-bottom-container {
+    padding: 0 10px;
   }
   
   .header-bottom-container nav ul {
@@ -86,11 +98,12 @@
   }
   
   .header-bottom-container nav ul li {
-    margin: 0 2px;
+    margin: 0 1px;
   }
   
   .header-bottom-container nav ul li a {
     font-size: 8px;
+    padding: 5px;
   }
   
   .header-bottom-container nav ul li a img {
@@ -101,14 +114,14 @@
 }
 
 @media screen and (max-width: 480px) {
-  /* Redução máxima para dispositivos móveis pequenos */
+  
   .header-top {
     padding: 5px 0;
   }
   
   .header-top .logo img {
-    max-width: 100px;
-    padding-top: 10px;
+    max-width: 80px;
+    padding-top: 5px;
   }
   
   .header-top .social-links {
@@ -116,30 +129,62 @@
   }
   
   .header-top .social-links img {
-    max-width: 12px;
+    max-width: 10px;
   }
   
   .header-mid {
     padding: 3px 0;
-    
+  }
+  
+  .header-mid-container nav ul {
+    padding: 0 1%;
   }
   
   .header-mid-container nav ul li a {
     font-size: 5px;
-    padding: 0 2px;
+    padding: 2px 3px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
   }
   
   .header-bottom {
-    padding: 6px 0;
+    padding: 3px 0;
+  }
+  
+  .header-bottom-container {
+    padding: 0 2px;
+  }
+  
+  .header-bottom-container nav ul {
+    gap: 1px;
   }
   
   .header-bottom-container nav ul li a {
     font-size: 6px;
+    padding: 2px 3px;
   }
   
   .header-bottom-container nav ul li a img {
-    max-width: 16px;
-    max-height: 16px;
-    margin-right: 2px;
+    max-width: 13px;
+    max-height: 13px;
+    margin-right: 1px;
+  }
+  
+  /* Ajuste de hover para telas pequenas */
+  .header-mid-container nav ul li a:hover,
+  .header-bottom-container nav ul li a:hover {
+    transition: background-color 0.1s ease;
+  }
+}
+
+/* Garantir que o hover funcione em dispositivos touch */
+@media (hover: none) {
+  .header-mid-container nav ul li a:active {
+    background-color: #183e85;
+    color: inherit;
+  }
+  
+  .header-bottom-container nav ul li a:active {
+    background-color: #f2f2f2d7;
+    color: #e84b2a;
   }
 }
