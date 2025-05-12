@@ -1,7 +1,7 @@
 /*fundo*/
 body {
   background-image: url(../../../images/global/background-main.png);
-  background-size: 78%;
+  background-size: 980px auto;
   background-attachment: fixed;
   background-position: right;
   background-repeat: repeat-y;
@@ -92,8 +92,8 @@ body {
 }
 
 .slider-indicators .indicator {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
@@ -139,7 +139,7 @@ body {
 .folheto-container,
 .atacado-banner {
   width: 70%;
-  margin: 20px auto 0;
+  margin: 30px auto 0;
   box-sizing: border-box;
 }
 
@@ -178,7 +178,7 @@ body {
 .atacado-banner {
   display: flex;
   justify-content: center;
-  margin: 5px auto;
+  margin:0 auto;
 }
 
 .atacado-banner img {
