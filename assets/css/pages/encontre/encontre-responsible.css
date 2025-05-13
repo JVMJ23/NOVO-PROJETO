@@ -2,7 +2,9 @@
     main {
       margin: 0 10%;
     }
-    
+    .section h1 {
+      font-size: 34px;
+    }
     .lojas-grid {
       gap: 15px;
     }
@@ -17,7 +19,7 @@
     }
     
     .section h1 {
-      font-size: 0.9rem;
+      font-size: 30px;
     }
     
     .lojas-grid {
@@ -36,14 +38,14 @@
         font-size: 0.7rem;}
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     main {
       margin: 0 2%;
       padding: 0 10px;
     }
     
     .section h1 {
-      font-size: 0.9rem;
+      font-size: 24px;
       padding: 0 10px;
     }
     
@@ -78,7 +80,7 @@
         padding: 0 1px;
       }
     .section h1 {
-      font-size: 0.9rem;
+      font-size:13px;
     }
     
     .lojas-grid {

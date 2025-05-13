@@ -3,16 +3,16 @@ Produtos marca Máx
 --------------------------------------------------------------------------- */
 main {
   position: relative;
-  padding: 0; /* Removi o padding lateral */
-  max-width: 100%; /* Ajustado para ocupar toda a largura disponível */
+  padding: 0;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 /*fundo*/
 body {
   background-image: url(../../../images/global/background-main.png);
-  background-size: 78%;
-  background-attachment: fixed;
+  background-size: 700px auto;
+  background-attachment: local;
   background-position: right;
   background-repeat: repeat-y;
   background-color: transparent;
@@ -30,18 +30,22 @@ body {
   background-color: transparent; 
 }
 
-
+/* Banner principal */
 .galeria1 {
   display: flex;
   justify-content: center;
-  max-width: 835px; 
+  max-width: 805px;
+  margin-bottom: 0;
 }
 
+/* Grades de produtos */
 .galeria2, .galeria3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap:0;
-  max-width: 835px; 
+  gap: 0;
+  max-width: 835px;
+  margin: 0; /* Remover margens */
+  border-collapse: collapse; /* Colapsar bordas */
 }
 
 .galeria1 img {
@@ -52,9 +56,11 @@ body {
 
 .galeria2 img, .galeria3 img {
   width: 100%;
-  height: 280px; /* Altura fixa para todas as imagens */
+  height: 280px;
   object-fit: contain;
   display: block;
+  margin: 0; /* Remover margens */
+  padding: 0; /* Remover padding */
 }
 
 .galeria1 a {
@@ -67,13 +73,17 @@ body {
   text-decoration: none;
   text-align: center;
   display: block;
-  background-color:white ;
-  height: 300px; /* Altura fixa */
+  background-color: white;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0; /* Remover margens */
+  padding: 0; /* Remover padding */
+  border: none; /* Remover bordas */
 }
 
+/* Ajuste para galeria de 2 colunas */
 .galeria3 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -87,4 +97,23 @@ body {
   color: #003366;
   cursor: pointer;
   text-decoration: none;
+}
+
+/* Remove espaços entre linhas do grid */
+.galeria2, .galeria3 {
+  font-size: 0; /* Remover espaços de texto */
+  line-height: 0; /* Remover espaços de linha */
+}
+
+/* Ajustes para elementos adjacentes */
+.galeria2 + .galeria3,
+.galeria3 + .galeria2 {
+  margin-top: 0; /* Remover espaço entre galerias */
+}
+
+/* Eliminar qualquer borda ou margem que possa criar espaçamento */
+.galeria2 > a, .galeria3 > a {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }

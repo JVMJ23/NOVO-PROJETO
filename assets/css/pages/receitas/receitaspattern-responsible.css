@@ -1,6 +1,9 @@
   
   @media (max-width: 992px) {
     .recipe-container {
+      background-image: url(../../../images/global/background\ receitas-01.png);
+      background-repeat: repeat-x;
+      background-size: 700px auto;
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -47,6 +50,9 @@
   
   @media (max-width: 768px) {
     .recipe-container {
+      background-image: url(../../../images/global/background\ receitas-01.png);
+      background-repeat: repeat-x;
+      background-size: 500px auto;
       padding-left: 20px;
       padding-right: 15px;
     }
@@ -105,6 +111,9 @@
   
   @media (max-width: 640px) {
     .recipe-container {
+      background-image: url(../../../images/global/background\ receitas-01.png);
+      background-repeat: repeat-x;
+      background-size: 500px auto;
       padding-left: 10px;
       padding-right: 10px;
     }
@@ -166,6 +175,9 @@
   
   @media (max-width: 495px) {
     .recipe-container {
+      background-image: url(../../../images/global/background\ receitas-01.png);
+      background-repeat: repeat-x;
+      background-size: 300px auto;
       padding-left: 10px;
       padding-right: 10px;
     }
@@ -173,54 +185,54 @@
     .image-ingredients {
       width: calc(100% - 20px);
       max-width: 460px;
-      gap: 5px;
+      gap: 10px;
     }
     
     .recipe-image img {
-      width: 250px;
+      width: 170px;
     }
     
     .ingredients {
-      max-width: 220px;
+      max-width: 250px;
     }
     
     .instructions {
       width: calc(100% - 20px);
-      max-width: 460px;
+      max-width: 450px;
     }
     
     .ingredients h2 {
-      font-size: 11px;
-      margin-left: 15px;
+      font-size: 10px;
+      margin-left: 13px;
       margin-bottom: 15px;
     }
     
     .ingredients h5 {
-      font-size: 10px;
-      padding-left: 20px;
+      font-size: 9px;
+      padding-left: 13px;
     }
     
     .ingredients p {
-      font-size: 10px;
-      padding-left: 20px;
+      font-size: 9px;
+      padding-left: 13px;
     }
     
     .ingredients ul {
-      padding-left: 20px;
+      padding-left: 13px;
     }
     
     .ingredients li {
-      font-size: 10px;
+      font-size: 9px;
       margin-bottom: 2px;
     }
     
     .instructions h2 {
-      font-size: 11px;
+      font-size: 10px;
       margin-bottom: 12px;
     }
     
     .instructions p, .instructions h5 {
-      font-size: 10px;
+      font-size: 9px;
       line-height: 1.2;
     }
   }
@@ -241,7 +253,7 @@
   }
 
   .ingredients {
-    max-width: 210px;
+    max-width: 220px;
   }
 
   .instructions {
@@ -251,22 +263,22 @@
 
   .ingredients h2 {
     font-size: 7px;
-    margin-left: 12px;
+    margin-left: 5px;
     margin-bottom: 8px;
   }
 
   .ingredients h5 {
     font-size: 6px;
-    padding-left: 15px;
+    padding-left: 5px;
   }
 
   .ingredients p {
     font-size: 6px;
-    padding-left: 15px;
+    padding-left: 5px;
   }
 
   .ingredients ul {
-    padding-left: 15px;
+    padding-left: 5px;
   }
 
   .ingredients li {

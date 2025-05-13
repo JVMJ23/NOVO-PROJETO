@@ -1,7 +1,7 @@
 
 body{
     background-image: url(../../../images/global/background-main.png);
-    background-size: 76%;
+    background-size: 600px auto;
     background-attachment: fixed;
     background-position: right;
     background-repeat: repeat-y;
@@ -67,7 +67,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     align-items: flex-start;
     padding-left: 0;
     margin-left: 0;
@@ -162,7 +162,7 @@ body{
     color: #003366;
     font-size: 19px;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 

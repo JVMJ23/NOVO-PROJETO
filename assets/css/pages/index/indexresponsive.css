@@ -66,8 +66,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  /* Apenas ajustes sutis para manter proporcionalidade */
+  @media screen and (max-width: 768px) {
+    body {
+      background-image: none;
+      background-color: #fff; 
+    }
   .index-main-content {
     gap: 3px;
   }
@@ -88,7 +91,7 @@
     height: 100%;
   }
   .banner-slider{
-    width: 66%;
+    width: 67%;
   }
   .slider-controls span {
     font-size: 0.9rem;
@@ -98,12 +101,12 @@
     height: 4px;
   }
   .compre-banner{
-    width: 33%;
+    width: 30%;
   }
   .botao-voltar-container {
     width: 85%;
   }
   .botao-voltar {
-    font-size: 0.7rem;
+    font-size: 6px;
   }
 }

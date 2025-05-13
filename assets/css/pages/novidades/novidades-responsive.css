@@ -6,6 +6,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: #fff; 
+  }
   .novidades-main h1 {
     font-size: 28px;
   }

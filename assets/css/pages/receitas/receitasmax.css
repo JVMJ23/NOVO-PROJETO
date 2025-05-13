@@ -2,9 +2,9 @@
    Novidades / Receitas
 --------------------------------------------------------------------------- */
 .receitas h1{
-  margin: 0 20%;
+  margin: 0 15%;
   font-family: 'MyriadProBlack',sans-serif;
-  font-size: 38px;
+  font-size: 40px;
   color: #e84b2a;
   font-weight: 900;
   text-align: center;
@@ -22,10 +22,10 @@
 
 .receitas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(5, 1fr); /* Force 5 recipes per row */
   justify-items: center;
-  padding: 0 20%;
-  gap: 20px;
+  padding: 0 18%;
+  gap: 10px;
   padding-bottom: 50px;
 }
 

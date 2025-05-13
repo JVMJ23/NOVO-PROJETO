@@ -3,6 +3,7 @@
   .site-footer {
     border-top: 20px solid #e84b2a;
     padding: 50px 0 20px;
+    font-size: 0.9rem;
   }
   
   .site-footer .store-addresses {
@@ -21,7 +22,7 @@
   .site-footer .store-addresses {
     flex-wrap: wrap;
     max-width: 500px;
-    gap: 10px;
+    gap: 5px;
   }
   
   .site-footer .store-addresses div {
