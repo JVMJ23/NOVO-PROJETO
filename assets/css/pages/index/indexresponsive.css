@@ -59,7 +59,7 @@
     font-size: 0.9rem;
   }
   .compre-banner{
-    width: 40%;
+    width: 38%;
   }
   .botao-voltar {
     font-size: 0.7rem;
@@ -91,7 +91,7 @@
     height: 100%;
   }
   .banner-slider{
-    width: 67%;
+    width: 65%;
   }
   .slider-controls span {
     font-size: 0.9rem;
@@ -101,12 +101,13 @@
     height: 4px;
   }
   .compre-banner{
-    width: 30%;
+    width: 31%;
   }
   .botao-voltar-container {
     width: 85%;
   }
   .botao-voltar {
-    font-size: 6px;
+    right:50px;
+    font-size: 5px;
   }
 }

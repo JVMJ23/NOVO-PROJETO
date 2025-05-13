@@ -120,7 +120,7 @@
     }
     
     .timeline-item p {
-        font-size: 11px;
+        font-size: 10px;
         padding: 2px;
     }
     
@@ -140,42 +140,44 @@
 
 /* Media query para telas muito pequenas */
 @media screen and (max-width: 400px) {
-    body{
-    background-image: none;}
 
     .titulo {
       font-size: 12px;
+      margin-bottom: 5px;
     }
     .historia-grid {
         flex-wrap: nowrap; /* Garante que não vai quebrar em linhas */
     }
     
     .timeline-container {
-        width:33%;
-        padding-left: 2px;
+        width:42%;
+        padding-left: 3px;
     }
     
     .column-left{
         width: 30%;
-        gap:40px;
+        gap:35px;
     }
     .column-left img {
-        max-width: 50px;
-        margin-right: 22px;
+        max-width: 45px;
+        margin-right: 23px;
+        margin-top: 6px;
     }
     .column-right{
         width: 30%;
-        gap:80px
+        gap:40px
     }
     .column-right img {
-        max-width: 220px;
+        max-width: 120px;
+        margin-top: 5px;
         margin-right: 0;
     }
     .timeline-item{
-        margin-bottom: 6px;
+        margin-bottom: 9px;
+       
     }
     .timeline-item p{
-      font-size: 6px;
+      font-size: 5px;
       text-align: justify;
     }
     .timeline-item::before {
@@ -185,15 +187,15 @@
     }
     
     .dot {
-        width: 12px;
-        height: 12px;
-        left: -11px;
+        width: 10px;
+        height: 10px;
+        left: -10px;
     }
     
     .dot::after {
-        font-size: 10px;
+        font-size: 7px;
         left: -5px;
-        top: -30px;
+        top: -15px;
     }
     .logo-final {
         max-width: 110px;
@@ -201,7 +203,7 @@
         margin-left: -60px;
     }
     .timeline-item:last-child p {
-        font-size: 6px;
+        font-size: 5px;
         text-align: justify;
     }
      .botao-voltar{
