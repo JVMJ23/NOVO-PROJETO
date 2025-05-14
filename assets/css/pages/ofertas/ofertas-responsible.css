@@ -1,59 +1,98 @@
-/*Media Query*/
-@media screen and (max-width: 992px) {
-  .container h1 {
-    width: 100%;
-    font-size: 30px;
-  }
-    .ofertas {
-      width: 90%;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    body {
-      background-image: none;
-      background-color: #fff; 
-    }
-    .container h1 {
-      width: 100%;
-      font-size: 26px;
-    }
-    .ofertas {
-      width: 95%;
-      margin: 0 auto;
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    .container h1 {
-      width: 100%;
-      font-size: 18px;
-    }
-  }
+ /* Media Queries para responsividade */
 
-  .container img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    max-width: 100%;
-  }
-  
-  
-  .botao-voltar {
-    display: block;
-    text-align: right;
-    margin: 5px 0 0 0;
-    padding-right: 10%;
-    font-family: 'MyriadProRegular', sans-serif;
-    font-size: 15px;
-    color: #003366;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .botao-voltar {
-      padding-right: 5%;
+    /* 990px - Telas maiores e desktop */
+    @media screen and (max-width: 990px) {
+      .ofertas {
+        width: 85%;
+      }
+      
+      .ofertas h1 {
+        font-size: 28px;
+      }
     }
-  }
+
+    /* 768px - Tablets e telas médias */
+    @media screen and (max-width: 768px) {
+      main {
+        padding: 25px 15px;
+      }
+      
+      .ofertas {
+        width: 90%;
+      }
+      
+      .ofertas h1 {
+        font-size: 24px;
+      }
+    }
+
+    /* 576px - Tablets pequenos e smartphones grandes */
+    @media screen and (max-width: 576px) {
+      main {
+        padding: 20px 10px;
+      }
+      
+      .ofertas {
+        width: 95%;
+        padding-bottom: 40px;
+      }
+      
+      .ofertas h1 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      
+      .botao-voltar {
+        font-size: 13px;
+      }
+    }
+
+    /* 425px - Smartphones */
+    @media screen and (max-width: 425px) {
+      main {
+        padding: 15px 5px;
+      }
+      
+      .ofertas {
+        width: 100%;
+        padding-bottom: 30px;
+      }
+      
+      .ofertas h1 {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+    }
+
+    /* 375px - Smartphones menores */
+    @media screen and (max-width: 375px) {
+      .ofertas h1 {
+        font-size: 15px;
+        padding: 0 5px;
+      }
+      
+      .botao-voltar {
+        font-size: 11px;
+      }
+    }
+
+    /* 320px - Smartphones muito pequenos */
+    @media screen and (max-width: 320px) {
+      main {
+        padding: 10px 5px;
+      }
+      
+      .ofertas h1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      
+      .ofertas img {
+        margin-bottom: 10px;
+      }
+      
+      .botao-voltar {
+        font-size: 10px;
+        padding: 3px 10px;
+      }
+    }

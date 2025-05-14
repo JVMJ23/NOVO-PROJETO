@@ -1,170 +1,134 @@
-/* Responsividade - manter design 50/50 em todas as plataformas */
-@media (max-width: 992px) {
-    main.compre-main {
-      flex-wrap: nowrap;
-    }
-    
-    .compre-content, .infografico {
-      width: 50%;
-    }
+@media screen and (max-width: 992px) {
+  main.compre-main {
+    padding: 0 10%;
   }
   
-  @media (max-width: 768px) {
-    main.compre-main {
-      flex-wrap: nowrap; 
-    }
-     body {
+  .compre h1 {
+    font-size: 28px;
+  }
+  
+  .compre p {
+    font-size: 15px;
+  }
+  
+  .infografico img {
+    width: 115%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
     background-image: none;
-    background-color: #fff; 
-  }
-    
-    .compre-content, .infografico {
-      width: 50%; 
-    }
-    
-    .compre h1 {
-      font-size: 18px;
-    }
-    
-    .compre p {
-      font-size: 13px;
-    }
-  }
-  @media (max-width: 475px) {
-    main.compre-main {
-      margin: 0;
-      padding: 0 20px;
-      flex-wrap: nowrap; /* Mantém 50/50*/
-    }
-    .compre h1 {
-      font-size: 9px;
-    }
-    
-    .compre p {
-      font-size: 5px;
-    }
-    
-    .infografico {
-      width: 50%; /* Mantém 50/50*/
-    }
-    .compre-content{
-      width: 45%;
-      padding-left: 1px;
-      margin-bottom: 1px;
-    }
-    
-    
-    .compre h1 {
-      font-size: 10px;
-      margin-bottom: 0;
-    }
-    
-    .compre p {
-      font-size: 6px;
-      font-family: 'MyriadProRegular',sans-serif;
-      margin-bottom: 0;
-    }
-    .btn-whatsapp img {
-      width: 88%;
-      height: auto;
-      display: block;
-    }
-    .infografico{
-      padding-left:2px;
-      
-    }
-    .infografico img {
-      width:110%;
-      height:100%;
-      object-fit: contain;
-    }
-    .botao-voltar {
-      font-size: 6px;
-    }
-
+    background-color: #fff;
   }
   
-  @media (max-width: 355px) {
-    main.compre-main {
-      margin: 0;
-      padding: 0 20px;
-      flex-wrap: nowrap; /* Mantém 50/50*/
-    }
-    
-    .infografico {
-      width: 50%; /* Mantém 50/50*/
-    }
-    .compre-content{
-      width: 50%;
-      padding-left: 2px;
-      margin-bottom: 1px;
-    }
-    
-    
-    .compre h1 {
-      font-size: 9px;
-      margin-bottom: 0;
-    }
-    
-    .compre p {
-      font-size: 4px;
-      font-family: 'MyriadProRegular',sans-serif;
-      margin-bottom: 0;
-    }
-    .btn-whatsapp img {
-      width: 94%;
-      height: auto;
-      display: block;
-    }
-    .infografico{
-      padding-left: 1px;
-    }
-    .infografico img {
-      width:116%;
-      height:100%;
-      object-fit: contain;
-    }
-    .botao-voltar {
-      font-size: 6px;
-    }
+  main.compre-main {
+    padding: 0 5%;
+    /* Mantém o layout lado a lado */
+  }
+  
+  .compre-content, .infografico {
+    width: 50%; /* Mantém a divisão 50/50 */
+  }
+  
+  .compre h1 {
+    font-size: 24px;
+  }
+  
+  .compre p {
+    font-size: 14px;
+  }
+  
+  .infografico img {
+    width: 110%; /* Reduz um pouco para melhor adaptação */
+  }
+}
 
-    /*celular com tela menor*/
-    @media (max-width: 320px) {
-      main.compre-main {
-        margin-left:20px;
-        padding: 0 5px;
-        flex-wrap: nowrap; /* Mantém 50/50*/
-      }
-      
-      .infografico {
-        width: 50%; /* Mantém 50/50*/
-      }
-      .compre-content{
-        width: 35%;
-      }
-      
-      
-      .compre h1 {
-        font-size: 8px;
-      }
-      
-      .compre p {
-        font-size: 6px;
-        font-family: 'MyriadProRegular',sans-serif;
-        
-      }
-      .btn-whatsapp img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-      }
-      .infografico img {
-        width:115%;
-        height:100%;
-        object-fit: contain;
-      }
-      .botao-voltar {
-        font-size: 7px;
-      }
+@media screen and (max-width: 576px) {
+  main.compre-main {
+    padding: 0 2%;
+    margin: 5px auto;
+  }
+  
+  .compre h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .compre p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  
+  .btn-whatsapp {
+    margin-bottom: 4px;
+  }
+  
+  .infografico img {
+    width: 105%; /* Reduz ainda mais para evitar overflow */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .compre h1 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .compre p {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .botao-voltar {
+    font-size: 13px;
+  }
+  
+  .infografico img {
+    width: 100%; /* Ajusta para evitar overflow em telas menores */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .compre h1 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .compre p {
+    font-size: 11px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  
+  .btn-whatsapp {
+    margin-bottom: 3px;
+  }
+  
+  .botao-voltar {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .compre h1 {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+  
+  .compre p {
+    font-size: 10px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  
+  .btn-whatsapp {
+    margin-bottom: 2px;
+  }
+  
+  .botao-voltar {
+    font-size: 11px;
+  }
   }

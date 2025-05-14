@@ -7,7 +7,7 @@ main {
    /*fundo*/
    body{
    background-image:url(../../../images/global/background-main.png);
-   background-size :100%;
+   background-size :780px auto;
    background-repeat: repeat-y;
    background-color: none;
 }

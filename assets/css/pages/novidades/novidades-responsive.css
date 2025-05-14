@@ -1,49 +1,114 @@
-/* Media queries para responsividade */
-@media screen and (max-width: 992px) {
-  .novidades-container {
-    width: 90%;
-  }
-}
+/* Media queries corretamente estruturadas */
+    @media screen and (max-width: 992px) {
+      .novidades-container {
+        width: 80%;
+      }
+      
+      .novidades-main h1 {
+        font-size: 34px;
+      }
+    }
 
-@media screen and (max-width: 768px) {
-  body {
-    background-image: none;
-    background-color: #fff; 
-  }
-  .novidades-main h1 {
-    font-size: 28px;
-  }
-  .novidades-scroll-area {
-    max-height: 450px;
-  }
-}
+    @media screen and (max-width: 768px) {
+      body {
+        background-image: none;
+        background-color: #fff; 
+      }
+      
+      .novidades-container {
+        width: 85%;
+      }
+      
+      .novidades-main h1 {
+        font-size: 28px;
+      }
+      
+      .novidades-scroll-area {
+        max-height: 450px;
+      }
+    }
 
-@media screen and (max-width: 576px) {
-  .novidades-container {
-    width: 90%;
-  }
-  .novidades-main h1 {
-    font-size: 20px;
-  }
-  .novidades-main p{
-    font-size: 11px;
-  }
-  .novidades-scroll-area {
-    max-height: 400px;
-  }
+    @media screen and (max-width: 576px) {
+      .novidades-container {
+        width: 90%;
+      }
+      
+      .novidades-main h1 {
+        font-size: 22px;
+      }
+      
+      .novidades-main h1 br {
+        display: none; /* Remove a quebra de linha no título em telas pequenas */
+      }
+      
+      .novidade-card p {
+        font-size: 14px;
+        padding: 12px 15px 0;
+      }
+      
+      .novidades-scroll-area {
+        max-height: 400px;
+      }
+    }
 
-  @media screen and (max-width: 456px) {
-   .novidades-container {
-    width: 90%;
-  }
-  .novidades-main h1 {
-    font-size: 14px;
-  }
-  .novidades-main p{
-    font-size: 8px;
-  }
-  .novidades-scroll-area {
-    max-height: 150px;
-  }
-}
-}
+    @media screen and (max-width: 425px) {
+      .novidades-container {
+        width: 95%;
+        padding: 15px 0;
+      }
+      
+      .novidades-main h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      
+      .novidade-card p {
+        font-size: 13px;
+        padding: 10px 12px 0;
+      }
+      
+      .novidades-scroll-area {
+        max-height: 350px;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .novidades-main h1 {
+        font-size: 16px;
+      }
+      
+      .novidade-card p {
+        font-size: 12px;
+        line-height: 1.4;
+      }
+      
+      .novidades-scroll-area {
+        max-height: 300px;
+      }
+    }
+
+    @media screen and (max-width: 320px) {
+      .novidades-container {
+        padding: 10px 0;
+      }
+      
+      .novidades-main h1 {
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+      
+      .novidade-card p {
+        font-size: 11px;
+        padding: 8px 10px 0;
+        margin-bottom: 3px;
+      }
+      
+      .novidade-card p:last-child {
+        padding-bottom: 15px;
+      }
+      
+      .novidades-scroll-area {
+        max-height: 250px;
+        min-height: 150px;
+      }
+    }
