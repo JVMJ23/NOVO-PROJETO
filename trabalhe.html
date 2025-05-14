@@ -7,6 +7,20 @@
   <link rel="stylesheet" href="assets/css/global/global.css">
   <link rel="stylesheet" href="assets/css/pages/trabalhe/trabalhe.css">
   <link rel="stylesheet" href="assets/css/pages/trabalhe/trabalhe-resposible.css">
+  <script>
+  function adjustRecaptcha() {
+    var width = document.querySelector('.recaptcha').offsetWidth;
+    var scale = width / 302; // 302px é a largura padrão do widget reCAPTCHA
+    if (scale < 1) {
+      document.querySelector('.g-recaptcha').style.transform = 'scale(' + scale + ')';
+      document.querySelector('.g-recaptcha').style.transformOrigin = 'left top';
+    }
+  }
+  
+  // Chama a função no carregamento e redimensionamento
+  window.onload = adjustRecaptcha;
+  window.onresize = adjustRecaptcha;
+</script>
 
 </head>
 <body>
@@ -167,7 +181,7 @@
       <p>Produzido por João.2025 Rede Máximo de Supermercados</p>
     </div>
   </footer>
-  
+  <script> src="assets/javascript/recaptcha-responsive.js" </script>
   <script>
     const inputFile = document.getElementById('curriculo');
     const fileNameDisplay = document.querySelector('.file-name');
