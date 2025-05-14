@@ -13,7 +13,7 @@ main.compre-main {
 /* Fundo */
 body {
   background-image: url(../../../images/global/background-main.png);
-  background-size: 650px auto;
+  background-size: 600px auto;
   background-attachment: local;
   background-position: right;
   background-repeat: repeat-y;

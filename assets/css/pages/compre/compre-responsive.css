@@ -23,28 +23,33 @@
     }
     
     .compre h1 {
-      font-size: 15px;
+      font-size: 18px;
     }
     
     .compre p {
-      font-size: 12px;
+      font-size: 13px;
     }
   }
   @media (max-width: 475px) {
- main.compre-main {
+    main.compre-main {
       margin: 0;
-      padding: 0;
-      margin-left: 5%;
-      margin-right: 5%;
+      padding: 0 20px;
       flex-wrap: nowrap; /* Mantém 50/50*/
+    }
+    .compre h1 {
+      font-size: 9px;
+    }
+    
+    .compre p {
+      font-size: 5px;
     }
     
     .infografico {
       width: 50%; /* Mantém 50/50*/
     }
     .compre-content{
-      width: 50%;
-      padding-left: 5px;
+      width: 45%;
+      padding-left: 1px;
       margin-bottom: 1px;
     }
     
@@ -55,18 +60,18 @@
     }
     
     .compre p {
-      font-size: 7px;
+      font-size: 6px;
       font-family: 'MyriadProRegular',sans-serif;
       margin-bottom: 0;
     }
     .btn-whatsapp img {
-      width: 93%;
+      width: 88%;
       height: auto;
       display: block;
     }
     .infografico{
-      padding-left:0;
-      margin-left: 0;
+      padding-left:2px;
+      
     }
     .infografico img {
       width:110%;
@@ -74,7 +79,7 @@
       object-fit: contain;
     }
     .botao-voltar {
-      font-size: 7px;
+      font-size: 6px;
     }
 
   }
@@ -82,9 +87,7 @@
   @media (max-width: 355px) {
     main.compre-main {
       margin: 0;
-      padding: 0;
-      margin-left: 5%;
-      margin-right: 5%;
+      padding: 0 20px;
       flex-wrap: nowrap; /* Mantém 50/50*/
     }
     
@@ -104,12 +107,12 @@
     }
     
     .compre p {
-      font-size: 5px;
+      font-size: 4px;
       font-family: 'MyriadProRegular',sans-serif;
       margin-bottom: 0;
     }
     .btn-whatsapp img {
-      width: 96%;
+      width: 94%;
       height: auto;
       display: block;
     }

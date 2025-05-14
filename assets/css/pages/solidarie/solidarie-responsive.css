@@ -21,6 +21,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: #fff; 
+  }
+
   .container h1 {
     font-size: 28px;
   }
@@ -75,6 +80,6 @@
   }
   
   .botao-voltar {
-    font-size: 12px;
+    font-size: 10px;
   }
 }

@@ -4,6 +4,7 @@
     border-top: 20px solid #e84b2a;
     padding: 50px 0 20px;
     font-size: 0.9rem;
+    bottom: 0;
   }
   
   .site-footer .store-addresses {
@@ -46,6 +47,7 @@
   .site-footer {
     padding: 20px 0 20px;
     border-top: 10px solid #e84b2a;
+    bottom: 0;
   }
   
   .site-footer .store-addresses {
@@ -87,6 +89,7 @@
  .site-footer {
   padding: 20px 0 20px;
   border-top: 10px solid #e84b2a;
+  bottom: 0;
 
 }
 

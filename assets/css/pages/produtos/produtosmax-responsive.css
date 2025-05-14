@@ -16,6 +16,10 @@
   }
   
   @media screen and (max-width: 768px) {
+    body {
+      background-image: none;
+      background-color: #fff; 
+    }
     .produtos {
       max-width: 90%;
       padding: 10px;
@@ -85,6 +89,7 @@
       padding: 1px;
     }
     .botao-voltar {
+      margin-right: 30px;
       font-size: 8px;
     }
   }
