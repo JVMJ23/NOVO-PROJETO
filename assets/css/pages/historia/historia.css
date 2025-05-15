@@ -1,21 +1,20 @@
 
 body{
      background-image: url(../../../images/global/background-main2.png);
-    background-size: 600px auto;
-    background-attachment: fixed;
+    background-size: 900px auto;
+    background-attachment: local;
     background-position: right;
     background-repeat: repeat-y;
     background-color: transparent;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 /* Container geral da seção */
 .historia-section {
     max-width: 1000px;
     position: relative;
-    font-family: 'MyriadPro',sans-serif;
+    font-family: 'MyriadProRegular',sans-serif;
     margin: 0 auto;
     padding: 10px 0;
 }

@@ -74,6 +74,7 @@
   .btn-enviar {
     font-size: 18px;
     padding: 10px 20px;
+    margin-bottom: 5px;
   }
   
   /* Escala o reCAPTCHA para telas menores */
@@ -134,6 +135,7 @@
   .btn-enviar {
     font-size: 15px;
     padding: 8px 15px;
+    margin-bottom: 5px;
   }
   
   /* Escala o reCAPTCHA para telas menores */
@@ -207,17 +209,18 @@
   }
   
   .btn-upload {
-    font-size: 11px;
+    font-size: 10px;
     padding: 4px 6px;
   }
   
   .file-name {
-    font-size: 7px;
+    font-size: 6px;
   }
   
   .btn-enviar {
     font-size: 11px;
     padding: 5px 10px;
+    margin-bottom: 3px;
   }
   
   /* Escala o reCAPTCHA para telas menores */
@@ -265,6 +268,7 @@
   .btn-enviar {
     font-size: 10px;
     padding: 4px 8px;
+    margin-bottom: 3px;
   }
   
   /* Escala o reCAPTCHA para telas menores */

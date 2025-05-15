@@ -12,7 +12,7 @@ main {
 /* Fundo */
 body {
   background-image: url(../../../images/global/background-main2.png);
-  background-size: 700px auto;
+  background-size: 850px auto;
   background-attachment: local;
   background-position: right;
   background-repeat: repeat-y;
