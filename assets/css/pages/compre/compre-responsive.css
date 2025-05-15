@@ -28,25 +28,36 @@
   }
   
   .compre-content, .infografico {
-    width: 50%; /* Mantém a divisão 50/50 */
+    width: 45%; /* Mantém a divisão 50/50 */
   }
   
   .compre h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   
   .compre p {
-    font-size: 14px;
+    font-size: 10px;
   }
-  
+  .btn-whatsapp img {
+    width: 90%;
+  }
   .infografico img {
-    width: 110%; /* Reduz um pouco para melhor adaptação */
+    width: 120%; /* Reduz um pouco para melhor adaptação */
+    object-fit: contain;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .compre-content{
+    width: 40%;
+    margin-left: 4%;
+  }
+  .infografico{
+    width: 48%;
+    margin-right: 2%;
+  }
   main.compre-main {
-    padding: 0 2%;
+    padding: 0 3%;
     margin: 5px auto;
   }
   
@@ -66,18 +77,27 @@
   }
   
   .infografico img {
-    width: 105%; /* Reduz ainda mais para evitar overflow */
+    width: 100%; /* Reduz ainda mais para evitar overflow */
   }
 }
 
 @media screen and (max-width: 425px) {
+  .compre-content{
+    width: 40%;
+    margin-left: 4%;
+  }
+  .infografico{
+    width: 48%;
+    margin-right: 2%;
+  }
+
   .compre h1 {
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 10px;
   }
   
   .compre p {
-    font-size: 12px;
+    font-size: 8px;
     margin-bottom: 12px;
   }
   
@@ -86,22 +106,38 @@
   }
   
   .infografico img {
-    width: 100%; /* Ajusta para evitar overflow em telas menores */
+    width: 120%; /* Ajusta para evitar overflow em telas menores */
+    object-fit: contain;
   }
 }
 
 @media screen and (max-width: 375px) {
+  .compre-content{
+    width: 40%;
+    margin-left: 3%;
+  }
+  .infografico{
+    width: 50%;
+  }
+
   .compre h1 {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 8px;
   }
   
   .compre p {
-    font-size: 11px;
+    font-size: 8px;
     margin-bottom: 10px;
     line-height: 1.3;
   }
-  
+  .btn-whatsapp img {
+    width: 95%;
+  }
+  .infografico img {
+    width: 110%;
+    height: 100%;
+    object-fit: contain;
+  }
   .btn-whatsapp {
     margin-bottom: 3px;
   }
@@ -112,18 +148,33 @@
 }
 
 @media screen and (max-width: 320px) {
+  .infografico{
+    width: 50%;
+  }
+  
+  .compre-content{
+    width: 40%;
+    margin-left: 3%;
+  }
   .compre h1 {
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 8px;
     margin-bottom: 6px;
   }
   
   .compre p {
-    font-size: 10px;
-    margin-bottom: 8px;
+    font-size: 6px;
+    margin-bottom: 6px;
     line-height: 1.2;
   }
-  
+  .btn-whatsapp img {
+    width: 95%;
+  }
+  .infografico img {
+    width: 112%;
+    height: 100%;
+    object-fit: contain;
+  }
   .btn-whatsapp {
     margin-bottom: 2px;
   }

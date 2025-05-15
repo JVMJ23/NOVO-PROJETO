@@ -13,6 +13,10 @@
 
     /* 768px - Tablets e telas médias */
     @media screen and (max-width: 768px) {
+      body {
+        background-image: none;
+        background-color: #fff;
+      }
       main {
         padding: 25px 15px;
       }

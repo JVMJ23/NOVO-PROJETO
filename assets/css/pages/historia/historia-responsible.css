@@ -140,7 +140,7 @@
 }
 
 /* Media query para telas muito pequenas */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
 
     .titulo {
       font-size: 12px;
@@ -208,7 +208,7 @@
         text-align: justify;
     }
      .botao-voltar{
-        right:80px;
+        right:90px;
         font-size: 4px;
      }
 }

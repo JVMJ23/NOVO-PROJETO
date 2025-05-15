@@ -29,6 +29,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: #fff;
+  }
+
   main {
     padding: 20px 15px;
   }
@@ -144,31 +149,31 @@
   }
   
   label {
-    font-size: 10px;
+    font-size: 8px;
   }
   
   input[type="text"],
   input[type="email"] {
     padding: 5px;
-    font-size: 10px;
+    font-size: 7px;
   }
   
   .btn-upload {
-    font-size: 13px;
+    font-size: 11px;
     padding: 5px 8px;
     margin-top: 5px;
   }
   
   .file-name {
-    font-size: 9px;
+    font-size: 7px;
   }
   
   .politica {
-    font-size: 9px;
+    font-size: 8px;
   }
   
   .btn-enviar {
-    font-size: 14px;
+    font-size: 12px;
     padding: 6px 12px;
   }
   
@@ -187,31 +192,31 @@
   }
   
   .form-row {
-    gap: 4px;
+    gap: 2px;
   }
   
   label {
-    font-size: 9px;
+    font-size: 8px;
     margin-bottom: 2px;
   }
   
   input[type="text"],
   input[type="email"] {
     padding: 4px;
-    font-size: 9px;
+    font-size: 7px;
   }
   
   .btn-upload {
-    font-size: 12px;
+    font-size: 11px;
     padding: 4px 6px;
   }
   
   .file-name {
-    font-size: 8px;
+    font-size: 7px;
   }
   
   .btn-enviar {
-    font-size: 13px;
+    font-size: 11px;
     padding: 5px 10px;
   }
   
@@ -234,14 +239,14 @@
   }
   
   label {
-    font-size: 8px;
+    font-size: 6px;
     margin-bottom: 2px;
   }
   
   input[type="text"],
   input[type="email"] {
     padding: 3px;
-    font-size: 8px;
+    font-size: 6px;
   }
   
   .btn-upload {
@@ -250,15 +255,15 @@
   }
   
   .file-name {
-    font-size: 7px;
+    font-size: 6px;
   }
   
   .politica {
-    font-size: 7px;
+    font-size: 6px;
   }
   
   .btn-enviar {
-    font-size: 12px;
+    font-size: 10px;
     padding: 4px 8px;
   }
   
