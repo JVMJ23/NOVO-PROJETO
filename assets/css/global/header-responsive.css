@@ -116,11 +116,11 @@
 @media screen and (max-width: 480px) {
   
   .header-top {
-    padding: 5px 0;
+    padding: 4px 0;
   }
   
   .header-top .logo img {
-    max-width: 80px;
+    max-width: 85px;
     padding-top: 5px;
   }
   
@@ -141,8 +141,8 @@
   }
   
   .header-mid-container nav ul li a {
-    font-size: 5px;
-    padding: 2px 3px;
+    font-size: 9px;
+    padding: 1px 5px;
     border-right: 1px solid rgba(255, 255, 255, 0.5);
   }
   
@@ -151,7 +151,7 @@
   }
   
   .header-bottom-container {
-    padding: 0 2px;
+    padding: 0 5px;
   }
   
   .header-bottom-container nav ul {
@@ -159,13 +159,203 @@
   }
   
   .header-bottom-container nav ul li a {
-    font-size: 6px;
-    padding: 2px 3px;
+    font-size: 10px;
+    padding: 2px 1px;
   }
   
   .header-bottom-container nav ul li a img {
-    max-width: 13px;
-    max-height: 13px;
+    max-width: 11px;
+    max-height: 11px;
+    margin-right: 1px;
+  }
+  
+  /* Ajuste de hover para telas pequenas */
+  .header-mid-container nav ul li a:hover,
+  .header-bottom-container nav ul li a:hover {
+    transition: background-color 0.1s ease;
+  }
+}
+@media screen and (max-width: 425px) {
+    .header-top {
+    padding: 4px 0;
+  }
+  
+  .header-top .logo img {
+    max-width: 85px;
+    padding-top: 5px;
+  }
+  
+  .header-top .social-links {
+    gap: 2px;
+  }
+  
+  .header-top .social-links img {
+    max-width: 11px;
+  }
+  
+  .header-mid {
+    padding: 2px 0;
+  }
+  
+  .header-mid-container nav ul {
+    padding: 0 2%;
+  }
+  
+  .header-mid-container nav ul li a {
+    font-size: 8px;
+    padding: 2px 3px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .header-bottom {
+    padding: 2px 0;
+  }
+  
+  .header-bottom-container {
+    flex-wrap:wrap ;
+    padding: 0 2%;
+  }
+  
+  .header-bottom-container nav ul {
+    gap: 1px;
+  }
+  
+  .header-bottom-container nav ul li a {
+    font-size: 9px;
+    padding: 5px 2px;
+  }
+  
+  .header-bottom-container nav ul li a img {
+    max-width: 10px;
+    max-height: 10px;
+    margin-right: 1px;
+  }
+  
+  /* Ajuste de hover para telas pequenas */
+  .header-mid-container nav ul li a:hover,
+  .header-bottom-container nav ul li a:hover {
+    transition: background-color 0.1s ease;
+  }
+}
+
+@media screen and (max-width: 375px) {
+   .header-top {
+    padding: 4px 0;
+  }
+  
+  .header-top .logo img {
+    max-width: 70px;
+    padding-top: 5px;
+  }
+  
+  .header-top .social-links {
+    gap: 2px;
+  }
+  
+  .header-top .social-links img {
+    max-width: 11px;
+  }
+  
+  .header-mid {
+    padding: 2px 0;
+  }
+  
+  .header-mid-container nav ul {
+    padding: 0 2%;
+  }
+  
+  .header-mid-container nav ul li a {
+    font-size: 7px;
+    padding: 2px 5px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .header-bottom {
+    padding: 2px 0;
+  }
+  
+  .header-bottom-container {
+    flex-wrap:wrap ;
+    padding: 0 1%;
+  }
+  
+  .header-bottom-container nav ul {
+    gap: 1px;
+  }
+  
+  .header-bottom-container nav ul li a {
+    font-size: 8px;
+    padding: 3px 2px;
+  }
+  
+  .header-bottom-container nav ul li a img {
+    max-width: 11px;
+    max-height: 11px;
+    margin-right: 1px;
+  }
+  
+  /* Ajuste de hover para telas pequenas */
+  .header-mid-container nav ul li a:hover,
+  .header-bottom-container nav ul li a:hover {
+    transition: background-color 0.1s ease;
+  }
+}
+
+
+
+@media screen and (max-width: 320px) {
+   .header-top {
+    padding: 4px 0;
+  }
+  
+  .header-top .logo img {
+    max-width: 70px;
+    padding-top: 5px;
+  }
+  
+  .header-top .social-links {
+    gap: 2px;
+  }
+  
+  .header-top .social-links img {
+    max-width: 10px;
+  }
+  
+  .header-mid {
+    padding: 2px 0;
+  }
+  
+  .header-mid-container nav ul {
+    padding: 0 2%;
+  }
+  
+  .header-mid-container nav ul li a {
+    font-size: 7px;
+    padding: 2px 3px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .header-bottom {
+    padding: 2px 0;
+  }
+  
+  .header-bottom-container {
+    flex-wrap:wrap ;
+    padding: 0 1%;
+  }
+  
+  .header-bottom-container nav ul {
+    gap: 0.5px;
+  }
+  
+  .header-bottom-container nav ul li a {
+    font-size: 7px;
+    padding: 3px 1px;
+  }
+  
+  .header-bottom-container nav ul li a img {
+    max-width: 10px;
+    max-height: 10px;
     margin-right: 1px;
   }
   
