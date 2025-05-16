@@ -86,7 +86,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px auto 20px;
+  margin: 30px auto 20px;
   padding: 0 40px;
   max-width: 100%;
   gap: 20px;
@@ -118,7 +118,7 @@ main {
 
   .banner-lojas .botao-voltar {
     font-family: 'MyriadRegular', sans-serif;
-    font-size: 15px; /* Aumentado de 13px para 16px */
+    font-size: 14px; /* Aumentado de 13px para 16px */
     color: #003366;
     cursor: pointer;
     text-decoration: none;

@@ -82,13 +82,13 @@
   }
   
 
-@media (max-width: 480px) {
+@media (max-width: 430px) {
   main {
     margin: 0 3%;
     padding: 0 3px;
   }
   .section h1 {
-    font-size: 14px;
+    font-size: 19px;
   }
   
   .lojas-grid {
@@ -100,22 +100,22 @@
     max-width: 220px;
   }
   .banner-lojas img {
-    max-width: 250px;
+    max-width: 200px;
   }
   
   .banner-lojas .botao-voltar {
     font-size: 5px !important;
     white-space: nowrap;
   }
-
-  @media (max-width: 320px) {
-    main {
+  
+  @media (max-width: 375px) {
+     main {
       margin: 0 3%;
       padding: 0 3px;
     }
     .section h1 {
-      font-size: 13px;
-      margin-bottom: 2px;
+      font-size: 17px;
+      margin-bottom: 3px;
     }
     
     .lojas-grid {
@@ -131,7 +131,35 @@
     }
     
     .banner-lojas .botao-voltar {
-      font-size: 4px !important;
+      font-size: 4px ;
+      white-space: nowrap;
+    }
+
+  }
+  @media (max-width: 320px) {
+    main {
+      margin: 0 3%;
+      padding: 0 3px;
+    }
+    .section h1 {
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+    
+    .lojas-grid {
+      gap: 5px;
+    }
+    
+    .banner-lojas p {
+      font-size: 6px;
+      max-width: 280px;
+    }
+    .banner-lojas img {
+      max-width: 180px;
+    }
+    
+    .banner-lojas .botao-voltar {
+      font-size: 4px;
       white-space: nowrap;
     }
   }

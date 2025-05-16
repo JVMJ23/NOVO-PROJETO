@@ -225,8 +225,8 @@
   
   /* Escala o reCAPTCHA para telas menores */
   .g-recaptcha {
-    transform: scale(0.65);
-    -webkit-transform: scale(0.65);
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
   }
 }
 
@@ -273,7 +273,7 @@
   
   /* Escala o reCAPTCHA para telas menores */
   .g-recaptcha {
-    transform: scale(0.6);
-    -webkit-transform: scale(0.6);
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
   }
 }
