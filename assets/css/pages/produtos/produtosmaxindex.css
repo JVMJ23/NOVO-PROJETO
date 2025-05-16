@@ -1,48 +1,48 @@
 
 .produtos-max {
-    margin-top: 13%;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    padding: 60px 20px;
+    padding: 20px 50px;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .produtos-max .container {
-    max-width: 900px;
+    max-width: 1200px;
     text-align: center;
-    width: 100%;
-    padding:0 13%;
+    padding:0 30px;
     
 }
 
 .produtos-max h1 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 900;
-    text-align:left;
+    text-align:justify;
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     font-family: 'MyriadProRegular', sans-serif;
     width: 100%;
 }
 
 .produtos-max h2 {
-    font-size: 24px;
-    text-align: center;
+    font-size: 22px;
+    text-align: justify;
     font-weight: 900;
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     font-family: 'MyriadProRegular', sans-serif;
+    width: 100%;
 }
 
 .produtos-max p {
     font-family: 'MyriadProRegular', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     margin: 10px auto;
-    line-height: 1.6;
+    line-height: 1.4;
     max-width: 650px;
     margin-bottom: 30px;
     text-align: justify;
@@ -51,7 +51,7 @@
 .logo-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin-top: 20px;
     flex-wrap: wrap;
     width: 100%;
@@ -59,6 +59,6 @@
 
 .logo-container img {
     height: auto;
-    max-width: 160px;
+    max-width: 150px;
     margin-bottom: 50px;
 }

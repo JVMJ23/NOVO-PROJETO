@@ -88,16 +88,25 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.botao-voltar {
-  display: block;
-  text-align: right;
-  margin: 5px 280px 0 0;
-  font-family: 'MyriadProRegular', sans-serif;
-  font-size: 15px;
-  color: #003366;
-  cursor: pointer;
-  text-decoration: none;
-}
+ .botao-voltar-container {
+      display: flex;
+      justify-content: flex-end;
+      width: 78%;
+    }
+
+    .botao-voltar {
+      width: max-content;
+      font-family: 'MyriadProRegular', sans-serif;
+      font-size: 15px;
+      color: #003366;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .botao-voltar:hover {
+      text-decoration: underline;
+    }
 
 /* Remove espaços entre linhas do grid */
 .galeria2, .galeria3 {

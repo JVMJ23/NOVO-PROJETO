@@ -13,6 +13,10 @@
     .galeria2 a, .galeria3 a {
       height: 260px;
     }
+     .botao-voltar {
+      padding-left: 100%;
+      font-size: 15px;
+    }
   }
   
   @media screen and (max-width: 768px) {
@@ -22,7 +26,7 @@
     }
     .produtos {
       max-width: 90%;
-      padding: 10px;
+      padding: 15px;
     }
     
     .galeria2, .galeria3 {
@@ -37,12 +41,16 @@
       height: 220px;
       padding: 8px;
     }
+    .botao-voltar {
+      padding-left: 100%;
+      font-size: 14px;
+    }
   }
   
   @media screen and (max-width: 576px) {
     /* Mantém o layout em 3 colunas e 2 colunas mesmo em telas menores */
     .galeria2, .galeria3 {
-      gap: 10px;
+      gap: 1px;
     }
     
     .galeria2 img, .galeria3 img {
@@ -55,8 +63,8 @@
     }
     
     .botao-voltar {
-      margin: 5px 10px 0 0;
-      font-size: 14px;
+      font-size: 12px;
+      padding-left: 100%;
     }
   }
   
@@ -68,16 +76,18 @@
     .galeria2 a, .galeria3 a {
       height: 140px;
     }
+    .botao-voltar {
+      padding-left: 100%;
+      font-size: 7px;
+    }
   }
-  
-  /* Para telas muito pequenas, mantém a grade ao invés de empilhar */
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 425px){
     .produtos {
       padding: 5px;
     }
     
     .galeria2, .galeria3 {
-      gap: 1px;
+      gap: 0;
     }
     
     .galeria2 img, .galeria3 img {
@@ -89,7 +99,57 @@
       padding: 1px;
     }
     .botao-voltar {
-      margin-right: 30px;
-      font-size: 8px;
+      padding-left: 100%;
+      font-size: 7px;
+    }
+  }
+  
+
+  @media screen and (max-width: 375px){
+    .produtos {
+      padding: 5px;
+    }
+    
+    .galeria2, .galeria3 {
+      gap: 0;
+    }
+    
+    .galeria2 img, .galeria3 img {
+      height: 100px;
+    }
+    
+    .galeria2 a, .galeria3 a {
+      height: 120px;
+      padding: 1px;
+    }
+    .botao-voltar {
+      padding-left: 100%;
+      font-size: 6px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 320px) {
+    .produtos {
+      padding: 5px;
+    }
+    
+    .galeria2, .galeria3 {
+      gap: 0;
+    }
+    
+    .galeria2 img, .galeria3 img {
+      height: 100px;
+    }
+    
+    .galeria2 a, .galeria3 a {
+      height: 120px;
+      padding: 1px;
+    }
+    
+    .botao-voltar {
+      font-size: 7px;
+      padding-left: 100%;
+      
     }
   }
