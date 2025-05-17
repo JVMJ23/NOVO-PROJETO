@@ -39,7 +39,7 @@
   }
   
   .formulario-container {
-    padding: 0 15px;
+    padding: 0 20px;
   }
   
   .formulario-top h1 {
@@ -48,7 +48,7 @@
   }
   
   .form-row {
-    gap: 8px;
+    gap: 5px;
   }
   
   label {
@@ -70,13 +70,10 @@
     font-size: 16px;
     padding: 8px 12px;
   }
-  
-  .btn-enviar {
-    font-size: 18px;
-    padding: 10px 20px;
-    margin-bottom: 5px;
+
+   .modal-content p{
+    font-size: 14px;
   }
-  
   /* Escala o reCAPTCHA para telas menores */
   .g-recaptcha {
     transform: scale(0.85);
@@ -131,11 +128,8 @@
   .politica {
     font-size: 10px;
   }
-  
-  .btn-enviar {
-    font-size: 15px;
-    padding: 8px 15px;
-    margin-bottom: 5px;
+   .modal-content p{
+    font-size: 10px;
   }
   
   /* Escala o reCAPTCHA para telas menores */
@@ -173,10 +167,8 @@
   .politica {
     font-size: 8px;
   }
-  
-  .btn-enviar {
-    font-size: 12px;
-    padding: 6px 12px;
+   .modal-content p{
+    font-size: 8px;
   }
   
   /* Escala o reCAPTCHA para telas menores */
@@ -216,13 +208,19 @@
   .file-name {
     font-size: 6px;
   }
-  
-  .btn-enviar {
-    font-size: 11px;
-    padding: 5px 10px;
-    margin-bottom: 3px;
+  .imagem-box {
+    width:50%;
+    margin-bottom: 0;
   }
-  
+  .imagem-box img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+   .modal-content p{
+    font-size: 8px;
+  }
+
   /* Escala o reCAPTCHA para telas menores */
   .g-recaptcha {
     transform: scale(0.6);
@@ -264,11 +262,21 @@
   .politica {
     font-size: 6px;
   }
-  
-  .btn-enviar {
-    font-size: 10px;
-    padding: 4px 8px;
-    margin-bottom: 3px;
+  .formulario-bottom {
+    margin-bottom: 0;
+  }
+   .imagem-box {
+    width:50%;
+    margin-bottom: 0;
+  }
+  .imagem-box img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+  }
+  .modal-content p{
+    font-size: 8px;
   }
   
   /* Escala o reCAPTCHA para telas menores */

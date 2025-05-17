@@ -190,7 +190,7 @@
         text-align: center;
         font-size: 12px;
         margin-top: 30px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     
     .produtos-max p {
@@ -204,7 +204,7 @@
     
     .logo-container img {
         max-width: 70px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 } 

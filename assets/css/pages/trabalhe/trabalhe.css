@@ -1,9 +1,4 @@
-main {
-  position: relative;
-  padding: 30px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
    /*fundo*/
    body{
     background-image: url(../../../images/global/background-main2.png);
@@ -19,7 +14,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   flex: 1;
-  min-height: calc(100vh - 60px);
+  
 }
 
 .formulario-container {
@@ -107,8 +102,7 @@ input[type="checkbox"] {
 
 .imagem-box {
   flex: 0 0 auto; /* Não cresce, não encolhe, fica com tamanho automático */
-  width: 35%; /* Porcentagem em vez de tamanho fixo */
-  min-width: 0; /* Permite que o elemento encolha abaixo do conteúdo mínimo */
+  width: 50%; /* Porcentagem em vez de tamanho fixo */
   box-sizing: border-box;
 }
 
@@ -116,6 +110,7 @@ input[type="checkbox"] {
   max-width: 100%; /* Usa 100% do contêiner pai */
   height: auto;
   display: block;
+  
 }
 
 .form-extra {
@@ -151,25 +146,13 @@ input[type="checkbox"] {
   position: relative;
   max-width: 100%; /* Adaptado para ser responsivo */
   height: auto;
-  margin-top: 10px;
+  margin-top: 5px;
   left: 0;
 }
 
 .g-recaptcha {
   transform-origin: left top;
   -webkit-transform-origin: left top;
-}
-
-.btn-enviar {
-  background-color: #e35f1d;
-  color: white;
-  padding: 15px 30px;
-  font-size: 22px;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  white-space: nowrap;
-  width: fit-content;
 }
 
 .politica {

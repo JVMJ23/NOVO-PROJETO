@@ -18,8 +18,8 @@
     
     /* Mantendo a estrutura de três colunas ajustando proporções */
     .column-left {
-        width: 25%;
-        gap: 30px;
+        width: 30%;
+        gap: 50px;
     }
     
     .timeline-container {
@@ -27,8 +27,8 @@
     }
     
     .column-right {
-        width: 25%;
-        gap: 80px;
+        width: 30%;
+        gap: 150px;
     }
     
     .column-left img {
@@ -92,7 +92,7 @@
     }
     
     .column-right {
-        gap: 90px;
+        gap: 110px;
         width: 30%;
     }
     
@@ -156,25 +156,25 @@
     }
     
     .column-left {
-        width: 28%;
-        gap: 35px;
-    }
-    
-    .column-left img {
-        max-width: 55px;
-        margin-right: 15px;
-        margin-top: 6px;
-    }
-    
-    .column-right {
-        width: 28%;
+        width: 30%;
         gap: 40px;
     }
     
+    .column-left img {
+        max-width: 60px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    
+    .column-right {
+        width: 30%;
+        gap: 85px;
+    }
+    
     .column-right img {
-        max-width: 80px;
+        max-width: 85px;
         margin-top: 5px;
-        margin-left: 5px;
+        margin-left: 2px;
     }
     
     .timeline-item {
@@ -230,25 +230,28 @@
     }
     
     .timeline-container {
-        width: 44%;
+        width: 42%;
         padding-left: 12px;
     }
     
     .column-left {
-        width: 26%;
+        width: 30%;
+        gap:60px;
     }
     
     .column-right {
-        width: 26%;
+        width: 30%;
+        gap:70px;
     }
     
     .column-left img {
-        max-width: 45px;
-        margin-right: 12px;
+        max-width: 50px;
+        margin-right: 15px;
     }
     
     .column-right img {
-        max-width: 70px;
+        max-width: 80px;
+        margin-left :1px;
     }
     
     .timeline-item p {
@@ -275,7 +278,7 @@
     
     .logo-final {
         max-width: 90px;
-        margin-left: -50px;
+        margin-left: -55px;
     }
     
     .timeline-item:last-child p {
@@ -306,21 +309,21 @@
     
     .column-left {
         width: 25%;
-        gap: 30px;
+        gap: 55px;
     }
     
     .column-right {
-        width: 25%;
-        gap: 30px;
+        width: 30%;
+        gap: 50px;
     }
     
     .column-left img {
-        max-width: 40px;
-        margin-right: 10px;
+        max-width: 50px;
+        margin-right: 15px;
     }
     
     .column-right img {
-        max-width: 60px;
+        max-width: 70px;
         margin-left: 3px;
     }
     
@@ -355,7 +358,7 @@
     
     .logo-final {
         max-width: 80px;
-        margin-left: -40px;
+        margin-left: -50px;
     }
     
     .timeline-item:last-child p {

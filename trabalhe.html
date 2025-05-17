@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/pages/trabalhe/trabalhe.css">
   <link rel="stylesheet" href="assets/css/pages/trabalhe/trabalhe-resposible.css">
   <script>
+
   function adjustRecaptcha() {
     var width = document.querySelector('.recaptcha').offsetWidth;
     var scale = width / 302; // 302px é a largura padrão do widget reCAPTCHA
@@ -17,7 +18,6 @@
     }
   }
   
-  // Chama a função no carregamento e redimensionamento
   window.onload = adjustRecaptcha;
   window.onresize = adjustRecaptcha;
 </script>
@@ -140,9 +140,6 @@
         <div class="recaptcha">
             <div class="g-recaptcha" data-sitekey="KEY"></div>
         </div>
-
-        <button type="submit" class="btn-enviar">Enviar</button>
-      </div>
         <div id="modal-politica" class="modal">
           <div class="modal-content">
           <span class="fechar">&times;</span>
