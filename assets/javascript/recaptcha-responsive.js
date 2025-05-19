@@ -1,5 +1,4 @@
-<!-- Script para reCAPTCHA responsivo -->
-<script>
+// Função para ajustar o reCAPTCHA responsivamente
   function adjustRecaptcha() {
     var recaptchaContainer = document.querySelector('.recaptcha');
     if (recaptchaContainer) {
@@ -15,12 +14,6 @@
     }
   }
   
-  // Chama a função no carregamento e redimensionamento
-  if (window.addEventListener) {
-    window.addEventListener('load', adjustRecaptcha);
-    window.addEventListener('resize', adjustRecaptcha);
-  } else if (window.attachEvent) {
-    window.attachEvent('onload', adjustRecaptcha);
-    window.attachEvent('onresize', adjustRecaptcha);
-  }
-</script>
+  // Chama a função de ajuste do reCAPTCHA no carregamento e redimensionamento
+  adjustRecaptcha();
+  window.addEventListener('resize', adjustRecaptcha);

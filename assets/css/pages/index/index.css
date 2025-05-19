@@ -17,7 +17,8 @@ body {
   margin: 20px auto 20px;
   justify-content: space-between;
   height: 290px;
-  gap: 5px;
+  gap: 3px;
+  padding:5px;
   box-sizing: border-box;
 }
 

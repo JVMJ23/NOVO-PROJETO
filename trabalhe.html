@@ -75,7 +75,12 @@
     <div class="formulario-top">
       <h1>Você se considera uma pessoa atenciosa, simpática e pronta para novos desafios?</h1>
   
-      <form id="formulario-trabalho">
+      <form id="formulario-trabalho" action="https://formsubmit.co/supermercadomaximoRh@" method="POST" enctype="multipart/form-data">
+      
+        <input type="hidden" name="_subject" value="Novo Currículo Enviado">
+        <input type="hidden" name="_captcha" value="true">
+       
+
         <div class="form-group">
           <label for="nome">Nome completo</label>
           <input type="text" id="nome" required>
@@ -113,7 +118,7 @@
             <input type="text" id="setor" required>
           </div>
         </div>
-      </form>
+     
     </div>
   
     <div class="formulario-bottom">
@@ -130,7 +135,7 @@
           <label for="curriculo" class="btn-upload">Escolher arquivo</label>
           <span class="file-name">Nenhum Arquivo escolhido</span>
         </div>
-  
+   </form>
   
         <div class="politica">
           <p>Ao enviar o currículo você afirma estar de acordo com nossa <a href="#" id="abrir-politica">Política de Privacidade</a>.
@@ -138,8 +143,9 @@
         <input type="checkbox" id="Li-termos" required> Declaro ter lido e estar de acordo com a politica de privacidade
 
         <div class="recaptcha">
-            <div class="g-recaptcha" data-sitekey="KEY"></div>
+           <div class="g-recaptcha" data-sitekey="6LdDbkArAAAAAM-dMWtauQI3ffkzJ-r66eA8sN7Q" data-callback="recaptchaCallback"></div>
         </div>
+        
         <div id="modal-politica" class="modal">
           <div class="modal-content">
           <span class="fechar">&times;</span>
@@ -175,47 +181,16 @@
   
     <div class="footer-center">
       <img src="assets/images/global/logo novo-02.png" alt="logo da Rede Máximo">
-      <p>Produzido por João.2025 Rede Máximo de Supermercados</p>
+
     </div>
   </footer>
-  <script> src="assets/javascript/recaptcha-responsive.js" </script>
-  <script>
-    const inputFile = document.getElementById('curriculo');
-    const fileNameDisplay = document.querySelector('.file-name');
-  
-    inputFile.addEventListener('change', function () {
-      if (this.files.length > 0) {
-        fileNameDisplay.textContent = this.files[0].name;
-      } else {
-        fileNameDisplay.textContent = 'Nenhum Arquivo escolhido';
-      }
-    });
-
-  </script>
-
-            <script>
-              const abrir = document.getElementById("abrir-politica");
-              const modal = document.getElementById("modal-politica");
-              const fecharBtns = document.querySelectorAll(".fechar");
-
-              abrir.addEventListener("click", function (e) {
-                e.preventDefault();
-                modal.style.display = "block";
-              });
-
-              fecharBtns.forEach(btn => {
-                btn.addEventListener("click", function () {
-                  modal.style.display = "none";
-                });
-              });
-
-              window.addEventListener("click", function (e) {
-                if (e.target === modal) {
-                  modal.style.display = "none";
-                }
-              });
-            </script>
-
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+         <script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+</script>
+        <script src="assets/javascript/trabalhe.js"></script>
+        <script src="assets/javascript/recaptcha-responsive.js"></script>      
 </body>
 </html>
