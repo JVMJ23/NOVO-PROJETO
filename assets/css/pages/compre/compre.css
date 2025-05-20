@@ -26,10 +26,12 @@ body {
 .compre-content {
   width: 50%;
   box-sizing: border-box;
+  padding-right: 25px;
 }
 
 section.compre {
   width: 100%;
+  
 }
 
 section.compre .container {

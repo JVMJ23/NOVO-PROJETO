@@ -149,7 +149,8 @@ body{
 
 /* Logo final */
 .logo-final {
-    max-width: 250px;
+    background-color: #f1f1f1;
+    max-width: 240px;
     display: block;
     margin-left: -140px;
     
@@ -159,7 +160,7 @@ body{
 .timeline-item:last-child p {
     font-family: 'MyriadProRegular',sans-serif;
     color: #003366;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 900;
     margin-bottom: 0;
 }
