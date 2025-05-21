@@ -27,7 +27,7 @@ body{
     font-size: 38px;
     font-weight: 900;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .historia-grid{
     display: flex;
@@ -40,11 +40,12 @@ body{
 
 /* Reduzindo largura das colunas e aproximando da timeline */
 .column-left{
+    top: 360px;
     width: 25%;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     align-items: flex-end;
     padding-right: 0;
     margin-right: 0;
@@ -52,21 +53,34 @@ body{
 
 /* Timeline centralizada */
 .timeline-container {
-    width: 52%;
+    width: 50%;
     position: relative;
     border-left: 2px solid #003366;
     margin-top: 50px;
     padding-left: 20px;
     box-sizing: border-box;
 }
+.pilars{
+    box-sizing: border-box;
+    margin-left: 0;
+    background: white;
+    margin-bottom: 60px;
 
+}
+.pilars img{
+    display: block;
+    max-width: 600px;
+    width:100%;
+    object-fit: cover;
+}
 /* Coluna direita */
 .column-right{
+    top: 380px;
     width: 25%;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 90px;
     align-items: flex-start;
     padding-left: 0;
     margin-left: 0;
@@ -149,7 +163,7 @@ body{
 
 /* Logo final */
 .logo-final {
-    background-color: #f1f1f1;
+    background-color: #003366;
     max-width: 240px;
     display: block;
     margin-left: -140px;
