@@ -115,3 +115,6 @@ section.compre .container {
   margin-top: 10px;
 }
 
+ .botao-voltar:hover {
+      text-decoration: underline;
+    }

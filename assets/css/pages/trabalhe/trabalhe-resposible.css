@@ -23,8 +23,8 @@
   
   /* Escala o reCAPTCHA para telas menores */
   .g-recaptcha {
-    transform: scale(0.9);
-    -webkit-transform: scale(0.9);
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
   }
 }
 
@@ -76,8 +76,8 @@
   }
   /* Escala o reCAPTCHA para telas menores */
   .g-recaptcha {
-    transform: scale(0.85);
-    -webkit-transform: scale(0.85);
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
   }
 }
 
@@ -134,8 +134,8 @@
   
   /* Escala o reCAPTCHA para telas menores */
   .g-recaptcha {
-    transform: scale(0.77);
-    -webkit-transform: scale(0.77);
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
   }
 }
 
@@ -173,8 +173,8 @@
   
   /* Escala o reCAPTCHA para telas menores */
   .g-recaptcha {
-    transform: scale(0.7);
-    -webkit-transform: scale(0.7);
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
   }
 }
 
