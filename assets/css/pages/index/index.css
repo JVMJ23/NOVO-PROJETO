@@ -238,7 +238,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.call-button :hover {
+  transform: translateY(3px);
+}
 .call-button a {
   cursor: pointer;
   width: calc(100vw / 7);
@@ -261,3 +263,6 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
+.botao-voltar:hover {
+      text-decoration: underline;
+    }

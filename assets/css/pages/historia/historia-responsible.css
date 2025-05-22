@@ -21,6 +21,15 @@
         width: 30%;
         gap: 50px;
     }
+    .pilars{
+        margin-bottom: 40px;
+
+}
+        .pilars img{
+            max-width: 600px;
+            width:100%;
+            object-fit: cover;
+}
     
     .timeline-container {
         width: 40%;

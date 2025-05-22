@@ -37,25 +37,25 @@ body {
 /* Grid de lojas - ajustado para 3 colunas
 --------------------------------------------------------------------------- */
 .container {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
 }
 
 /* Estilo das colunas */
-.column-left, .column-middle, .column-right {
-  width: 32%;
+.column-left, .column-middle {
+  width: 34%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 /* Garantir que a coluna direita ocupa o mesmo espaço */
 .column-right{
-  width: 38%;
+  width: 35%;
   display: flex;
   flex-direction: column;
 }
@@ -81,11 +81,11 @@ body {
 
 .loja img {
   display: block;
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
-/* Mapa de atuação - ajustado */
+/* Mapa de atuação */
 .mapa {
   background-color: white;
   border-radius: 8px;
@@ -108,8 +108,8 @@ body {
   justify-content: space-between;
   margin: 30px auto 20px;
   padding: 0 40px;
-  max-width: 80%;
-  gap: 15px;
+  max-width: 70%;
+  gap: 10px;
 }
 
 .banner-lojas p {
@@ -131,11 +131,13 @@ body {
 }
 
 .banner-lojas img {
-  width: 120%;
+  width: 115%;
   height: auto;
   display: block;
 }
-
+.banner-imagem :hover {
+  transform: translateY(5px);
+}
   .banner-lojas .botao-voltar {
     font-family: 'MyriadRegular', sans-serif;
     font-size: 14px; 
@@ -146,5 +148,8 @@ body {
     align-self: center; 
     flex: 0 0 auto; /* Não cresce nem encolhe, apenas usa o espaço necessário */
   }
+  .botao-voltar:hover {
+      text-decoration: underline;
+    }
 
 
