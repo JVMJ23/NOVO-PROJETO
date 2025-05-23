@@ -47,7 +47,7 @@
     .botao-voltar-container {
       display: flex;
       justify-content: flex-end;
-      width: 100%;
+      width: 95%;
       margin: 5px 0;
     }
 

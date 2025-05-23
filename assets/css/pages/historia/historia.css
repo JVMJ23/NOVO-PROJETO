@@ -40,7 +40,7 @@ body{
 
 /* Reduzindo largura das colunas e aproximando da timeline */
 .column-left{
-    top: 360px;
+    top: 680px;
     width: 25%;
     position: relative;
     display: flex;
@@ -63,19 +63,23 @@ body{
 .pilars{
     box-sizing: border-box;
     margin-left: 0;
-    background: white;
-    margin-bottom: 60px;
+    height:auto;
+    width: 100%;
+    margin-bottom: 65px;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 .pilars img{
     display: block;
-    max-width: 600px;
+    height: auto;
     width:100%;
     object-fit: cover;
+    background: rgb(210, 211, 212);
 }
 /* Coluna direita */
 .column-right{
-    top: 380px;
+    top: 780px;
     width: 25%;
     position: relative;
     display: flex;
@@ -163,7 +167,7 @@ body{
 
 /* Logo final */
 .logo-final {
-    background-color: #003366;
+    background-color: rgba(201, 196, 196, 0.993);
     max-width: 240px;
     display: block;
     margin-left: -140px;
