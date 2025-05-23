@@ -4,8 +4,8 @@
 main.compre-main {
   position: relative;
   max-width: 1200px;
-  padding: 0 15%;
-  margin: 10px auto;
+  padding: 0 12% 0 10%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: nowrap; /* Evita quebra para manter 50/50 em todas as plataformas */
 }
@@ -84,8 +84,8 @@ section.compre .container {
 
 /* Seção do infográfico Drive Thru e Delivery (50%) */
 .infografico {
-  width: 50%; 
-  padding-left: 2px;
+  width: 50%;
+  margin-right: 60px;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -94,7 +94,7 @@ section.compre .container {
 }
 
 .infografico img {
-  width: 130%;
+  width: 128%;
   height: 100%;
   object-fit: cover;
 }
