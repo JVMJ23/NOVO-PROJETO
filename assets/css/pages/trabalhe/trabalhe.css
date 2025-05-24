@@ -78,6 +78,17 @@ input[type="checkbox"] {
   margin-right: 5px;
   vertical-align: middle;
 }
+select {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f1ebeb;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
 
 .form-row {
   display: flex;

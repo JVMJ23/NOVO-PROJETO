@@ -1,167 +1,376 @@
-/* Mantenha o CSS original da .banner-lojas e outros elementos */
+/* MEDIA QUERIES - Mantendo sempre o layout de 3 colunas
+--------------------------------------------------------------------------- */
 
-/* Correção apenas para os media queries e o botão voltar */
-@media (min-width: 992px) and (max-width: 1199px) {
-  main {
-    margin: 0 10%;
-  }
-  .section h1 {
-    font-size: 34px;
-  }
-  .lojas-grid {
-    gap: 15px;
-  }
-  .banner-lojas .botao-voltar {
-    font-size: 14px !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  body {
-    background-image: none;
-    background-color: #fff; 
-  }
-  main {
-    margin: 0 5%;
-    padding: 0 20px;
+/* Tablets grandes (1024px - 1200px) */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 85%;
   }
   
   .section h1 {
-    font-size: 30px;
-  }
-  
-  .lojas-grid {
-    padding: 0 20px;
-    gap: 15px;
+    font-size: 36px;
+    padding: 0 30px;
   }
   
   .banner-lojas {
-    padding: 0 20px;
-  }
-  
-  .banner-lojas p {
-    font-size: 0.8rem;
-  }
-  .banner-lojas .botao-voltar {
-    font-size: 13px !important;
+    max-width: 80%;
+    padding: 0 30px;
   }
 }
 
-@media (max-width: 768px) {
-  body {
-    background-image: none;
-    background-color: #fff; 
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    gap: 8px;
   }
-  main {
-    margin: 0 2%;
-    padding: 0 10px;
+  
+  .column-left, .column-middle {
+    width: 32%;
+  }
+  
+  .column-right {
+    width: 36%;
+  }
+  
+  .section h1 {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+  
+  .loja {
+    margin-bottom: 12px;
+  }
+  
+  .mapa {
+    min-height: 200px;
+    max-height: 700px;
+  }
+  
+  .banner-lojas {
+    max-width: 85%;
+    padding: 0 20px;
+  }
+  
+  .banner-lojas img {
+    width: 110%;
+  }
+}
+
+/* Tablets pequenos (600px - 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    gap: 6px;
+  }
+  
+  .column-left, .column-middle {
+    width: 31%;
+  }
+  
+  .column-right {
+    width: 38%;
+  }
+  
+  .section h1 {
+    font-size: 28px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  
+  .loja {
+    margin-bottom: 10px;
+  }
+  
+  .mapa {
+    padding: 8px;
+    min-height: 200px;
+    max-height: 600px;
+  }
+  
+  .banner-lojas {
+    max-width: 90%;
+    padding: 0 15px;
+    gap: 8px;
+  }
+  
+  .banner-lojas p {
+    font-size: 14px;
+    max-width: 180px;
+  }
+  
+  .banner-lojas .banner-imagem {
+    max-width: 280px;
+  }
+  
+  .banner-lojas img {
+    width: 100%;
+  }
+}
+
+/* Smartphones grandes (480px - 600px) */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 98%;
+    gap: 4px;
+  }
+  
+  .column-left, .column-middle {
+    width: 30%;
+  }
+  
+  .column-right {
+    width: 40%;
   }
   
   .section h1 {
     font-size: 24px;
     padding: 0 10px;
+    margin-bottom: 15px;
   }
   
-  .lojas-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    padding: 0 10px;
+  .loja {
+    margin-bottom: 5px;
+  }
+  
+  .mapa {
+    padding: 5px;
+    min-height: 200px;
+    max-height: 500px;
   }
   
   .banner-lojas {
-    padding: 0 15px;
+    flex-direction: row;
+    max-width: 95%;
+    padding: 0 10px;
+    gap: 10px;
+    text-align: center;
   }
   
   .banner-lojas p {
+    max-width: 100%;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .banner-lojas .banner-imagem {
+    max-width: 250px;
+  }
+  
+  .botao-voltar {
     font-size: 12px;
-    max-width: 280px;
   }
-  
-  .banner-lojas .botao-voltar {
-    font-size: 10px !important;
-  }
-  
+}
 
-@media (max-width: 430px) {
-  main {
-    margin: 0 3%;
-    padding: 0 3px;
-  }
-  .section h1 {
-    font-size: 19px;
+/* Smartphones (360px - 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 99%;
+    gap: 3px;
   }
   
-  .lojas-grid {
-    gap: 5px;
+  .column-left, .column-middle {
+    width: 29%;
+  }
+  
+  .column-right {
+    width: 42%;
+  }
+  
+  .section h1 {
+    font-size: 18px;
+    padding: 0 10px;
+    margin-bottom: 8px;
+  }
+  
+  .loja {
+    margin-bottom: 6px;
+  }
+  
+  .mapa {
+    padding: 5px;
+    min-height: 100px;
+    max-height: 450px;
+  }
+  
+  .banner-lojas {
+    flex-direction: row;
+    padding: 0 10px;
+    margin: 20px auto 15px;
+    gap: 4px;
   }
   
   .banner-lojas p {
-    font-size: 6px;
-    max-width: 220px;
+    max-width: 100px;
+    font-size: 8px;
+    line-height: 1.4;
   }
-  .banner-lojas img {
+  
+  .banner-lojas .banner-imagem {
     max-width: 200px;
   }
   
-  .banner-lojas .botao-voltar {
-    font-size: 5px !important;
-    white-space: nowrap;
-  }
-  
-  @media (max-width: 375px) {
-     main {
-      margin: 0 3%;
-      padding: 0 3px;
-    }
-    .section h1 {
-      font-size: 17px;
-      margin-bottom: 3px;
-    }
-    
-    .lojas-grid {
-      gap: 5px;
-    }
-    
-    .banner-lojas p {
-      font-size: 6px;
-      max-width: 280px;
-    }
-    .banner-lojas img {
-      max-width: 180px;
-    }
-    
-    .banner-lojas .botao-voltar {
-      font-size: 4px ;
-      white-space: nowrap;
-    }
-
-  }
-  @media (max-width: 320px) {
-    main {
-      margin: 0 3%;
-      padding: 0 3px;
-    }
-    .section h1 {
-      font-size: 15px;
-      margin-bottom: 3px;
-    }
-    
-    .lojas-grid {
-      gap: 5px;
-    }
-    
-    .banner-lojas p {
-      font-size: 5px;
-      max-width: 280px;
-    }
-    .banner-lojas img {
-      max-width: 190px;
-    }
-    
-    .banner-lojas .botao-voltar {
-      font-size: 4px;
-      white-space: nowrap;
-    }
+ .banner-lojas .botao-voltar {
+    font-size: 8px;
   }
 }
+/* Smartphones (até 395px) */
+@media screen and (max-width: 425px) {
+  .container {
+    gap: 2px;
+  }
+  
+  .column-left, .column-middle {
+    width: 28%;
+  }
+  
+  .column-right {
+    width: 44%;
+  }
+  
+  .section h1 {
+    font-size: 15px;
+  }
+  
+  .loja {
+    margin-bottom: 4px;
+  }
+  
+  .mapa {
+    padding: 3px;
+    min-height: 100px;
+    max-height: 500px;
+  }
+  .mapa img{
+    width: 95%;
+  }
+  
+  .banner-lojas {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .banner-lojas img {
+    max-width: 180px;
+    width:100%;
+  }
+  
+  .banner-lojas p {
+    max-width: 100px;
+    font-size: 6px;
+    text-align: right;
+  }
+
+  .banner-lojas .botao-voltar {
+    font-size: 7px;
+  }
+}
+
+
+
+/* Smartphones pequenos (até 345px) */
+@media screen and (max-width: 375px) {
+  .container {
+    gap: 2px;
+  }
+  
+  .column-left, .column-middle {
+    width: 28%;
+  }
+  
+  .column-right {
+    width: 44%;
+  }
+  
+  .section h1 {
+    font-size: 15px;
+  }
+  
+  .loja {
+    margin-bottom: 4px;
+  }
+  
+  .mapa {
+    padding: 3px;
+    min-height: 100px;
+    max-height: 500px;
+  }
+  .mapa img{
+    width: 95%;
+  }
+  
+  .banner-lojas {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .banner-lojas img {
+    max-width: 180px;
+    width:100%;
+  }
+  
+  .banner-lojas p {
+    max-width: 100px;
+    font-size: 6px;
+    text-align: right;
+  }
+
+  .banner-lojas .botao-voltar {
+    font-size: 7px;
+  }
+}
+
+/* Smartphones muito pequenos (até 320px) */
+@media screen and (max-width: 320px) {
+  .container {
+    gap: 2px;
+  }
+  
+  .column-left, .column-middle {
+    width: 28%;
+  }
+  
+  .column-right {
+    width: 44%;
+  }
+  
+  .section h1 {
+    font-size: 15px;
+  }
+  
+  .loja {
+    margin-bottom: 4px;
+  }
+  
+  .mapa {
+    padding: 3px;
+    min-height: 100px;
+    max-height: 500px;
+  }
+  .mapa img{
+    width: 95%;
+  }
+  
+  .banner-lojas {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .banner-lojas img {
+    max-width: 180px;
+    width:100%;
+  }
+  
+  .banner-lojas p {
+    max-width: 100px;
+    font-size: 6px;
+    text-align: right;
+  }
+
+  .banner-lojas .botao-voltar {
+    font-size: 7px;
+  }
 }

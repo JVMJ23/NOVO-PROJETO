@@ -10,7 +10,7 @@
 --------------------------------------------------------------------------- */
 body {
   background-image: url(../../../images/global/background-main2.png);
-  background-size: 850px auto;
+  background-size: 800px auto;
   background-attachment: local;
   background-position: right;
   background-repeat: repeat-y;
@@ -18,8 +18,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
 
 /* Título principal
 --------------------------------------------------------------------------- */
@@ -31,10 +29,10 @@ body {
   font-weight: 900;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
 
-/* Grid de lojas - ajustado para 3 colunas
+/* Grid de lojas - sempre 3 colunas
 --------------------------------------------------------------------------- */
 .container {
   width: 75%;
@@ -43,112 +41,119 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 5px;
+  align-items: stretch; /* Garante que todas as colunas tenham a mesma altura */
 }
 
 /* Estilo das colunas */
 .column-left, .column-middle {
-  width: 34%;
+  width: 33%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
 }
 
-/* Garantir que a coluna direita ocupa o mesmo espaço */
-.column-right{
-  width: 35%;
+/* Garantir que a coluna direita ocupa o mesmo espaço e altura */
+.column-right {
+  width: 40%;
   display: flex;
   flex-direction: column;
+  height: 110%; /* Ocupa toda a altura disponível */
 }
 
 /* Estilo das lojas individuais */
 .loja {
   background-color: white;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
   transition: transform 0.1s ease-in-out;
 }
 
 .loja:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
 }
 
 .loja a {
   display: block;
-  width: 100%;
+  width: 95%;
   text-decoration: none;
 }
 
 .loja img {
   display: block;
-  width: 100%;
+  width: 95%;
   height: auto;
 }
 
-/* Mapa de atuação */
+/* Mapa de atuação - ajustado para ocupar toda a altura */
 .mapa {
   background-color: white;
-  border-radius: 8px;
-  padding: 10px;
-  height: 100%;
+  border-radius: 5px;
+  padding-left: 20px;
+  height: calc(110vh - 5%); /* Altura dinâmica baseada na viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mapa img {
-  width: 120%;
-  height: max-content;
-  object-fit: contain;
+  width: 110%;
+  height: 110%;
+  object-fit: contain; /* Mantém a proporção sem distorção */
   border-radius: 4px;
 }
+
 /* Banner "Em breve"
 --------------------------------------------------------------------------- */
 .banner-lojas {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px auto 20px;
-  padding: 0 40px;
-  max-width: 70%;
-  gap: 10px;
+  margin: 20px auto 20px;
+  padding: 0 50px;
+  max-width: 80%;
+  gap: 3px;
 }
 
 .banner-lojas p {
-  max-width: 210px; /* Reduzido para dar mais espaço */
+  max-width: 330px;
   font-family: 'MyriadProRegular', sans-serif;
   color: #003366;
   font-size: 16px;
-  font-weight: 800;
-  line-height: 1.3;
-  text-align: left;
-  flex: 1; /* Permite flexibilidade */
+  font-weight: 900;
+  line-height: 1.4;
+  text-align:right;
+  flex: 2;
 }
 
 .banner-lojas .banner-imagem {
   display: block;
-  max-width: 360px;
+  max-width: 350px;
   width: 100%;
-  flex: 2; /* Dá mais espaço para a imagem */
+  flex: 1;
 }
 
 .banner-lojas img {
-  width: 115%;
+  width: 110%;
   height: auto;
   display: block;
 }
-.banner-imagem :hover {
+
+.banner-imagem:hover {
   transform: translateY(5px);
 }
-  .banner-lojas .botao-voltar {
-    font-family: 'MyriadRegular', sans-serif;
-    font-size: 14px; 
-    color: #003366;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 500;
-    align-self: center; 
-    flex: 0 0 auto; /* Não cresce nem encolhe, apenas usa o espaço necessário */
-  }
-  .botao-voltar:hover {
-      text-decoration: underline;
-    }
 
+.banner-lojas .botao-voltar {
+  font-family: 'MyriadRegular', sans-serif;
+  font-size: 12px; 
+  color: #003366;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  align-self: center; 
+  flex: 0 0 auto;
+}
 
+.botao-voltar:hover {
+  text-decoration: underline;
+}

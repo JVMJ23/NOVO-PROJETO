@@ -60,6 +60,10 @@
     padding: 8px;
     font-size: 13px;
   }
+  select {
+    padding: 8px;
+    font-size: 13px;
+  }
   
   .formulario-bottom {
     gap: 15px;
@@ -110,6 +114,10 @@
     padding: 6px;
     font-size: 11px;
   }
+  select{
+    padding: 6px;
+    font-size: 11px;
+  }
   
   .formulario-bottom {
     gap: 10px;
@@ -153,7 +161,11 @@
     padding: 5px;
     font-size: 7px;
   }
-  
+
+  select{
+    padding: 5px;
+    font-size: 7px;
+  }
   .btn-upload {
     font-size: 11px;
     padding: 5px 8px;
@@ -199,7 +211,12 @@
     padding: 4px;
     font-size: 7px;
   }
-  
+
+  select{
+    padding: 4px;
+    font-size: 7px;
+  }
+
   .btn-upload {
     font-size: 10px;
     padding: 4px 6px;
@@ -246,6 +263,10 @@
   
   input[type="text"],
   input[type="email"] {
+    padding: 3px;
+    font-size: 6px;
+  }
+  select{
     padding: 3px;
     font-size: 6px;
   }

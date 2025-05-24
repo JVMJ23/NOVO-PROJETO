@@ -193,3 +193,19 @@ document.addEventListener('DOMContentLoaded', function() {
                   modal.style.display = "none";
                 }
               });
+
+/* seleção */
+                function mostrarSelecao() {
+            const select = document.getElementById('loja');
+            const resultado = document.getElementById('resultado');
+            
+            if (select.value) {
+                const textoSelecionado = select.options[select.selectedIndex].text;
+                resultado.innerHTML = `<strong>Loja selecionada:</strong> ${textoSelecionado}`;
+                resultado.style.display = 'block';
+            } else {
+                resultado.innerHTML = '<strong>Por favor, selecione uma loja.</strong>';
+                resultado.style.display = 'block';
+                resultado.style.color = '#dc3545';
+            }
+        }
